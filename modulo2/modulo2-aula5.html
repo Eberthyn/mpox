@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>EDL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+
+    <link href="../assets/css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link href="../assets/css/styles.css" rel="stylesheet">
+    <style>
+        .tituloLista {
+            font-weight: 400 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="12">
+        <!-- Toolbar -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+
+                <img src="../assets/images/logos/logoMenu.png" class="img-fluid logo" alt="Logo Fiocruz" />
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li><a href="../index.html">Home</a></li>
+                        <!-- <li><a href="material-complementar.html">Material Complementar</a></li> -->
+                        <li><a href="../referencias.html">Referências</a></li>
+                        <li><a href="../creditos.html">Créditos</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="row" id="row-main">
+            <!-- Sidebar -->
+            <div class="col-md-2" id="sidebar">
+                <app-menu-lateral></app-menu-lateral>
+            </div>
+
+            <div class="col-md-10" id="content">
+                <!-- Introdução -->
+                <div class="conteudo">
+                    <p class="indice">Módulo2/Aula5</p>
+                    <h1>Logística estratégica e operacional</h1>
+
+                    <p>Como você pode perceber, a EDL é uma ação muito eficiente para o combate ao mosquito e todo
+                        município
+                        que manifeste ou tenha a intenção de implantar as Estações Disseminadoras de Larvicida para o
+                        controle de <i>Aedes</i> spp. deverá entrar em contato com a CGARB/SVSA-MS, visando articular e
+                        pactuar os
+                        compromissos e responsabilidades para a implementação no município.</p>
+
+                    <p>Uma vez realizado esse primeiro contato com a coordenação nacional, de preferência mediada pela
+                        Secretaria de Estado de Saúde (SES), o município enviará um ofício de pactuação onde estarão
+                        definidos os compromissos e responsabilidades para a implementação das EDL’s no município, bem
+                        como
+                        a equipe ou o profissional de saúde responsável da implementação da estratégia no município.
+                        Posteriormente, a CGARB orientará ao município a contactar ao PReV Amazônia - EDTA/ILMD/Fiocruz
+                        Amazônia, referência técnica da CGARB/SVSA-MS para auxiliar no plano de operacionalização da
+                        estratégia.</p>
+
+                    <p>Entre os critérios de inclusão sugeridos para a avaliação do plano de operacionalização da
+                        estratégia
+                        no município, é importante ter à disposição:</p>
+
+                    <!-- Abas -->
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab">
+                            <a class="nav-item nav-link active" id="nav-1-tab" data-toggle="tab" data-target="#nav-1"
+                                aria-controls="nav-1" aria-selected="true">Base<br>entomológica</a>
+                            <a class="nav-item nav-link" id="nav-2-tab" data-toggle="tab" data-target="#nav-2"
+                                aria-controls="nav-2" aria-selected="false">Dados<br>demográficos</a>
+                            <a class="nav-item nav-link" id="nav-3-tab" data-toggle="tab" data-target="#nav-3"
+                                aria-controls="nav-3" aria-selected="false">Base<br>epidemiológica</a>
+                            <a class="nav-item nav-link" id="nav-4-tab" data-toggle="tab" data-target="#nav-4"
+                                aria-controls="nav-4" aria-selected="false">Áreas de interesse<br>estratégico</a>
+                            <a class="nav-item nav-link" id="nav-5-tab" data-toggle="tab" data-target="#nav-5"
+                                aria-controls="nav-5" aria-selected="false">Malha municipal<br>vetorizada</a>
+                        </div>
+                    </nav>
+
+
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-1" aria-labelledby="nav-1-tab">
+                            <br>
+                            <p>Histórico de monitoramento de ovos, larvas e/ou adultos de <i>Aedes</i> spp.</p>
+                        </div>
+
+                        <div class="tab-pane fade" id="nav-2" aria-labelledby="nav-2-tab">
+                            <br>
+                            <p>Imóveis, saneamento básico, infraestrutura urbana, entre outros.</p>
+                        </div>
+
+                        <div class="tab-pane fade" id="nav-3" aria-labelledby="nav-3-tab">
+                            <br>
+                            <p>Base de dados SINAN desagregada dos casos notificados de arboviroses.</p>
+                        </div>
+
+                        <div class="tab-pane fade" id="nav-4" aria-labelledby="nav-4-tab">
+                            <br>
+                            <p>Pontos estratégicos como locais de alta infestação de <i>Aedes</i> spp., ou alta
+                                incidência
+                                de
+                                arboviroses, locais de alta receptividade vetorial ou persistência de infestação.</p>
+                        </div>
+                        <div class="tab-pane fade" id="nav-5" aria-labelledby="nav-5-tab">
+                            <br>
+                            <p>Malha municipal vetorizada e atualizada da área urbana do município, representada por
+                                imóveis, lotes, quadras ou quarteirões.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim das Abas -->
+
+                <div class="row voceSabia">
+                    <div class="col-md-2">
+                        <img class="centro img-fluid" src="../assets/images/icones/voceSabia.png" alt="Você sabia?">
+                    </div>
+                    <div class="col-md-10">
+                        <h3>VOCÊ SABIA?</h3>
+                        <hr>
+                        <p><b>Você sabe quem define onde será a implantação de uma EDL?</b></p>
+                        <p class="tituloLista">A definição do plano de operacionalização para a implantação de EDL’s se
+                            realizará
+                            com a
+                            equipe
+                            do Núcleo PReV Amazônia e a equipe de gestores e/ou profissionais responsáveis e
+                            designados para
+                            a operacionalização da estratégia no município. O plano de operacionalização tem
+                            como
+                            objetivos:
+                        </p>
+                        <ul>
+                            <li class="icon circle">Avaliar a capacidade operacional e logística para a implementação da
+                                estratégia
+                                no
+                                município.</li>
+                            <li class="icon circle">Revisar e definir as áreas/localidades que participarão na
+                                intervenção.
+                            </li>
+                            <li class="icon circle">Determinar o número necessário de EDL’s.</li>
+                            <li class="icon circle">Adequar os instrumentos necessários para a implantação e manutenção
+                                das
+                                EDL’s no
+                                município
+                                (formulários, bases de dados, estratégia de comunicação, entre outros).</li><br>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="conteudo">
+                    <p class="tituloLista">Para a formulação do plano de operacionalização da estratégia é necessário
+                        ter em
+                        conta dados da
+                        composição e estrutura urbana das áreas a serem inseridas, como: tipos de imóveis (residencial,
+                        comercial, entre outros), pontos estratégicos (ferro-velho, lava a jato, cemitérios, entre
+                        outros) e
+                        locais de maior fluxo de pessoas (shopping, hospitais, rodoviárias, entre outros). Com base
+                        nessas
+                        informações se definirá:</p>
+                    <ul>
+                        <li class="icon circle">as áreas e a finalidade da intervenção,</li>
+                        <li class="icon circle">estimar o número de EDL’s necessário para a implantação,</li>
+                        <li class="icon circle">a distribuição espaço-temporal,</li>
+                        <li class="icon circle">método que se ajuste à realidade local e capacidade operacional do
+                            município, com
+                            base
+                            na tabela
+                            abaixo:</li><br>
+                    </ul>
+
+                    <img src="../assets/images/modulo2/aula5/img1.png" alt="Tabela de dados" class="img-fluid imagem">
+                </div>
+
+                <!-- Botões de navegação -->
+                <div class="row" id="botao">
+                    <a href="modulo2-aula4.html" class="btn btn-sm" id="botaoVoltar" role="button" alt="Voltar">
+                        <strong>VOLTAR</strong></a>
+                    <a href="modulo2-atividade.html" class="btn btn-sm" id="botaoAvancar" role="button" alt="Avançar">
+                        <strong>AVANÇAR</strong></a>
+                </div>
+            </div>
+            <!-- Rodapé -->
+            <!-- class=rodapeFixo -->
+            <footer>
+                <div class="row-main">
+                    <div class="col-md-12 centro">
+                        <img class="img-fluid centro" src="../assets/images/rodape/rodape.png" alt="Rodapé">
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+    <!-- Arquivos JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
