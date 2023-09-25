@@ -43,71 +43,209 @@
 </head>
 
 <body>
-    <section id="13">
-        <!-- Toolbar -->
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light">
+    <!-- Toolbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" id="menuSuperior">
 
-                <img src="../assets/images/logos/logoMenu.png" class="img-fluid logo" alt="Logo Fiocruz" />
+            <img src="../assets/images/logos/logoMenu.png" class="img-fluid logo" alt="Logo Fiocruz" />
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav ml-auto">
-                        <li><a href="../index.html">Home</a></li>
-                        <!-- <li><a href="material-complementar.html">Material Complementar</a></li> -->
-                        <li><a href="../referencias.html">Referências</a></li>
-                        <li><a href="../creditos.html">Créditos</a></li>
-                    </ul>
-                </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li><a href="../index.html">Home</a></li>
+                    <!-- <li><a href="material-complementar.html">Material Complementar</a></li> -->
+                    <li><a href="../referencias.html">Referências</a></li>
+                    <li><a href="../creditos.html">Créditos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="row" id="row-main">
+        <!-- Sidebar -->
+        <div class="col-md-2" id="sidebar">
+            <!-- Botão p/ Recolher Sidebar-->
+            <span class="toggle-sidebar" id="sidebarButton"><i class="fas fa-chevron-left"></i></span>
+
+            <!-- Botão Secundário p/ Recolher Sidebar -->
+            <span class="toggle-sidebar" id="sidebarButton2"><img src="../assets/images/icones/icone.png"
+                    alt="Botão do Menu Lateral"></span>
+
+            <nav id="menuLateral">
+                <ul class="listaMenu" id="menuList">
+                    <li>
+                        <div class="row">
+                            <div class="barraStepper"></div>
+                            <div class="sectionTitle">
+                                <a href="../introducao.html" class="tituloLista introducao">Introdução</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="barraStepper"></div>
+                            <div class="sectionTitle">
+                                <a href="../modulo1/modulo1-introducao.html" class="tituloLista">Módulo 1: Combate
+                                    ao
+                                    mosquito <i>Aedes</i></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="barraStepper"></div>
+                            <div class="sectionTitle">
+                                <div class="iconeMenu"></div>
+                                <a href="../modulo1/modulo1-aula1.html">Aspectos básicos da biologia, ecologia e
+                                    controle de <i>Aedes</i></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="barraStepper"></div>
+                            <div class="sectionTitle">
+                                <div class="iconeMenu"></div>
+                                <a href="../modulo1/modulo1-aula2.html">Inseticidas reguladores de crescimento</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="barraStepper"></div>
+                            <div class="sectionTitle">
+                                <div class="iconeMenu"></div>
+                                <a href="../modulo1/modulo1-aula3.html">O que é uma Estação Disseminadora de
+                                    Larvicida (EDL) e como funciona?</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="barraStepper"></div>
+                            <div class="sectionTitle">
+                                <div class="iconeMenu"></div>
+                                <a href="../modulo1/modulo1-atividade.html">Atividade</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="barraStepper"></div>
+                            <div class="sectionTitle">
+                                <a href="modulo2-introducao.html" class="tituloLista">Módulo 2:
+                                    Implantação,
+                                    manutenção e
+                                    distribuição da EDL</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="barraStepper"></div>
+                            <div class="sectionTitle">
+                                <div class="iconeMenu"></div>
+                                <a href="modulo2-aula1.html">Implantação da EDL</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="barraStepper"></div>
+                            <div class="sectionTitle">
+                                <div class="iconeMenu"></div>
+                                <a href="modulo2-aula2.html">Manutenção e registro da EDL</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="barraStepper"></div>
+                            <div class="sectionTitle">
+                                <div class="iconeMenu"></div>
+                                <a href="modulo2-aula3.html">Métodos de distribuição em campo da EDL</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="barraStepper"></div>
+                            <div class="sectionTitle">
+                                <div class="iconeMenu"></div>
+                                <a href="modulo2-aula4.html">Supervisão da EDL</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="barraStepper"></div>
+                            <div class="sectionTitle">
+                                <div class="iconeMenu"></div>
+                                <a href="modulo2-aula5.html">Logística estratégica e operacional</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="barraStepper active"></div>
+                            <div class="sectionTitle">
+                                <div class="iconeMenu"></div>
+                                <a href="#">Atividade</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="barraStepper"></div>
+                            <div class="sectionTitle">
+                                <a href="../encerramento.html" class="tituloLista">Encerramento</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </nav>
-        </header>
+        </div>
 
-        <div class="row" id="row-main">
-            <!-- Sidebar -->
-            <div class="col-md-2" id="sidebar">
-                <app-menu-lateral></app-menu-lateral>
-            </div>
+        <div class="col-md-10" id="content">
+            <div class="conteudo">
+                <p class="indice">Módulo2/Atividade</p>
+                <h1>Muito bem, você chegou ao final do módulo 2</h1>
 
-            <div class="col-md-10" id="content">
-                <div class="conteudo">
-                    <p class="indice">Módulo2/Atividade</p>
-                    <h1>Muito bem, você chegou ao final do módulo 2</h1>
+                <h3>Vamos fixar alguns pontos aprendidos até aqui? Vamos lá!</h3>
+                <div>
+                    <ol>
+                        <li *ngFor="let pergunta of perguntas">
+                            {{ pergunta.texto }}
+                            <br>
+                            <div class="input-radio" *ngFor="let opcao of opcoesResposta">
+                                <input type="radio" [(ngModel)]="pergunta.resposta" [name]="pergunta.id"
+                                    [value]="opcao.valor" (change)="verificarResposta(pergunta)">
 
-                    <h3>Vamos fixar alguns pontos aprendidos até aqui? Vamos lá!</h3>
-                    <div>
-                        <ol>
-                            <li *ngFor="let pergunta of perguntas">
-                                {{ pergunta.texto }}
-                                <br>
-                                <div class="input-radio" *ngFor="let opcao of opcoesResposta">
-                                    <input type="radio" [(ngModel)]="pergunta.resposta" [name]="pergunta.id"
-                                        [value]="opcao.valor" (change)="verificarResposta(pergunta)">
+                                <label
+                                    [ngClass]="{'resposta-correta': pergunta.resposta === opcao.valor && pergunta.resposta === pergunta.respostaCorreta, 'resposta-incorreta': pergunta.resposta === opcao.valor && pergunta.resposta !== pergunta.respostaCorreta}">
+                                    <div class="radio-btn"></div>
+                                    <b>{{opcao.texto}}</b>
+                                </label>
+                            </div>
+                            <br>
+                            <p [innerHTML]="formatText(pergunta.resultado, ['Aedes', 'aegypti', 'albopictus'])">{{
+                                pergunta.resultado }}</p>
+                        </li>
+                    </ol>
+                </div>
 
-                                    <label
-                                        [ngClass]="{'resposta-correta': pergunta.resposta === opcao.valor && pergunta.resposta === pergunta.respostaCorreta, 'resposta-incorreta': pergunta.resposta === opcao.valor && pergunta.resposta !== pergunta.respostaCorreta}">
-                                        <div class="radio-btn"></div>
-                                        <b>{{opcao.texto}}</b>
-                                    </label>
-                                </div>
-                                <br>
-                                <p [innerHTML]="formatText(pergunta.resultado, ['Aedes', 'aegypti', 'albopictus'])">{{
-                                    pergunta.resultado }}</p>
-                            </li>
-                        </ol>
-                    </div>
-
-                    <!-- Botões de navegação -->
-                    <div class="row" id="botao">
-                        <a href="modulo2-aula5.html" class="btn btn-sm" id="botaoVoltar" role="button" alt="Voltar">
-                            <strong>VOLTAR</strong></a>
-                        <a href="../encerramento.html" class="btn btn-sm" id="botaoAvancar" role="button" alt="Avançar">
-                            <strong>AVANÇAR</strong></a>
-                    </div>
+                <!-- Botões de navegação -->
+                <div class="row" id="botao">
+                    <a href="modulo2-aula5.html" class="btn btn-sm" id="botaoVoltar" role="button" alt="Voltar">
+                        <strong>VOLTAR</strong></a>
+                    <a href="../encerramento.html" class="btn btn-sm" id="botaoAvancar" role="button" alt="Avançar">
+                        <strong>AVANÇAR</strong></a>
                 </div>
             </div>
+
             <!-- Rodapé -->
             <!-- class=rodapeFixo -->
             <footer>
@@ -118,7 +256,7 @@
                 </div>
             </footer>
         </div>
-    </section>
+    </div>
 
     <!-- Arquivos JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

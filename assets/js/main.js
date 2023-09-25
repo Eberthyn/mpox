@@ -1,107 +1,52 @@
 /* Fixa Menu Superior */
 $(window).scroll(function () {
 
-    if ($(window).scrollTop() + $(window).height() === $(document).height()) {
-  
-    } else {
-      $(".navbar").addClass("fixed-top");
-    }
-  
-    if ($(window).scrollTop() === 0) {
-      $(".navbar").removeClass("fixed-top");
-      $("#row-main").css("padding-top", "0%");
-      $(".navbar").css("box-shadow", "0px 0px 0px rgba(0,0,0,0.5)")
-  
-    } else {
-      $(".navbar").addClass("fixed-top");
-      $("#row-main").css("padding-top", ($('#menuSuperior').css("height")));
-      $(".stepContainer").css("padding-bottom", ($('#menuSuperior').css("height")));
-      $(".navbar").css("box-shadow", "0px 2px 2px rgba(0,0,0,0.5)")
-    }
-  
-  });
-  
-  /*Controla funções no Menu Lateral*/
-  $(function () {
-    var Accordion = function (el, multiple) {
-      this.el = el || {};
-      this.multiple = multiple || false;
-  
-      var links = this.el.find('.link');
-  
-      links.on('click', { el: this.el, multiple: this.multiple }, this.dropdown);
-    }
-  
-    Accordion.prototype.dropdown = function (e) {
-      var $el = e.data.el;
-      $this = $(this),
-        $next = $this.next();
-  
-      $next.slideToggle();
-      $this.parent().toggleClass('open');
-  
-      if (!e.data.multiple) {
-        $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
-      };
-  
-  
-      if ($(".step:last-child .contentMenu").hasClass("open")) {
-        $(".step:last-child .line").show();
-      } else {
-        $(".step:last-child .line").hide();
-      }
-    }
-  
-    /* Mostra linha da última Aula */
-    var accordion = new Accordion($('#accordion'), false);
-    if ($(".step:last-child .contentMenu").hasClass("open")) {
-      $(".step:last-child .line").show();
-    } else {
-      $(".step:last-child .line").hide();
-    }
-  
-  });
-  
-  /* Deixa a aula atual aberta */
-  $(".contentMenu.open .submenu").show();
-  $(".step:last-child .line").hide();
-  
-  /* Adiciona suavidade na rolagem da ancoragem */
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-  
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-      });
-    });
-  });
-  
-  /* Adiciona tooltip (Abas) */
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  })
-  
-  /* Rola tela para o Inicio da Aula*/
-  $(document).on('click', '.botaoComecar', function(e) {
+  if ($(window).scrollTop() + $(window).height() === $(document).height()) {
+
+  } else {
+    $("#menuSuperior").addClass("fixed-top");
+  }
+
+  if ($(window).scrollTop() === 0) {
+    $("#menuSuperior").removeClass("fixed-top");
+    $("#row-main").css("padding-top", "0%");
+    $("#menuSuperior").css("box-shadow", "0px 0px 0px rgba(0,0,0,0.5)")
+
+  } else {
+    $("#menuSuperior").addClass("fixed-top");
+    $("#row-main").css("padding-top", ($('#menuSuperior').css("height")));
+    $("#menuSuperior").css("box-shadow", "0px 2px 2px rgba(0,0,0,0.5)")
+  }
+
+});
+
+/* Adiciona suavidade na rolagem da ancoragem */
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
     e.preventDefault();
-    $('html,body').animate({scrollTop: ($("#topico1").offset().top) }, 500);
-    });
 
-    // SIDEBAR
+    $('html,body').animate({scrollTop: ($("#row-main").offset().top) }, 500);
+  });
+});
 
-    /* Abre com menu recolhido em Tablet e smartphone */
+/* Adiciona tooltip (Abas) */
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+// SIDEBAR
+/* Abre com menu recolhido em Tablet e smartphone */
 var tam = $(window).width();
-if (tam <= 980){
+if (tam <= 980) {
   $('#sidebar').addClass('esconder');
-    $("#sidebarButton").addClass("open");
-    $("#content").addClass("col-md-12");
-    $("#content").removeClass("col-md-10");
-}else{
+  $("#sidebarButton").addClass("open");
+  $("#content").addClass("col-md-12");
+  $("#content").removeClass("col-md-10");
+} else {
   $('#sidebar').removeClass('esconder');
-    $("#sidebarButton").removeClass("open");
-    $("#content").removeClass("col-md-12");
-    $("#content").addClass("col-md-10");
+  $("#sidebarButton").removeClass("open");
+  $("#content").removeClass("col-md-12");
+  $("#content").addClass("col-md-10");
 }
 
 // Recolhe menu ao reduzir tela no desktop //
@@ -120,7 +65,7 @@ $(window).on('resize', function () {
     $("#content").removeClass("col-md-12");
     $("#content").addClass("col-md-10");
   }
-  
+
 });
 
 /*Collapse Sidebar*/
@@ -132,45 +77,42 @@ $(".toggle-sidebar").click(function () {
   return false;
 });
 
-
-
 // CAROUSEL SWIPE
-
 +function ($) {
   'use strict';
 
-  if ( !$.fn.carousel ) {
-    throw new Error( "carousel-swipe required bootstrap carousel" )
+  if (!$.fn.carousel) {
+    throw new Error("carousel-swipe required bootstrap carousel")
   }
 
   // CAROUSEL CLASS DEFINITION
   // =========================
 
-  var CarouselSwipe = function(element) {
-    this.$element    = $(element)
-    this.carousel    = this.$element.data('bs.carousel')
-    this.options     = $.extend({}, CarouselSwipe.DEFAULTS, this.carousel.options)
-    this.startX      =
-    this.startY      =
-    this.startTime   =
-    this.cycling     =
-    this.$active     =
-    this.$items      =
-    this.$next       =
-    this.$prev       = 
-    this.dx          = null
+  var CarouselSwipe = function (element) {
+    this.$element = $(element)
+    this.carousel = this.$element.data('bs.carousel')
+    this.options = $.extend({}, CarouselSwipe.DEFAULTS, this.carousel.options)
+    this.startX =
+      this.startY =
+      this.startTime =
+      this.cycling =
+      this.$active =
+      this.$items =
+      this.$next =
+      this.$prev =
+      this.dx = null
 
     this.$element
-      .on('touchstart', $.proxy(this.touchstart,this))
-      .on('touchmove', $.proxy(this.touchmove,this))
-      .on('touchend', $.proxy(this.touchend,this))
+      .on('touchstart', $.proxy(this.touchstart, this))
+      .on('touchmove', $.proxy(this.touchmove, this))
+      .on('touchend', $.proxy(this.touchend, this))
   }
 
   CarouselSwipe.DEFAULTS = {
     swipe: 50 // percent per second
   }
 
-  CarouselSwipe.prototype.touchstart = function(e) {
+  CarouselSwipe.prototype.touchstart = function (e) {
     if (!this.options.swipe) return;
     var touch = e.originalEvent.touches ? e.originalEvent.touches[0] : e
     this.dx = 0
@@ -181,14 +123,14 @@ $(".toggle-sidebar").click(function () {
     this.startTime = e.timeStamp
   }
 
-  CarouselSwipe.prototype.touchmove = function(e) {
+  CarouselSwipe.prototype.touchmove = function (e) {
     if (!this.options.swipe) return;
     var touch = e.originalEvent.touches ? e.originalEvent.touches[0] : e
     var dx = touch.pageX - this.startX
     var dy = touch.pageY - this.startY
     if (Math.abs(dx) < Math.abs(dy)) return; // vertical scroll
 
-    if ( this.cycling === null ) {
+    if (this.cycling === null) {
       this.cycling = !!this.carousel.interval
       this.cycling && this.carousel.pause()
     }
@@ -197,7 +139,7 @@ $(".toggle-sidebar").click(function () {
     this.swipe(this.dx)
   }
 
-  CarouselSwipe.prototype.touchend = function(e) {
+  CarouselSwipe.prototype.touchend = function (e) {
     if (!this.options.swipe) return;
     if (!this.$active) return; // nothing moved
     var all = $()
@@ -215,7 +157,7 @@ $(".toggle-sidebar").click(function () {
         .one($.support.transition.end, function () {
           all.removeClass('prev next')
         })
-      .emulateTransitionEnd(this.$active.css('transition-duration').slice(0, -1) * 1000)
+        .emulateTransitionEnd(this.$active.css('transition-duration').slice(0, -1) * 1000)
     }
 
     all.css('left', '')
@@ -223,36 +165,36 @@ $(".toggle-sidebar").click(function () {
     this.$active = null // reset the active element
   }
 
-  CarouselSwipe.prototype.swipe = function(percent) {
+  CarouselSwipe.prototype.swipe = function (percent) {
     var $active = this.$active || this.getActive()
     if (percent < 0) {
-        this.$prev
-            .css('left', '')
-            .removeClass('prev')
-            .carousel_transition(true)
-        if (!this.$next.length || this.$next.hasClass('active')) return
-        this.$next
-            .carousel_transition(false)
-            .addClass('next')
-            .css('left', (percent + 100) + '%')
+      this.$prev
+        .css('left', '')
+        .removeClass('prev')
+        .carousel_transition(true)
+      if (!this.$next.length || this.$next.hasClass('active')) return
+      this.$next
+        .carousel_transition(false)
+        .addClass('next')
+        .css('left', (percent + 100) + '%')
     } else {
-        this.$next
-            .css('left', '')
-            .removeClass('next')
-            .carousel_transition(true)
-        if (!this.$prev.length || this.$prev.hasClass('active')) return
-        this.$prev
-            .carousel_transition(false)
-            .addClass('prev')
-            .css('left', (percent - 100) + '%')
+      this.$next
+        .css('left', '')
+        .removeClass('next')
+        .carousel_transition(true)
+      if (!this.$prev.length || this.$prev.hasClass('active')) return
+      this.$prev
+        .carousel_transition(false)
+        .addClass('prev')
+        .css('left', (percent - 100) + '%')
     }
 
     $active
-        .carousel_transition(false)
-        .css('left', percent + '%')
+      .carousel_transition(false)
+      .css('left', percent + '%')
   }
 
-  CarouselSwipe.prototype.getActive = function() {
+  CarouselSwipe.prototype.getActive = function () {
     this.$active = this.$element.find('.item.active')
     this.$items = this.$active.parent().children()
 
@@ -273,35 +215,35 @@ $(".toggle-sidebar").click(function () {
   // ==========================
 
   var old = $.fn.carousel
-  $.fn.carousel = function() {
+  $.fn.carousel = function () {
     old.apply(this, arguments);
     return this.each(function () {
-      var $this   = $(this)
-      var data    = $this.data('bs.carousel.swipe')
+      var $this = $(this)
+      var data = $this.data('bs.carousel.swipe')
       if (!data) $this.data('bs.carousel.swipe', new CarouselSwipe(this))
     })
   }
 
-  $.extend($.fn.carousel,old);
+  $.extend($.fn.carousel, old);
 
-  $.fn.carousel_transition = function(enable) {
+  $.fn.carousel_transition = function (enable) {
     enable = enable ? '' : 'none';
-    return this.each(function() {
+    return this.each(function () {
       $(this)
         .css('-webkit-transition', enable)
         .css('transition', enable)
     })
   };
 
-/* Navegação flip card com touch*/
-$(".carousel").carousel({
-  interval: false,
-  pause: true
-});
+  /* Navegação flip card com touch*/
+  $(".carousel").carousel({
+    interval: false,
+    pause: true
+  });
 
 
-$('.carousel .carousel-inner').on('dragstart', 'a', function () {
-  return false;
-});
-  
+  $('.carousel .carousel-inner').on('dragstart', 'a', function () {
+    return false;
+  });
+
 }(jQuery);

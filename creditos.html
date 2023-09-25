@@ -37,7 +37,7 @@
 <body>
     <!-- Toolbar -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light" id="menuSuperior">
 
             <img src="assets/images/logos/logoMenu.png" class="img-fluid logo" alt="Logo Fiocruz" />
 
@@ -57,12 +57,149 @@
     </header>
 
     <div class="row" id="row-main">
-        <!-- Menu Lateral -->
+        <!-- Sidebar -->
         <div class="col-md-2" id="sidebar">
-            <app-menu-lateral></app-menu-lateral>
+            <!-- Botão p/ Recolher Sidebar-->
+            <span class="toggle-sidebar" id="sidebarButton"><i class="fas fa-chevron-left"></i></span>
+
+            <!-- Botão Secundário p/ Recolher Sidebar -->
+            <span class="toggle-sidebar" id="sidebarButton2"><img src="assets/images/icones/icone.png"
+                    alt="Botão do Menu Lateral"></span>
+
+            <nav id="menuLateral">
+                <ul class="listaMenu" id="menuList">
+                    <li>
+                        <div class="row">
+                            <div class="barraStepper"></div>
+                            <div class="sectionTitle">
+                                <a href="introducao.html" class="tituloLista introducao">Introdução</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="barraStepper"></div>
+                            <div class="sectionTitle">
+                                <a href="modulo1/modulo1-introducao.html" class="tituloLista">Módulo 1: Combate ao
+                                    mosquito <i>Aedes</i></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="barraStepper"></div>
+                            <div class="sectionTitle">
+                                <div class="iconeMenu"></div>
+                                <a href="modulo1/modulo1-aula1.html">Aspectos básicos da biologia, ecologia e
+                                    controle de <i>Aedes</i></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="barraStepper"></div>
+                            <div class="sectionTitle">
+                                <div class="iconeMenu"></div>
+                                <a href="modulo1/modulo1-aula2.html">Inseticidas reguladores de crescimento</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="barraStepper"></div>
+                            <div class="sectionTitle">
+                                <div class="iconeMenu"></div>
+                                <a href="modulo1/modulo1-aula3.html">O que é uma Estação Disseminadora de
+                                    Larvicida (EDL) e como funciona?</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="barraStepper"></div>
+                            <div class="sectionTitle">
+                                <div class="iconeMenu"></div>
+                                <a href="modulo1/modulo1-atividade.html">Atividade</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="barraStepper"></div>
+                            <div class="sectionTitle">
+                                <a href="modulo2/modulo2-introducao.html" class="tituloLista">Módulo 2: Implantação,
+                                    manutenção e
+                                    distribuição da EDL</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="barraStepper"></div>
+                            <div class="sectionTitle">
+                                <div class="iconeMenu"></div>
+                                <a href="modulo2/modulo2-aula1.html">Implantação da EDL</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="barraStepper"></div>
+                            <div class="sectionTitle">
+                                <div class="iconeMenu"></div>
+                                <a href="modulo2/modulo2-aula2.html">Manutenção e registro da EDL</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="barraStepper"></div>
+                            <div class="sectionTitle">
+                                <div class="iconeMenu"></div>
+                                <a href="modulo2/modulo2-aula3.html">Métodos de distribuição em campo da EDL</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="barraStepper"></div>
+                            <div class="sectionTitle">
+                                <div class="iconeMenu"></div>
+                                <a href="modulo2/modulo2-aula4.html">Supervisão da EDL</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="barraStepper"></div>
+                            <div class="sectionTitle">
+                                <div class="iconeMenu"></div>
+                                <a href="modulo2/modulo2-aula5.html">Logística estratégica e operacional</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="barraStepper"></div>
+                            <div class="sectionTitle">
+                                <div class="iconeMenu"></div>
+                                <a href="modulo2/modulo2-atividade.html">Atividade</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="barraStepper"></div>
+                            <div class="sectionTitle">
+                                <a href="encerramento.html" class="tituloLista">Encerramento</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
         </div>
         <!-- Conteúdo -->
-        <div class="col-md-10" id="content" tabindex="0">
+        <div class="col-md-10" id="content">
             <div class="conteudo">
 
                 <h1>Créditos</h1>
@@ -232,16 +369,17 @@
                         <strong>VOLTAR</strong></a>
                 </div>
             </div>
-        </div>
-        <!-- Rodapé -->
-        <!-- class=rodapeFixo -->
-        <footer>
-            <div class="row-main">
-                <div class="col-md-12 centro">
-                    <img class="img-fluid centro" src="./assets/images/rodape/rodape.png" alt="Rodapé">
+
+            <!-- Rodapé -->
+            <!-- class=rodapeFixo -->
+            <footer>
+                <div class="row-main">
+                    <div class="col-md-12 centro">
+                        <img class="img-fluid centro" src="./assets/images/rodape/rodape.png" alt="Rodapé">
+                    </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
+        </div>
     </div>
 
     <!-- Arquivos JS -->
