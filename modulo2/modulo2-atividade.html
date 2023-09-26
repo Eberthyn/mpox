@@ -12,34 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <link href="../assets/css/styles.css" rel="stylesheet">
-    <style>
-        label {
-            color: #9A7265;
-        }
-
-        input {
-            min-height: 20px !important;
-            min-width: 20px !important;
-            border-radius: 100px;
-            border: 1px solid;
-            margin-right: 1rem;
-            margin-top: 2px;
-        }
-
-        .input-radio {
-            display: flex;
-            align-items: flex-start;
-            margin-top: 22px;
-        }
-
-        .resposta-correta {
-            color: #0ABC3A !important;
-        }
-
-        .resposta-incorreta {
-            color: #F8062C !important;
-        }
-    </style>
 </head>
 
 <body>
@@ -215,27 +187,48 @@
                 <h1>Muito bem, você chegou ao final do módulo 2</h1>
 
                 <h3>Vamos fixar alguns pontos aprendidos até aqui? Vamos lá!</h3>
-                <div>
-                    <ol>
-                        <li *ngFor="let pergunta of perguntas">
-                            {{ pergunta.texto }}
-                            <br>
-                            <div class="input-radio" *ngFor="let opcao of opcoesResposta">
-                                <input type="radio" [(ngModel)]="pergunta.resposta" [name]="pergunta.id"
-                                    [value]="opcao.valor" (change)="verificarResposta(pergunta)">
 
-                                <label
-                                    [ngClass]="{'resposta-correta': pergunta.resposta === opcao.valor && pergunta.resposta === pergunta.respostaCorreta, 'resposta-incorreta': pergunta.resposta === opcao.valor && pergunta.resposta !== pergunta.respostaCorreta}">
+                <ol>
+                    <li>
+                        <span>As EDL’s devem ser instaladas em locais como:</span>
+                        <br>
+
+                        <div class="alternativas">
+                            <div class="input-radio">
+                                <input name="questao3" type="radio" value="a">
+                                <label id="a">
                                     <div class="radio-btn"></div>
-                                    <b>{{opcao.texto}}</b>
+                                    <b>Ambiente de sombra e protegido da chuva e do sol, principalmente locais fechados
+                                        onde outros inseticidas pulverizantes não acessam.</b>
                                 </label>
                             </div>
-                            <br>
-                            <p [innerHTML]="formatText(pergunta.resultado, ['Aedes', 'aegypti', 'albopictus'])">{{
-                                pergunta.resultado }}</p>
-                        </li>
-                    </ol>
-                </div>
+                            <div class="input-radio">
+                                <input name="questao3" type="radio" value="b">
+                                <label id="b">
+                                    <div class="radio-btn"></div>
+                                    <b>Preferentemente no peridomicílio ou área externa, em áreas abertas.</b>
+                                </label>
+                            </div>
+                            <div class="input-radio">
+                                <input name="questao3" type="radio" value="c">
+                                <label id="c">
+                                    <div class="radio-btn"></div>
+                                    <b>Ambiente de sombra e protegido da chuva e do sol, em locais expostos a crianças e
+                                        animais domésticos.</b>
+                                </label>
+                            </div>
+                            <div class="input-radio">
+                                <input name="questao3" type="radio" value="d">
+                                <label id="d">
+                                    <div class="radio-btn"></div>
+                                    <b>Alto de telhados e próximos a caixas d’água.</b>
+                                </label>
+                            </div>
+                        </div>
+                        <br>
+                        <p id="mensagem3"></p>
+                    </li>
+                </ol>
 
                 <!-- Botões de navegação -->
                 <div class="row" id="botao">
@@ -248,7 +241,7 @@
 
             <!-- Rodapé -->
             <!-- class=rodapeFixo -->
-            <footer>
+            <footer id="rodape">
                 <div class="row-main">
                     <div class="col-md-12 centro">
                         <img class="img-fluid centro" src="../assets/images/rodape/rodape.png" alt="Rodapé">
@@ -262,5 +255,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="../assets/js/modulo2-atividade.js"></script>
     <script src="../assets/js/main.js"></script>
 </body>

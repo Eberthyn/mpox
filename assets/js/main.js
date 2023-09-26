@@ -1,10 +1,23 @@
+// Fixa rodapé
+$(document).ready(function () {
+  if (document.body.scrollHeight >= window.innerHeight) {
+    $("#rodape").removeClass("fixaRodape");
+    $("#row-main").css("padding-bottom", "0%");
+  } else {
+    $("#rodape").addClass("fixaRodape");
+    $("#row-main").css("padding-bottom", ($('#rodape').css("height")));
+  }
+});
+
 /* Fixa Menu Superior */
 $(window).scroll(function () {
 
-  if ($(window).scrollTop() + $(window).height() === $(document).height()) {
-
+  if (document.body.scrollHeight >= window.innerHeight) {
+    $("#rodape").removeClass("fixaRodape");
+    $("#row-main").css("padding-bottom", "0%");
   } else {
-    $("#menuSuperior").addClass("fixed-top");
+    $("#rodape").addClass("fixaRodape");
+    $("#row-main").css("padding-bottom", ($('#rodape').css("height")));
   }
 
   if ($(window).scrollTop() === 0) {
@@ -25,7 +38,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
 
-    $('html,body').animate({scrollTop: ($("#row-main").offset().top) }, 500);
+    $('html,body').animate({ scrollTop: ($("#row-main").offset().top) }, 500);
   });
 });
 
@@ -51,6 +64,14 @@ if (tam <= 980) {
 
 // Recolhe menu ao reduzir tela no desktop //
 $(window).on('resize', function () {
+  if (document.body.scrollHeight >= window.innerHeight) {
+    $("#rodape").removeClass("fixaRodape");
+    $("#row-main").css("padding-bottom", "0%");
+  } else {
+    $("#rodape").addClass("fixaRodape");
+    $("#row-main").css("padding-bottom", ($('#rodape').css("height")));
+  }
+
   var win = $(this);
   if (win.width() < 980) {
 

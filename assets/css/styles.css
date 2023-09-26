@@ -27,6 +27,11 @@ footer {
     margin: 45px 0px 65px 20px;
 }
 
+#botaoAvancar.desabilitado {
+    background-color: #E4E4E4 !important;
+    cursor: not-allowed;
+}
+
 #botaoVoltar {
     background-color: white;
     border-radius: 25px;
@@ -490,11 +495,6 @@ footer img {
     }
 }
 
-li {
-    list-style: disc;
-}
-
-
 .col-sm-3 p.centro {
     margin-top: 15px;
     text-align: center;
@@ -771,4 +771,39 @@ a.tituloLista {
     font-weight: bold;
 }
 
-:focus { outline: none; }
+:focus {
+    outline: none;
+}
+
+/* ATIVODADES */
+
+.alternativas label {
+    color: #9A7265;
+}
+
+.input-radio input {
+    min-height: 20px !important;
+    min-width: 20px !important;
+    border-radius: 100px;
+    border: 1px solid;
+    margin-right: 1rem;
+    margin-top: 2px;
+}
+
+.input-radio {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 8px;
+}
+
+.resposta-correta {
+    color: #0ABC3A !important;
+}
+
+.resposta-incorreta {
+    color: #F8062C !important;
+}
+
+.alternativas {
+    margin-top: 14px;
+}
