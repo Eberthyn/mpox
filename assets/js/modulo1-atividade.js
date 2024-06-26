@@ -20,8 +20,8 @@ $("input[name=questao1]").on("click", function () {
         }
 
         var mensagem = "";
-        resposta == value ? mensagem = "Correto, os ovos de <i>Aedes aegypti</i> e <i>Aedes albopictus</i> são postos, diretamente sobre a superfície líquida ou em substrato úmido, acima da coluna de água, porém uma mesma postura pode ser distribuída em diferentes substratos “oviposição em saltos”, estratégia que permite aumentar a sobrevivência e dispersão desses mosquitos."
-            : mensagem = "Errado, embora possam concentrá-los em um único local de oviposição, a maioria de vezes, uma mesma postura pode ser distribuída em diferentes substratos “oviposição em saltos”, estratégia que permite aumentar a sobrevivência e dispersão desses mosquitos.";
+        resposta == value ? mensagem = "Você pode usar a equação de Cockcroft-Gault para calcular o clearence da creatinina com base na creatinina sérica medida, o sexo da pessoa ao nascer, a idade e o peso corporal calculado."
+            : mensagem = "";
         $("#mensagem1").html(mensagem);
     } else {
         // esvazia a div de mensagem
@@ -30,7 +30,7 @@ $("input[name=questao1]").on("click", function () {
 });
 
 // MÓDULO 1 QUESTÃO 2
-var resposta2 = "Falso"; // Resposta correta
+var resposta2 = "C2"; // Resposta correta
 $("input[name=questao2]").on("click", function () {
     var value = "";
     // seleciona apenas o que foi checado
@@ -42,17 +42,23 @@ $("input[name=questao2]").on("click", function () {
             value += $(this).val();
         });
 
-        if (value === "Falso") {
-            $("#false2").addClass("resposta-correta")
-            $("#true2").removeClass("resposta-incorreta")
-        } else if (value === "Verdadeiro") {
-            $("#false2").removeClass("resposta-correta")
-            $("#true2").addClass("resposta-incorreta")
+        if (value === "C2") {
+            $("#C2").addClass("resposta-correta")
+            $("#A2").removeClass("resposta-incorreta")
+            $("#B2").removeClass("resposta-incorreta")
+        } else if (value === "A2") {
+            $("#C2").removeClass("resposta-correta")
+            $("#A2").addClass("resposta-incorreta")
+            $("#B2").removeClass("resposta-incorreta")
+        }else if (value === "B2") {
+            $("#C2").removeClass("resposta-correta")
+            $("#A2").removeClass("resposta-incorreta")
+            $("#B2").addClass("resposta-incorreta")
         }
 
         var mensagem = "";
-        resposta2 == value ? mensagem = "Correto, as arboviroses são doenças multifatoriais, e as medidas de controle vetorial em cada localidade devem ser avaliadas segundo o cenário epidemiológico, características sociodemográficas, capacidade operacional e recursos próprios dos programas de controle locais. Apesar de que a estratégia de disseminação de larvicida apresenta resultados promissores no controle de <i>Aedes</i> (especialmente em criadouros crípticos e de difícil acesso), se considera uma estratégia complementar às ações de rotina nos programas de controle vetorial." :
-            mensagem = "Errado, a Organização Pan-Americana de Saúde e o Ministério da Saúde, orientam aos tomadores de decisões para aplicar o Manejo Integrado de Vetores (MIV) para o monitoramento e controle de vetores, visando otimizar o uso de recursos direcionados aos programas de controle, melhorar a eficácia e a eficiência das ações, através de análise situacional, desenho de operação e planejamento, implementação, monitoramento e avaliação.";
+        resposta2 == value ? mensagem = "O desejo de utilizar a PrEP pode ser uma indicação de um risco significativo de infecção pelo HIV." :
+            mensagem = "";
         $("#mensagem2").html(mensagem);
     } else {
         // esvazia a div de mensagem

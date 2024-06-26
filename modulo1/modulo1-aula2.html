@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>EDL</title>
+  <title>PreP</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
 
@@ -17,23 +17,7 @@
 <body>
   <!-- Toolbar -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light" id="menuSuperior">
-
-      <img src="../assets/images/logos/logoMenu.png" class="img-fluid logo" alt="Logo Fiocruz" />
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ml-auto">
-          <li><a href="../index.html">Home</a></li>
-          <!-- <li><a href="material-complementar.html">Material Complementar</a></li> -->
-          <li><a href="../referencias.html">Referências</a></li>
-          <li><a href="../creditos.html">Créditos</a></li>
-        </ul>
-      </div>
-    </nav>
+    <img id="menuSuperior" src="../assets/images/logos/header.png" alt="Campus Virtual Fiocruz">
   </header>
 
   <div class="row" id="row-main">
@@ -43,135 +27,343 @@
       <span class="toggle-sidebar" id="sidebarButton"><i class="fas fa-chevron-left"></i></span>
 
       <!-- Botão Secundário p/ Recolher Sidebar -->
-      <span class="toggle-sidebar" id="sidebarButton2"><img src="../assets/images/icones/icone.png"
-          alt="Botão do Menu Lateral"></span>
+      <span class="toggle-sidebar" id="sidebarButton2"><i class="fas fa-bars"></i></span>
 
       <nav id="menuLateral">
-        <ul class="listaMenu" id="menuList">
+        <ul class="listaMenu">
           <li>
             <div class="row">
-              <div class="barraStepper"></div>
               <div class="sectionTitle">
-                <a href="../introducao.html" class="tituloLista introducao">Introdução</a>
+                <a href="../index.html" class="tituloLista" style="padding-top: 0 !important;"><i
+                    class="fas fa-home"></i>Página
+                  Inicial</a>
               </div>
             </div>
           </li>
           <li>
             <div class="row">
-              <div class="barraStepper"></div>
               <div class="sectionTitle">
-                <a href="modulo1-introducao.html" class="tituloLista">Módulo 1: Combate ao
-                  mosquito <i>Aedes</i></a>
+                <span class="tituloLista">Módulo 1</span>
               </div>
             </div>
           </li>
           <li>
             <div class="row">
-              <div class="barraStepper"></div>
+              <div class="barraStepper active">
+                <div class="item active"></div>
+              </div>
               <div class="sectionTitle">
-                <div class="iconeMenu"></div>
-                <a href="modulo1-aula1.html">Aspectos básicos da biologia, ecologia e
-                  controle de <i>Aedes</i></a>
+                <span class="tituloItem">Introdução</span>
               </div>
             </div>
-          </li>
-          <li>
             <div class="row">
               <div class="barraStepper active"></div>
               <div class="sectionTitle">
                 <div class="iconeMenu"></div>
-                <a href="#">Inseticidas reguladores de crescimento</a>
+                <a href="modulo1-introducao.html" class="subItem">Identificar os candidatos à PrEP</a>
+              </div>
+            </div>
+          <li>
+            <div class="row">
+              <div class="barraStepper active">
+                <div class="item active"></div>
+              </div>
+              <div class="sectionTitle">
+                <span class="tituloItem">Aula 1</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="barraStepper active">
+              </div>
+              <div class="sectionTitle">
+                <div class="iconeMenu"></div>
+                <a href="#" class="subItem">Critérios necessários para iniciar a
+                  PrEP</a>
               </div>
             </div>
           </li>
           <li>
+            <div class="row">
+              <div class="barraStepper">
+                <div class="item active"></div>
+              </div>
+              <div class="sectionTitle">
+                <span class="tituloItem">Aula 2</span>
+              </div>
+            </div>
             <div class="row">
               <div class="barraStepper"></div>
               <div class="sectionTitle">
                 <div class="iconeMenu"></div>
-                <a href="modulo1-aula3.html">O que é uma Estação Disseminadora de
-                  Larvicida (EDL) e como funciona?</a>
+                <a href="modulo1-aula2.html" class="subItem">Contraindicações para o uso da PrEP</a>
               </div>
             </div>
           </li>
           <li>
+            <div class="row">
+              <div class="barraStepper">
+                <div class="item"></div>
+              </div>
+              <div class="sectionTitle">
+                <a href="modulo1-atividade.html" class="tituloItem">Atividades Módulo 1</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row">
+              <div class="barraStepper" style="background-color: #00B9B9;">
+                <div class="item"></div>
+              </div>
+              <div class="sectionTitle">
+                <a href="modulo1-encerramento.html" class="tituloItem">Encerramento Módulo 1</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row">
+              <div class="sectionTitle">
+                <span class="tituloLista">Módulo 2</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row">
+              <div class="barraStepper">
+                <div class="item"></div>
+              </div>
+              <div class="sectionTitle">
+                <span class="tituloItem">Introdução</span>
+              </div>
+            </div>
             <div class="row">
               <div class="barraStepper"></div>
               <div class="sectionTitle">
                 <div class="iconeMenu"></div>
-                <a href="modulo1-atividade.html">Atividade</a>
+                <a href="../modulo2/modulo2-introducao.html" class="subItem">Iniciar a PrEP oral</a>
               </div>
             </div>
           </li>
           <li>
             <div class="row">
-              <div class="barraStepper"></div>
+              <div class="barraStepper">
+                <div class="item"></div>
+              </div>
               <div class="sectionTitle">
-                <a href="../modulo2/modulo2-introducao.html" class="tituloLista">Módulo 2: Implantação,
-                  manutenção e
-                  distribuição da EDL</a>
+                <span class="tituloItem">Aula 1</span>
               </div>
             </div>
-          </li>
-          <li>
-            <div class="row">
-              <div class="barraStepper"></div>
-              <div class="sectionTitle">
-                <div class="iconeMenu"></div>
-                <a href="../modulo2/modulo2-aula1.html">Implantação da EDL</a>
-              </div>
-            </div>
-          </li>
-          <li>
             <div class="row">
               <div class="barraStepper"></div>
               <div class="sectionTitle">
                 <div class="iconeMenu"></div>
-                <a href="../modulo2/modulo2-aula2.html">Manutenção e registro da EDL</a>
+                <a href="../modulo2/modulo2-aula1.html" class="subItem">Avaliação do uso da PrEP</a>
               </div>
             </div>
           </li>
           <li>
+            <div class="row">
+              <div class="barraStepper">
+                <div class="item"></div>
+              </div>
+              <div class="sectionTitle">
+                <span class="tituloItem">Aula 2</span>
+              </div>
+            </div>
             <div class="row">
               <div class="barraStepper"></div>
               <div class="sectionTitle">
                 <div class="iconeMenu"></div>
-                <a href="../modulo2/modulo2-aula3.html">Métodos de distribuição em campo da EDL</a>
+                <a href="../modulo2/modulo2-aula2.html" class="subItem">Introdução às modalidades da
+                  PrEP</a>
               </div>
             </div>
           </li>
           <li>
+            <div class="row">
+              <div class="barraStepper">
+                <div class="item"></div>
+              </div>
+              <div class="sectionTitle">
+                <span class="tituloItem">Aula 3</span>
+              </div>
+            </div>
             <div class="row">
               <div class="barraStepper"></div>
               <div class="sectionTitle">
                 <div class="iconeMenu"></div>
-                <a href="../modulo2/modulo2-aula4.html">Supervisão da EDL</a>
+                <a href="../modulo2/modulo2-aula3.html" class="subItem">Procedimentos para as consultas
+                  inicial e de acompanhamento da PrEP</a>
               </div>
             </div>
           </li>
           <li>
+            <div class="row">
+              <div class="barraStepper">
+                <div class="item"></div>
+              </div>
+              <div class="sectionTitle">
+                <span class="tituloItem">Aula 4</span>
+              </div>
+            </div>
             <div class="row">
               <div class="barraStepper"></div>
               <div class="sectionTitle">
                 <div class="iconeMenu"></div>
-                <a href="../modulo2/modulo2-aula5.html">Logística estratégica e operacional</a>
+                <a href="../modulo2/modulo2-aula4.html" class="subItem">Dispensa do medicamento</a>
               </div>
             </div>
           </li>
           <li>
+            <div class="row">
+              <div class="barraStepper">
+                <div class="item"></div>
+              </div>
+              <div class="sectionTitle">
+                <a href="../modulo2/modulo2-atividade.html" class="tituloItem">Atividades Módulo 2</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row">
+              <div class="barraStepper" style="background-color: #00B9B9;">
+                <div class="item"></div>
+              </div>
+              <div class="sectionTitle">
+                <a href="../modulo2/modulo2-encerramento.html" class="tituloItem">Encerramento Módulo
+                  2</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row">
+              <div class="sectionTitle">
+                <span class="tituloLista">Módulo 3</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row">
+              <div class="barraStepper">
+                <div class="item"></div>
+              </div>
+              <div class="sectionTitle">
+                <span class="tituloItem">Introdução</span>
+              </div>
+            </div>
             <div class="row">
               <div class="barraStepper"></div>
               <div class="sectionTitle">
                 <div class="iconeMenu"></div>
-                <a href="../modulo2/modulo2-atividade.html">Atividade</a>
+                <a href="../modulo3/modulo3-introducao.html" class="subItem">Orientações e mensagens
+                  sobre PrEP</a>
               </div>
             </div>
           </li>
           <li>
             <div class="row">
+              <div class="barraStepper">
+                <div class="item"></div>
+              </div>
+              <div class="sectionTitle">
+                <span class="tituloItem">Aula 1</span>
+              </div>
+            </div>
+            <div class="row">
               <div class="barraStepper"></div>
               <div class="sectionTitle">
-                <a href="../encerramento.html" class="tituloLista">Encerramento</a>
+                <div class="iconeMenu"></div>
+                <a href="../modulo3/modulo3-aula1.html" class="subItem">Análise de situações especiais
+                  da PrEP
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row">
+              <div class="barraStepper">
+                <div class="item"></div>
+              </div>
+              <div class="sectionTitle">
+                <span class="tituloItem">Aula 2</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="barraStepper"></div>
+              <div class="sectionTitle">
+                <div class="iconeMenu"></div>
+                <a href="../modulo3/modulo3-aula2.html" class="subItem">Mensagem de orientação sobre a
+                  eficácia da PrEP</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row">
+              <div class="barraStepper">
+                <div class="item"></div>
+              </div>
+              <div class="sectionTitle">
+                <span class="tituloItem">Aula 3</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="barraStepper"></div>
+              <div class="sectionTitle">
+                <div class="iconeMenu"></div>
+                <a href="../modulo3/modulo3-aula3.html" class="subItem">Mensagem de orientação sobre a
+                  segurança da PrEP</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row">
+              <div class="barraStepper">
+                <div class="item"></div>
+              </div>
+              <div class="sectionTitle">
+                <span class="tituloItem">Aula 4</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="barraStepper"></div>
+              <div class="sectionTitle">
+                <div class="iconeMenu"></div>
+                <a href="../modulo3/modulo3-aula4.html" class="subItem">Mensagem de orientação para
+                  reduzir o estigma dos usuários da PrEP</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row">
+              <div class="barraStepper">
+                <div class="item"></div>
+              </div>
+              <div class="sectionTitle">
+                <a href="../modulo3/modulo3-atividade.html" class="tituloItem">Atividade Módulo 3</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row">
+              <div class="barraStepper" style="background-color: #00B9B9;">
+                <div class="item"></div>
+              </div>
+              <div class="sectionTitle">
+                <a href="../modulo3/modulo3-encerramento.html" class="tituloItem">Encerramento Módulo
+                  3</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row">
+              <div class="sectionTitle">
+                <a href="../referencias.html" class="tituloLista"><i class="fas fa-file-alt"></i>Referências</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row">
+              <div class="sectionTitle">
+                <a href="../creditos.html" class="tituloLista"><i class="fas fa-list"></i>Créditos</a>
               </div>
             </div>
           </li>
@@ -182,76 +374,55 @@
     <!-- Conteúdo principal -->
     <div class="col-md-10" id="content">
       <div class="conteudo">
-        <p class="indice">Módulo1/Aula2</p>
-        <h1>Inseticidas reguladores de crescimento</h1>
+        <p class="indice">Módulo 1 | Aula 2</p>
+        <h1>Contraindicações para o uso da PrEP</h1>
 
-        <p>Com o intuito de empregar inseticidas que não comprometam a saúde humana e do ambiente, os chamados
-          reguladores
-          de crescimento de insetos (IGR’s) são inseticidas alternativos, que apresentam menor probabilidade de
-          selecionar
-          populações que possuam resistência a determinados grupos químicos, quando comparado com os inseticidas
-          convencionais de amplo espectro.</p>
-      </div>
-
-      <div class="row blocoTexto">
-        <div class="col-md-12">
-          <p><b>Os IGR’s atuam nos mecanismos envolvidos no desenvolvimento e muda dos insetos, com um espectro mais
-              restrito, ausência ou baixa toxicidade para espécies não alvo e vertebrados. Estas características fazem
-              dos IGR’s candidatos ambientalmente amigáveis e sustentáveis quanto à possibilidade de seleção de
-              populações resistentes a longo prazo, em comparação com os inseticidas convencionais.</b></p>
-        </div>
+        <p>Para garantir a eficiência da profilaxia pré-exposição é necessário identificar as pessoas que apresentam
+          contraindicações para o uso da PrEP: </p>
       </div>
 
       <div class="conteudo">
         <p>De acordo ao seu modo de ação, os IGR’s são classificados em:</p>
 
+        <div class="imagem centro">
+          <img src="../assets/images/modulo1/aula2/img1.png" alt="Atendimento Médico" class="img-fluid">
+        </div>
+
         <ul>
-          <li style="list-style: disc;">Análogos de hormônio juvenil de crescimento.</li>
-          <li style="list-style: disc;">Inibidores da síntese de quitina.</li>
-          <li style="list-style: disc;">Derivados de triazina.</li>
+          <li class="icon circle-color">
+            <p><b style="color: #00B9B9;">Infecção pelo HIV:</b> Resultado positivo/reagente no teste do HIV.</p>
+          </li>
+          <li class="icon circle-color">
+            <p><b style="color: #00B9B9;">Exposição de risco ao HIV nas últimas 72 horas:</b>
+              Essa é uma contraindicação momentânea. Deve ser avaliada a indicação da PEP, e após 28 dias sugerir o
+              início
+              da PrEP.</p>
+          </li>
+          <li class="icon circle-color">
+            <p><b style="color: #00B9B9;">Suspeita de infecção aguda pelo HIV:</b> Suspeita com base nos sinais e nos
+              sintomas
+              de
+              síndrome viral aguda, sem que existam outras hipóteses diagnósticas mais prováveis, e exposição recente de
+              risco ao HIV.</p>
+          </li>
+          <li class="icon circle-color">
+            <p><b style="color: #00B9B9;">Alergia:</b> Apresentar alergia ou outra contraindicação a qualquer
+              medicamento.</p>
+          </li>
         </ul>
 
-        <p>Os IGR’s são eficazes no controle de vários culicídeos (mosquitos, pernilongos e muriçocas) de importância
-          em
-          saúde pública, como espécies pertencentes aos gêneros <i>Anopheles, Culex e Aedes</i> (Hoffmann & Lorenz
-          1998;
-          Khan <i>et
-            al</i>. 2016).</p>
-      </div>
+        <h2>Suspeita de infecção aguda pelo HIV</h2>
 
-      <div class="row curiosidade">
-        <div class="col-md-2">
-          <img src="../assets/images/icones/curiosidade.png" alt="Curiosidade" class="img-fluid">
+        <div class="imagem centro">
+          <img src="../assets/images/modulo1/aula2/img2.png" alt="Sintomas de infecção" class="img-fluid">
         </div>
-        <div class="col-md-10">
-          <h3>CURIOSIDADE</h3>
-          <hr>
-          <p><b>Quais são os IGR’s recomendados?</b></p>
-          <p>O piriproxifem, que é um análogo de hormônio juvenil de crescimento, classifica-se dentre os IGR,
-            recomendados pelo Ministério de Saúde e a OMS para o controle de <i>Aedes aegypti</i>, inclusive em água
-            para
-            consumo humano (IPCS 2002, WHO 2008; MS 2017).</p>
 
-          <p>O piriproxifem pertence à classe química éter-piridil-oxipropílico, é eficaz em doses muito baixas e
-            praticamente sem toxicidade para vertebrados (incluindo o ser humano e os animais domésticos), impede o
-            desenvolvimento normal dos mosquitos imaturos, que morrem no estágio de larva ou (mais comumente) de pupa.
-            O
-            piriproxifem não tem efeitos letais imediatos nos mosquitos adultos, mas encurta a vida das fêmeas e
-            impede
-            o desenvolvimento dos ovos fecundados (Sihuincha <i>et al</i>. 2005, Devine <i>et al</i>. 2009, Ohashi
-            <i>et
-              al</i>. 2012).
-          </p>
-        </div>
-      </div>
-
-      <div class="conteudo">
         <!-- Botões de navegação -->
-        <div class="row" id="botao">
+        <div class="row botao">
           <a href="modulo1-aula1.html" class="btn btn-sm" id="botaoVoltar" role="button" alt="Voltar">
-            <strong>VOLTAR</strong></a>
-          <a href="modulo1-aula3.html" class="btn btn-sm" id="botaoAvancar" role="button" alt="Avançar">
-            <strong>AVANÇAR</strong></a>
+            <strong>Módulo 1 Aula 1</strong></a>
+          <a href="modulo1-atividade.html" class="btn btn-sm" id="botaoAvancar" role="button" alt="Avançar">
+            <strong>Atividades Módulo 1</strong></a>
         </div>
       </div>
 

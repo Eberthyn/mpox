@@ -3,15 +3,60 @@
 
 <head>
     <meta charset="utf-8">
-    <title>EDL</title>
+    <title>PreP</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
 
     <link href="./assets/css/normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <link href="./assets/css/styles.css" rel="stylesheet">
+    <style>
+        .botaoAvaliacao {
+            background-color: #9A7265;
+        }
+
+        .botaoMatricula {
+            background-color: #2F6C48;
+        }
+
+        .botaoAvaliacao,
+        .botaoMatricula {
+            width: 166px;
+            height: 44px;
+            color: white;
+            cursor: pointer;
+            border: 0;
+        }
+
+        .instrucaoBtn {
+            font-size: 12px;
+            font-weight: 500;
+            margin: 10px 0px;
+            text-align: center;
+        }
+
+        .botao {
+            margin-top: 45px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #botaoVoltar {
+            margin: 45px 0px 65px 0px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .campusVirtual {
+            justify-content: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -50,9 +95,9 @@
                 <ul class="listaMenu" id="menuList">
                     <li>
                         <div class="row">
-                            <div class="barraStepper active"></div>
+                            <div class="barraStepper"></div>
                             <div class="sectionTitle">
-                                <a href="#" class="tituloLista introducao">Introdução</a>
+                                <a href="introducao.html" class="tituloLista introducao">Introdução</a>
                             </div>
                         </div>
                     </li>
@@ -169,9 +214,9 @@
                     </li>
                     <li>
                         <div class="row">
-                            <div class="barraStepper"></div>
+                            <div class="barraStepper active"></div>
                             <div class="sectionTitle">
-                                <a href="encerramento.html" class="tituloLista">Encerramento</a>
+                                <a href="#" class="tituloLista">Encerramento</a>
                             </div>
                         </div>
                     </li>
@@ -182,91 +227,57 @@
         <div class="col-md-10" id="content">
             <!-- Introdução -->
             <div class="conteudo">
-                <h1>Introdução</h1>
+                <p class="indice">Encerramento</p>
+                <h2>Assista ao vídeo de encerramento do curso e revise os principais pontos aprendidos.</h2>
 
-                <p>Antes de começarmos, vamos entender um pouco sobre o comportamento dos mosquitos <i>Aedes</i> e
-                    as
-                    arboviroses
-                    transmitidas por eles que constituem graves problemas de saúde pública. Como vocês vêm
-                    observando,
-                    nessa
-                    última
-                    década, as consecutivas epidemias de dengue, chikungunya, Zika e a associação entre a infecção e
-                    lesões
-                    severas
-                    do sistema nervoso, como a síndrome congênita do Zika, levaram à declaração de emergência
-                    (internacional
-                    e
-                    nacional) de saúde pública. Do mesmo modo, um dos principais problemas das ferramentas
-                    convencionais
-                    de
-                    controle
-                    de <i>Aedes aegypti</i> e <i>Ae. albopictus</i> é a dificuldade em se encontrar e tratar os
-                    diferentes
-                    tipos
-                    de
-                    criadouros,
-                    acarretando uma baixa cobertura das atividades de controle larvário, seja por métodos mecânicos
-                    ou químicos. Essas espécies usam frequentemente criadouros crípticos, ou seja, muito difíceis de
-                    se detectar pelos <a data-toggle="tooltip" title="" class="nobr"
-                        data-original-title="Agentes de Combate às Endemias, agentes de vigilância ambiental, agentes de vigilância em saúde e similares."><u>
-                            profissionais de campo</u></a>, ou situados em locais inacessíveis (incluindo prédios
-                    fechados).
-                </p>
-
-                <p>Na ausência de vacinas eficazes, disponíveis e de tratamento etiológico específico para as
-                    principais
-                    arboviroses, bem como as limitações das estratégias convencionais de controle vetorial, o
-                    Ministério
-                    da
-                    Saúde,
-                    com o apoio da OPAS, vêm incentivando pesquisas necessárias para o desenvolvimento de novas
-                    alternativas
-                    para o
-                    controle de <i>Aedes</i>.</p>
-            </div>
-
-            <!-- BLOCO DE TEXTO MARROM -->
-            <div class="row voceSabia">
-                <div class="col-md-2">
-                    <img class="centro img-fluid" src="assets/images/icones/voceSabia.png" alt="Você sabia?">
+                <!-- Video 1 -->
+                <div class="row video justify-content-center">
+                    <div class="col-md-8">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <video width="560" height="315" class="embed-responsive-item" controls>
+                                <source src="https://educare.fiocruz.br/file-storage/O8piacCS" type="video/mp4"
+                                    frameborder="0" allow="encrypted-media" allowfullscreen="allowfullscreen">
+                            </video>
+                        </div>
+                        <small class="text-muted">Crédito: Elaborado pelos autores</small>
+                    </div>
                 </div>
-                <div class="col-md-10">
-                    <h3>VOCÊ SABIA?</h3>
-                    <hr>
-                    <p>A primeira Reunião Internacional para Avaliação de Novas Estratégias para o
-                        Controle do <i>Aedes
-                            aegypti</i>
-                        no Brasil ocorreu em 2016, foram recomendadas diferentes estratégias para serem consideradas
-                        no
-                        contexto das grávidas, para pesquisas estratégicas e para serem inseridas nas diretrizes do
-                        Plano
-                        Nacional de Controle da Dengue. Neste último contexto, recomendou-se o uso de <b>Estações
-                            Disseminadoras de Larvicida (EDL)</b> entre as tecnologias inovadoras para inclusão nas
-                        diretrizes do
-                        Plano Nacional de Controle da Dengue (SVS–MS 2016).</p>
-                </div>
-            </div>
 
-            <div class="conteudo">
-                <p>Agora, você irá conhecer as orientações técnicas para a implantação e manutenção de Estações
-                    Disseminadoras
-                    de
-                    Larvicida (EDL) para o controle de <i>Aedes</i> spp., em áreas urbanas, principalmente para o
-                    pessoal
-                    operacional e de
-                    gestão dos programas de prevenção e controle de doenças transmitidas por <i>Aedes</i>, nas
-                    diferentes
-                    escalas e
-                    realidades do Brasil.</p>
+                <h2>Esse curso tem certificação pelo <u>Campus Virtual Fiocruz</u>. Para receber o certificado, é
+                    preciso:</h2>
+
+                <ul>
+                    <li class="icon arrow">Estar matriculado no curso pelo Campus Virtual</li><br>
+                    <li class="icon arrow">Fazer a avaliação final e obter um aproveitamento de 70%</li>
+                </ul>
+
+                <div class="row campusVirtual">
+                    <div class="col-xl-3 botao">
+                        <p class="instrucaoBtn">Se você já está matriculado,<br>vá direto para a avaliação:</p>
+                        <a href="https://cursos.campusvirtual.fiocruz.br/mod/quiz/view.php?id=99840" target="_blank"
+                            rel="noopener noreferrer">
+                            <button class="btn-sm botaoAvaliacao" role="button" aria-pressed="true" alt="Voltar">
+                                <strong>FAZER AVALIAÇÃO</strong>
+                            </button>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-3 botao">
+                        <p class="instrucaoBtn">Se não tem matrícula<br>acesse aqui:</p>
+                        <a href="https://campusvirtual.fiocruz.br/gestordecursos/hotsite/EDL" target="_blank"
+                            rel="noopener noreferrer">
+                            <button class="btn-sm botaoMatricula" role="button" aria-pressed="true" alt="Começar curso">
+                                <strong>FAZER MATRÍCULA</strong>
+                            </button>
+                        </a>
+                    </div>
+                </div>
 
                 <!-- Botões de navegação -->
-                <div class="row" id="botao">
-                    <a href="index.html" class="btn btn-sm" id="botaoVoltar" role="button" alt="Voltar">
+                <div class="row botao">
+                    <a href="modulo2/modulo2-atividade.html" class="btn btn-sm" id="botaoVoltar" role="button"
+                        alt="Voltar">
                         <strong>VOLTAR</strong></a>
-                    <a href="modulo1/modulo1-introducao.html" class="btn btn-sm" id="botaoAvancar" role="button"
-                        alt="Avançar">
-                        <strong>AVANÇAR</strong></a>
                 </div>
             </div>
 
@@ -275,12 +286,13 @@
             <footer id="rodape">
                 <div class="row-main">
                     <div class="col-md-12 centro">
-                        <img class="img-fluid centro" src="assets/images/rodape/rodape.png" alt="Rodapé">
+                        <img class="img-fluid centro" src="./assets/images/rodape/rodape.png" alt="Rodapé">
                     </div>
                 </div>
             </footer>
         </div>
     </div>
+
     <!-- Arquivos JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>

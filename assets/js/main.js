@@ -1,18 +1,6 @@
 // Fixa rodapé
 $(document).ready(function () {
-  if (document.body.scrollHeight >= window.innerHeight) {
-    $("#rodape").removeClass("fixaRodape");
-    $("#row-main").css("padding-bottom", "0%");
-  } else {
-    $("#rodape").addClass("fixaRodape");
-    $("#row-main").css("padding-bottom", ($('#rodape').css("height")));
-  }
-});
-
-/* Fixa Menu Superior */
-$(window).scroll(function () {
-
-  if (document.body.scrollHeight >= window.innerHeight) {
+  if (document.body.scrollHeight && (document.body.scrollHeight > window.innerHeight)) {
     $("#rodape").removeClass("fixaRodape");
     $("#row-main").css("padding-bottom", "0%");
   } else {
@@ -28,9 +16,36 @@ $(window).scroll(function () {
   } else {
     $("#menuSuperior").addClass("fixed-top");
     $("#row-main").css("padding-top", ($('#menuSuperior').css("height")));
+    $("#menuLateral").css("padding-bottom", ($('#menuSuperior').css("height")));
     $("#menuSuperior").css("box-shadow", "0px 2px 2px rgba(0,0,0,0.5)")
   }
+});
 
+$("#botaoConhecer").click(function () {
+  $("#rodape").toggleClass("fixaRodape")
+})
+
+/* Fixa Menu Superior */
+$(window).scroll(function teste() {
+  if (document.body.scrollHeight > window.innerHeight) {
+    $("#rodape").removeClass("fixaRodape");
+    $("#row-main").css("padding-bottom", "0%");
+  } else {
+    $("#rodape").addClass("fixaRodape");
+    $("#row-main").css("padding-bottom", ($('#rodape').css("height")));
+  }
+
+  if ($(window).scrollTop() === 0) {
+    $("#menuSuperior").removeClass("fixed-top");
+    $("#row-main").css("padding-top", "0%");
+    $("#menuSuperior").css("box-shadow", "0px 0px 0px rgba(0,0,0,0.5)")
+
+  } else {
+    $("#menuSuperior").addClass("fixed-top");
+    $("#row-main").css("padding-top", ($('#menuSuperior').css("height")));
+    $("#menuLateral").css("padding-bottom", ($('#menuSuperior').css("height")));
+    $("#menuSuperior").css("box-shadow", "0px 2px 2px rgba(0,0,0,0.5)")
+  }
 });
 
 /* Adiciona suavidade na rolagem da ancoragem */
@@ -70,6 +85,10 @@ $(window).on('resize', function () {
   } else {
     $("#rodape").addClass("fixaRodape");
     $("#row-main").css("padding-bottom", ($('#rodape').css("height")));
+  }
+
+  if ($(window).scrollTop() > 0) {
+    $("#row-main").css("padding-top", ($('#menuSuperior').css("height")));
   }
 
   var win = $(this);

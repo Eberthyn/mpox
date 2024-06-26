@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>EDL</title>
+    <title>PreP</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 
@@ -18,133 +18,232 @@
 
     <!-- Toolbar -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-
-            <img src="assets/images/logos/logoMenu.png" class="img-fluid logo" alt="Logo Fiocruz" />
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ml-auto">
-                    <li><a href="index.html">Home</a></li>
-                    <!-- <li><a href="material-complementar.html">Material Complementar</a></li> -->
-                    <li><a href="referencias.html">Referências</a></li>
-                    <li><a href="creditos.html">Créditos</a></li>
-                </ul>
-            </div>
-        </nav>
+        <img src="assets/images/home/imgCapa.png" class="img-fluid" alt="Capa do Curso">
     </header>
 
-    <!-- Capa do Curso -->
-            <div class="capa">
-                <img src="assets/images/home/imgCapa.png" class="img-fluid" alt="Capa do Curso">
-            </div>
-
-    <!-- Introdução -->
-    <div class="conteudoHome">
-        <h1>Olá, seja bem-vindo(a) ao curso Estratégia de Disseminação de Larvicida para combate ao mosquito
-            <i>Aedes</i>.
+    <!-- Capa do Curso-->
+    <div>
+        <h1 class="text-center">
+            <span style="color: #00B9B9;">Curso</span><br>
+            <span style="color: #0545A6;">PROFILAXIA PRÉ-EXPOSIÇÃO DE RISCO<br>
+                À INFECÇÃO PELO HIV</span><br>
+            <span style="color: #8242A5;">(PreP) Oral</span>
         </h1>
 
-        <p>Você irá conhecer neste curso a Estratégia de Disseminação de Larvicida (EDL), que é uma tática muito
-            promissora
-            no combate aos mosquitos, visto que algumas espécies de mosquitos <i>Aedes</i> utilizam, frequentemente,
-            criadouros
-            crípticos ou situados em locais inacessíveis, muitas vezes de difícil detecção, inclusive pelos agentes de
-            combate às endemias (ACE).</p>
+        <!-- Botão Conheça o Curso -->
+        <div class="row botao">
+            <a class="btn btn-sm collapsed" id="botaoConhecer" role="button" data-toggle="collapse"
+                data-target=".mostraAula" aria-expanded="false" aria-controls="collapseExample" alt="Conheça o curso">
+                <strong>Conheça o curso</strong>
+                <i class="fas fa-chevron-up chevronUp"></i></a>
+        </div>
+    </div>
 
-        <p>Este curso é direcionado aos agentes de saúde, estudantes, pesquisadores e profissionais de saúde que atuam
-            ou
-            pretendem atuar no combate aos mosquitos <i>Aedes</i> e tem como objetivo explicitar a eficiência do combate
-            aos
-            mosquitos <i>Aedes</i> por meio da disseminação de larvicidas por esses próprios insetos.</p>
+    <!-- Apresentação -->
+    <div class="mostraAula collapse">
+        <div class="conteudoHome fundoTexto">
+            <h1 class="text-center">Apresentação</h1>
 
-        <p>Assista ao vídeo de apresentação do curso e veja os principais temas que serão abordados.</p>
+            <p>Olá, seja bem-vindo(a) ao curso Profilaxia <b>Pré-Exposição de Risco à Infecção pelo HIV PreP Oral</b>.
+                Neste
+                curso, você irá conhecer como realizar a identificação de pessoas em situação de vulnerabilidade para a
+                infecção por HIV que sejam possíveis candidatas para uso da PrEP oral, o manejo inicial e o seguimento
+                destes usuários e situações especiais que os profissionais de saúde podem encontrar em sua prática,
+                assim
+                como sugestões de estratégias de aconselhamento e de minimização do estigma sobre a PrEP.</p>
 
-        <h2>Vídeo de apresentação do Curso</h2>
+            <p>Este é um curso on-line na modalidade autoinstrucional, em que o protagonismo do aprendizado está no
+                aprendiz, sendo direcionado aos profissionais da saúde que atendam pessoas em situação de maior
+                vulnerabilidade para o HIV e tem o objetivo desenvolver as capacidades e habilidades desses
+                profissionais
+                para ofertar a PrEP oral de acordo com as recomendações do Ministério da Saúde.</p>
 
-        <!-- Video 1 -->
-        <div class="row justify-content-center video">
-            <div class="col-md-8">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <video width="560" height="315" class="embed-responsive-item" controls>
-                        <source src="https://educare.fiocruz.br/file-storage/XR7ZmJE2" type="video/mp4" frameborder="0"
-                            allow="encrypted-media" allowfullscreen="allowfullscreen">
-                    </video>
+            <!-- Video 1 -->
+            <div class="row justify-content-center video">
+                <div class="col-md-8">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <video width="560" height="315" class="embed-responsive-item" controls>
+                            <source src="" type="video/mp4" frameborder="0" allow="encrypted-media"
+                                allowfullscreen="allowfullscreen">
+                        </video>
+                    </div>
+                    <!-- <small class="text-muted">Crédito: Elaborado pelos autores</small> -->
                 </div>
-                <small class="text-muted">Crédito: Elaborado pelos autores</small>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <img src="assets/images/home/estruturaCurso.png" class="imagem img-fluid" style="max-width: 45%"
+                alt="Estrutura do Curso">
+        </div>
+
+        <div class="conteudoHome fundoCapa">
+            <div style="color: white">
+                <h1 class="text-center">Introdução</h1><br>
+                <p>Uma das formas de se prevenir do HIV é a PrEP (Profilaxia Pré-Exposição). Ela consiste na tomada de
+                    comprimidos antes da relação sexual, que permite ao organismo estar preparado para enfrentar um
+                    possível
+                    contato com o HIV. A pessoa que usa PrEP também realiza um acompanhamento regular de saúde sexual,
+                    com
+                    testagem para o HIV e para outras Infecções Sexualmente Transmissíveis (IST).</p>
+
+                <p>A PrEP é a combinação de dois medicamentos (tenofovir + entricitabina) que bloqueiam alguns
+                    “caminhos”
+                    que o HIV usa para infectar o organismo. Existem duas modalidades de PrEP indicadas: a PrEP diária e
+                    a
+                    PrEP sob demanda. </p>
+            </div>
+        </div>
+
+        <!-- Cards lado a lado -->
+        <div class="row justify-content-center">
+            <div class="col-xl-4 centro">
+                <!-- Flip Card 1 -->
+                <div class="cards">
+                    <div class="cards-header">
+                        <h2>Módulo 1</h2>
+                        <p>Identificar os candidatos à PrEP</p>
+                    </div>
+                    <div class="cards-body">
+                        <p>AULA 1<br>Critérios necessários para iniciar a PrEP</p>
+                        <p>AULA 2<br>Contraindicações para uso da PrEP</p>
+                        <p>ATIVIDADES</p>
+                        <p>ENCERRAMENTO</p>
+
+                        <!-- Botão Conheça o Curso -->
+                        <div class="row botao">
+                            <a href="" class="btn btn-sm" id="botaoConhecer" role="button" alt="Começar">
+                                <strong>Iniciar Módulo 1</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 centro">
+                <!-- Flip Card 2 -->
+                <div class="cards">
+                    <div class="cards-header">
+                        <h2>Módulo 2</h2>
+                        <p>Orientações e mensagens sobre PrEP</p>
+                        <p>Iniciar a PrEP oral</p>
+                    </div>
+                    <div class="cards-body">
+                        <p>AULA 1<br>Análise de situações especiais da PrEP</p>
+                        <p>AULA 2<br>Mensagem de orientação sobre a eficácia da PrEP</p>
+                        <p>AULA 3<br>Mensagem de orientação sobre a segurança da PrEP</p>
+                        <p>AULA 4<br>Mensagem de orientação para reduzir o estigma dos usuários da PrEP</p>
+                        <p>ATIVIDADES</p>
+                        <p>ENCERRAMENTO</p>
+
+                        <!-- Botão Conheça o Curso -->
+                        <div class="row botao">
+                            <a href="" class="btn btn-sm" id="botaoConhecer" role="button" alt="Começar">
+                                <strong>Iniciar Módulo 2</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 centro">
+                <!-- Flip Card 2 -->
+                <div class="cards">
+                    <div class="cards-header">
+                        <h2>Módulo 3</h2>
+                        <p>Orientações e mensagens sobre PrEP</p>
+                    </div>
+                    <div class="cards-body">
+                        <p>AULA 1<br>Avaliação do uso da PrEP</p>
+                        <p>AULA 2<br>Introdução às modalidades da PrEP</p>
+                        <p>AULA 3<br>Procedimentos para as consultas inicial e de acompanhamento da PrEP</p>
+                        <p>AULA 4<br>Dispensa do medicamento</p>
+                        <p>ATIVIDADES</p>
+                        <p>ENCERRAMENTO</p>
+
+                        <!-- Botão Conheça o Curso -->
+                        <div class="row botao">
+                            <a href="" class="btn btn-sm" id="botaoConhecer" role="button" alt="Começar">
+                                <strong>Iniciar Módulo 3</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="conteudoHome fundoNavega">
+            <!-- Botões de navegação -->
+            <div class="row botao">
+                <!-- Botão para acionar modal -->
+                <a href="" class="btn btn-sm botaoExtras" role="button" alt="Referências" data-toggle="modal"
+                    data-target="#modalReferencias">
+                    <strong>Referências</strong></a>
+                <a href="" class="btn btn-sm botaoExtras" role="button" alt="Crétidos" data-toggle="modal"
+                    data-target="#modalCreditos">
+                    <strong>Créditos</strong></a>
+            </div>
+        </div>
+
+        <!-- Modal Referências  -->
+        <div class="modal fade" id="modalReferencias" tabindex="-1" role="dialog"
+            aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="TituloModalCentralizado">Referências Bibliográficas</h1>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Créditos -->
+        <div class="modal fade" id="modalCreditos" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="TituloModalCentralizado">Créditos</h1>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="conteudoHome fundoTexto">
+            <h1 class="text-center">Objetivos</h1>
+
+            <p>Ao final do curso, esperamos que você seja capaz de realizar o cuidado de uma pessoa que faz uso de PrEP
+                oral de acordo com as orientações do Ministério da Saúde.</p>
+
+            <p><b>Bons estudos!</b></p>
+
+            <!-- Botão Conheça o Curso -->
+            <div class="row botao">
+                <a href="modulo1/modulo1-introducao.html" class="btn btn-sm" id="botaoComecar" role="button"
+                    alt="Começar">
+                    <strong>Começar</strong>
+                </a>
             </div>
         </div>
     </div>
-
-    <!-- Instruções -->
-    <div class="row fundoCapa centro">
-        <img src="assets/images/home/img1.png" alt="">
-    </div>
-
-    <div class="conteudoHome fundoTexto">
-
-        <h1>Conheça o conteúdo</h1>
-
-        <ul>
-            <p><b>Introdução</b></p>
-
-            <p class="tituloLista">Módulo 1: Combate ao mosquito <i>Aedes</i></p>
-            <ul>
-                <li style="list-style: disc;">Aspectos básicos da biologia, ecologia e controle de <i>Aedes</i></li>
-                <li style="list-style: disc;">Inseticidas reguladores de crescimento</li>
-                <li style="list-style: disc;">O que é uma Estação Disseminadora de Larvicida (EDL) e como funciona?</li>
-                <li style="list-style: disc;">Atividade</li>
-            </ul>
-
-            <br>
-
-            <p class="tituloLista">Módulo 2: Implantação, manutenção e distribuição da EDL</p>
-            <ul>
-                <li style="list-style: disc;">Implantação da EDL</li>
-                <li style="list-style: disc;">Manutenção e registro da EDL</li>
-                <li style="list-style: disc;">Métodos de distribuição em campo da EDL</li>
-                <li style="list-style: disc;">Supervisão da EDL</li>
-                <li style="list-style: disc;">Logística estratégica e operacional</li>
-                <li style="list-style: disc;">Atividade</li>
-            </ul>
-
-            <br>
-
-            <p class="tituloLista">
-                Encerramento<br>
-                Referências</p>
-        </ul>
-
-        <h1>Objetivos</h1>
-
-        <ul>
-            <li style="list-style: disc;">Compreender a estratégia de disseminação de larvicida por mosquitos no controle de arboviroses.
-            </li>
-            <li style="list-style: disc;">Identificar os aspectos básicos da utilização de Estações Disseminadoras de Larvicida (EDL) no controle
-                de
-                arboviroses.</li>
-            <li style="list-style: disc;">Compreender os procedimentos necessários para a implantação e manutenção de Estações Disseminadoras de
-                Larvicida (EDL).</li>
-        </ul>
-
-        <!-- Botão Início Aula 1 -->
-        <div class="row" id="botao">
-            <a href="introducao.html" class="btn btn-sm" id="botaoAvancar" role="button"
-                alt="Começar curso">
-                <strong>AVANÇAR</strong></a>
-        </div>
-    </div>
-
     <!-- Rodapé -->
     <!-- class=rodapeFixo -->
     <footer id="rodape">
         <div class="row-main">
             <div class="col-md-12 centro">
-                <img class="img-fluid centro" src="assets/images/rodape/rodape.png"
-                    alt="Rodapé">
+                <img class="img-fluid centro" src="assets/images/rodape/rodape.png" alt="Rodapé">
             </div>
         </div>
     </footer>
