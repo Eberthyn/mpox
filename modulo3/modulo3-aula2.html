@@ -12,43 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <link href="../assets/css/styles.css" rel="stylesheet">
-    <style>
-        .atencao {
-            margin-bottom: 0px;
-            font-weight: bold;
-            color: #9A7265;
-            position: absolute;
-            margin-left: 66px;
-            margin-top: 34px;
-        }
-
-        hr {
-            width: 100%;
-            border: 1px solid #9A7265;
-        }
-    </style>
 </head>
 
 <body>
     <!-- Toolbar -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light" id="menuSuperior">
-
-            <img src="../assets/images/logos/logoMenu.png" class="img-fluid logo" alt="Logo Fiocruz" />
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ml-auto">
-                    <li><a href="../index.html">Home</a></li>
-                    <!-- <li><a href="material-complementar.html">Material Complementar</a></li> -->
-                    <li><a href="../referencias.html">Referências</a></li>
-                    <li><a href="../creditos.html">Créditos</a></li>
-                </ul>
-            </div>
-        </nav>
+       <img id="menuSuperior" src="../assets/images/logos/header.png" class="img-fluid" alt="Capa do curso" />
     </header>
 
     <div class="row" id="row-main">
@@ -58,140 +27,386 @@
             <span class="toggle-sidebar" id="sidebarButton"><i class="fas fa-chevron-left"></i></span>
 
             <!-- Botão Secundário p/ Recolher Sidebar -->
-            <span class="toggle-sidebar" id="sidebarButton2"><img src="../assets/images/icones/icone.png"
-                    alt="Botão do Menu Lateral"></span>
+            <span class="toggle-sidebar" id="sidebarButton2"><i class="fas fa-bars"></i></span>
 
             <nav id="menuLateral">
-                <ul class="listaMenu" id="menuList">
+                <ul class="listaMenu">
                     <li>
                         <div class="row">
-                            <div class="barraStepper"></div>
                             <div class="sectionTitle">
-                                <a href="../introducao.html" class="tituloLista introducao">Introdução</a>
+                                <a href="../index.html" class="tituloLista" style="padding-top: 0 !important;"><i
+                                        class="fas fa-home"></i>Página
+                                    Inicial</a>
                             </div>
                         </div>
                     </li>
-                    <li>
+
+                    <div class="accordionMenu" id="headingModulo1">
                         <div class="row">
-                            <div class="barraStepper"></div>
                             <div class="sectionTitle">
-                                <a href="../modulo1/modulo1-introducao.html" class="tituloLista">Módulo 1: Combate
-                                    ao
-                                    mosquito <i>Aedes</i></a>
+                                <span class="tituloLista collapsed" data-toggle="collapse" data-target="#collapseModulo1"
+                                    aria-expanded="false" aria-controls="collapseModulo1">Módulo 1<i
+                                        class="fas fa-caret-up caretDown"></i></span>
                             </div>
                         </div>
-                    </li>
-                    <li>
+                    </div>
+
+                    <div id="collapseModulo1" class="collapse" aria-labelledby="headingModulo1">
+                        <li>
+                            <div class="row">
+                                <div class="barraStepper active">
+                                    <div class="item active"></div>
+                                </div>
+                                <div class="sectionTitle">
+                                    <span class="tituloItem">Introdução</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="barraStepper active"></div>
+                                <div class="sectionTitle">
+                                    <div class="iconeMenu"></div>
+                                    <a href="../modulo1/modulo1-introducao.html" class="subItem">Identificar os
+                                        candidatos à
+                                        PrEP</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="barraStepper active">
+                                    <div class="item active"></div>
+                                </div>
+                                <div class="sectionTitle">
+                                    <span class="tituloItem">Aula 1</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="barraStepper active">
+                                </div>
+                                <div class="sectionTitle">
+                                    <div class="iconeMenu"></div>
+                                    <a href="../modulo1/modulo1-aula1.html" class="subItem">Critérios necessários para
+                                        iniciar a
+                                        PrEP</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="barraStepper active">
+                                    <div class="item active"></div>
+                                </div>
+                                <div class="sectionTitle">
+                                    <span class="tituloItem">Aula 2</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="barraStepper active"></div>
+                                <div class="sectionTitle">
+                                    <div class="iconeMenu"></div>
+                                    <a href="../modulo1/modulo1-aula2.html" class="subItem">Contraindicações para o uso
+                                        da
+                                        PrEP</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="barraStepper active">
+                                    <div class="item active"></div>
+                                </div>
+                                <div class="sectionTitle">
+                                    <a href="../modulo1/modulo1-atividade.html" class="tituloItem">Atividades Módulo
+                                        1</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="barraStepper" style="background-color: #00B9B9;">
+                                    <div class="item active"></div>
+                                </div>
+                                <div class="sectionTitle">
+                                    <a href="../modulo1/modulo1-encerramento.html" class="tituloItem">Encerramento
+                                        Módulo 1</a>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="accordionMenu" id="headingModulo2">
                         <div class="row">
-                            <div class="barraStepper"></div>
                             <div class="sectionTitle">
-                                <div class="iconeMenu"></div>
-                                <a href="../modulo1/modulo1-aula1.html">Aspectos básicos da biologia, ecologia e
-                                    controle de <i>Aedes</i></a>
+                                <span class="tituloLista collapsed" data-toggle="collapse" data-target="#collapseModulo2"
+                                    aria-expanded="false" aria-controls="collapseModulo2">Módulo 2<i
+                                        class="fas fa-caret-up caretDown"></i></span>
                             </div>
                         </div>
-                    </li>
-                    <li>
+                        <div id="collapseModulo2" class="collapse" aria-labelledby="headingModulo2">
+                            <li>
+                                <div class="row">
+                                    <div class="barraStepper active">
+                                        <div class="item active"></div>
+                                    </div>
+                                    <div class="sectionTitle">
+                                        <span class="tituloItem">Introdução</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="barraStepper active"></div>
+                                    <div class="sectionTitle">
+                                        <div class="iconeMenu"></div>
+                                        <a href="../modulo2/modulo2-introducao.html" class="subItem">Iniciar a PrEP
+                                            oral</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="barraStepper active">
+                                        <div class="item active"></div>
+                                    </div>
+                                    <div class="sectionTitle">
+                                        <span class="tituloItem">Aula 1</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="barraStepper active"></div>
+                                    <div class="sectionTitle">
+                                        <div class="iconeMenu"></div>
+                                        <a href="../modulo2/modulo2-aula1.html" class="subItem">Avaliação do uso da
+                                            PrEP</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="barraStepper active">
+                                        <div class="item active"></div>
+                                    </div>
+                                    <div class="sectionTitle">
+                                        <span class="tituloItem">Aula 2</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="barraStepper active"></div>
+                                    <div class="sectionTitle">
+                                        <div class="iconeMenu"></div>
+                                        <a href="../modulo2/modulo2-aula2.html" class="subItem">Introdução às
+                                            modalidades da
+                                            PrEP</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="barraStepper active">
+                                        <div class="item active"></div>
+                                    </div>
+                                    <div class="sectionTitle">
+                                        <span class="tituloItem">Aula 3</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="barraStepper active"></div>
+                                    <div class="sectionTitle">
+                                        <div class="iconeMenu"></div>
+                                        <a href="../modulo2/modulo2-aula3.html" class="subItem">Procedimentos para as
+                                            consultas
+                                            inicial e de acompanhamento da PrEP</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="barraStepper active">
+                                        <div class="item active"></div>
+                                    </div>
+                                    <div class="sectionTitle">
+                                        <span class="tituloItem">Aula 4</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="barraStepper active"></div>
+                                    <div class="sectionTitle">
+                                        <div class="iconeMenu"></div>
+                                        <a href="../modulo2/modulo2-aula4.html" class="subItem">Dispensa do
+                                            medicamento</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="barraStepper active">
+                                        <div class="item active"></div>
+                                    </div>
+                                    <div class="sectionTitle">
+                                        <a href="../modulo2/modulo2-atividade.html" class="tituloItem">Atividades Módulo
+                                            2</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="barraStepper" style="background-color: #00B9B9;">
+                                        <div class="item active"></div>
+                                    </div>
+                                    <div class="sectionTitle">
+                                        <a href="../modulo2/modulo2-encerramento.html" class="tituloItem">Encerramento
+                                            Módulo
+                                            2</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+
+
+                    <div class="accordionMenu" id="headingModulo3">
                         <div class="row">
-                            <div class="barraStepper"></div>
                             <div class="sectionTitle">
-                                <div class="iconeMenu"></div>
-                                <a href="../modulo1/modulo1-aula2.html">Inseticidas reguladores de crescimento</a>
+                                <span class="tituloLista" data-toggle="collapse" data-target="#collapseModulo3"
+                                    aria-expanded="false" aria-controls="collapseModulo3">Módulo 3<i
+                                        class="fas fa-caret-up caretDown"></i></span>
                             </div>
                         </div>
-                    </li>
-                    <li>
+
+                        <div id="collapseModulo3" class="collapse show" aria-labelledby="headingModulo3">
+                            <li>
+                                <div class="row">
+                                    <div class="barraStepper active">
+                                        <div class="item active"></div>
+                                    </div>
+                                    <div class="sectionTitle">
+                                        <span class="tituloItem">Introdução</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="barraStepper active"></div>
+                                    <div class="sectionTitle">
+                                        <div class="iconeMenu"></div>
+                                        <a href="modulo3-introducao.html" class="subItem">Orientações e
+                                            mensagens
+                                            sobre PrEP</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="barraStepper active">
+                                        <div class="item active"></div>
+                                    </div>
+                                    <div class="sectionTitle">
+                                        <span class="tituloItem">Aula 1</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="barraStepper active"></div>
+                                    <div class="sectionTitle">
+                                        <div class="iconeMenu"></div>
+                                        <a href="modulo3-aula1.html" class="subItem">Análise de situações
+                                            especiais
+                                            da PrEP
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="barraStepper">
+                                        <div class="item active"></div>
+                                    </div>
+                                    <div class="sectionTitle">
+                                        <span class="tituloItem">Aula 2</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="barraStepper"></div>
+                                    <div class="sectionTitle">
+                                        <div class="iconeMenu"></div>
+                                        <a href="modulo3-aula2.html" class="subItem">Mensagem de orientação
+                                            sobre a
+                                            eficácia da PrEP</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="barraStepper">
+                                        <div class="item"></div>
+                                    </div>
+                                    <div class="sectionTitle">
+                                        <span class="tituloItem">Aula 3</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="barraStepper"></div>
+                                    <div class="sectionTitle">
+                                        <div class="iconeMenu"></div>
+                                        <a href="modulo3-aula3.html" class="subItem">Mensagem de orientação
+                                            sobre a
+                                            segurança da PrEP</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="barraStepper">
+                                        <div class="item"></div>
+                                    </div>
+                                    <div class="sectionTitle">
+                                        <span class="tituloItem">Aula 4</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="barraStepper"></div>
+                                    <div class="sectionTitle">
+                                        <div class="iconeMenu"></div>
+                                        <a href="modulo3-aula4.html" class="subItem">Mensagem de orientação
+                                            para
+                                            reduzir o estigma dos usuários da PrEP</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="barraStepper">
+                                        <div class="item"></div>
+                                    </div>
+                                    <div class="sectionTitle">
+                                        <a href="modulo3-atividade.html" class="tituloItem">Atividade Módulo
+                                            3</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="barraStepper" style="background-color: #00B9B9;">
+                                        <div class="item"></div>
+                                    </div>
+                                    <div class="sectionTitle">
+                                        <a href="modulo3-encerramento.html" class="tituloItem">Encerramento
+                                            Módulo
+                                            3</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                        </div>
                         <div class="row">
-                            <div class="barraStepper"></div>
                             <div class="sectionTitle">
-                                <div class="iconeMenu"></div>
-                                <a href="../modulo1/modulo1-aula3.html">O que é uma Estação Disseminadora de
-                                    Larvicida (EDL) e como funciona?</a>
+                                <a class="tituloLista" role="button" data-toggle="modal"
+                                    data-target="#modalReferencias"><i class="fas fa-file-alt"></i>Referências</a>
                             </div>
                         </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="barraStepper"></div>
-                            <div class="sectionTitle">
-                                <div class="iconeMenu"></div>
-                                <a href="../modulo1/modulo1-atividade.html">Atividade</a>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="sectionTitle">
+                                    <a data-toggle="modal" data-target="#modalCreditos" class="tituloLista"><i
+                                            class="fas fa-list"></i>Créditos</a>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="barraStepper"></div>
-                            <div class="sectionTitle">
-                                <a href="modulo2-introducao.html" class="tituloLista">Módulo 2:
-                                    Implantação,
-                                    manutenção e
-                                    distribuição da EDL</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="barraStepper"></div>
-                            <div class="sectionTitle">
-                                <div class="iconeMenu"></div>
-                                <a href="modulo2-aula1.html">Implantação da EDL</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="barraStepper active"></div>
-                            <div class="sectionTitle">
-                                <div class="iconeMenu"></div>
-                                <a href="#">Manutenção e registro da EDL</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="barraStepper"></div>
-                            <div class="sectionTitle">
-                                <div class="iconeMenu"></div>
-                                <a href="modulo2-aula3.html">Métodos de distribuição em campo da EDL</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="barraStepper"></div>
-                            <div class="sectionTitle">
-                                <div class="iconeMenu"></div>
-                                <a href="modulo2-aula4.html">Supervisão da EDL</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="barraStepper"></div>
-                            <div class="sectionTitle">
-                                <div class="iconeMenu"></div>
-                                <a href="modulo2-aula5.html">Logística estratégica e operacional</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="barraStepper"></div>
-                            <div class="sectionTitle">
-                                <div class="iconeMenu"></div>
-                                <a href="modulo2-atividade.html">Atividade</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="barraStepper"></div>
-                            <div class="sectionTitle">
-                                <a href="../encerramento.html" class="tituloLista">Encerramento</a>
-                            </div>
-                        </div>
-                    </li>
+                        </li>
                 </ul>
             </nav>
         </div>
@@ -199,214 +414,293 @@
         <div class="col-md-10" id="content">
             <!-- Introdução -->
             <div class="conteudo">
-                <p class="indice">Módulo2/Aula2</p>
-                <h1>Manutenção e registro da EDL</h1>
+                <p class="indice">Módulo 3 | Aula 2</p>
+                <h1>Mensagem de orientação sobre a eficácia da PrEP</h1>
 
-                <p>A equipe ou responsável pela estratégia do município entregará ao profissional de campo, a
-                    relação de
-                    EDL’s com as informações coletadas, revisadas e atualizadas. Uma vez ao mês, o profissional de
-                    campo
-                    deve retornar aos locais de instalação das EDL, e, caso permitido o ingresso ao domicílio pelo
-                    residente, deverá proceder com a manutenção da EDL.</p>
+                <p>Abaixo estão as principais mensagens de orientação sobre a eficácia da PrEP que devem ser abordadas
+                    com os(as) usuários(as) da PrEP.</p>
 
-                <ul>
-                    <li class="icon circle">Procurar na planilha de manutenção o local de instalação da EDL no
-                        imóvel
-                        (ver item c da
-                        planilha).</li><br>
-                    <li class="icon circle">Preencher a planilha de manutenção, com as novidades ou possíveis
-                        intercorrências:
-                    </li>
-                    <ul>
-                        <li>- Presença de larvas: presença de larvas de <i>Ae. aegypti</i> ou <i>Ae. albopictus</i>
-                            na
-                            água contida
-                            no interior da EDL.</li>
-                        <li>- Presença de pupas: presença de pupas de <i>Ae. aegypti</i> ou <i>Ae. albopictus</i> na
-                            água contida no
-                            interior da EDL.</li>
-                        <li>- Tecido desaparecido: Ausência do tecido no momento da manutenção da EDL</li>
-                        <li>- Imóvel fechado: no momento da visita para a manutenção da EDL, o imóvel se encontra
-                            fechado.</li>
-                        <li>- Estação Disseminadora não instalada: No momento da visita para a manutenção da EDL, o
-                            residente informou que a EDL nunca foi instalada, o qual pode acontecer por erros no
-                            preenchimento ou digitação do endereço.</li>
-                        <li>- Estação Disseminadora desaparecida: No momento da visita para a manutenção da EDL, o
-                            agente não localiza a EDL no local de instalação, o qual pode acontecer porque a EDL é
-                            reaproveitada para outros fins ou foi descartada por desconhecimento do objetivo da EDL
-                            no imóvel.</li>
-                        <li>- Estação Disseminadora quebrada: EDL danificada que impeça seu bom funcionamento.</li>
-                        <li>- Estação Disseminadora retirada: EDL retirada do imóvel por desistência de participação
-                            ou mudança do residente, ou dificuldade de acesso ao imóvel, em pelo menos duas visitas
-                            de manutenção.</li>
-                    </ul><br>
-
-                    <li class="icon circle">Retirar o clipe e o tecido da EDL, lavar o pano e retirar a água contida
-                        na
-                        EDL. Espremer o
-                        tecido até tirar o excesso de água e fazer as etapas de preparação do tecido para montagem
-                        de
-                        EDL e re-impregnar o piriproxifen micronizado e umedecido.</li>
-                </ul>
-            </div>
-
-            <div class="row curiosidade">
-                <div class="col-md-2">
-                    <img class="centro img-fluid" src="../assets/images/icones/curiosidade.png" alt="Curiosidade">
-                </div>
-                <div class="col-md-10">
-                    <h3>CURIOSIDADE</h3>
-                    <hr>
-                    <p><b>Você sabe quais são as intercorrências mais comuns?</b></p>
-                    <div class="row centro">
-                        <div class="col-sm-4 imagem">
-                            <img src="../assets/images/modulo2/aula2/img1.png"
-                                alt="Três fotos sobre as intercorrências mais comuns com as EDL’s. A primeira foto é de uma EDL virada no chão."
-                                class="img-fluid">
+                <!-- Accordion -->
+                <div class="accordion">
+                    <!-- Accordion card 1-->
+                    <div class="card">
+                        <!-- Card header -->
+                        <div class="card-header" id="headingOne1">
+                            <a class="collapsed" data-toggle="collapse" data-target="#collapseOne1"
+                                aria-expanded="false" aria-controls="collapseOne1">
+                                <p class="pinfo"><b>Eficácia</b><i class="fas fa-caret-up caretDown"></i></p>
+                            </a>
                         </div>
-                        <div class="col-sm-4 imagem">
-                            <img src="../assets/images/modulo2/aula2/img2.png"
-                                alt="A segunda foto é a EDL danificada com uma rachadura no meio." class="img-fluid">
+
+                        <!-- Card body -->
+                        <div id="collapseOne1" class="collapse" aria-labelledby="headingOne1">
+                            <div class="card-body">
+                                <p>Quando tomada conforme prescrito, a PrEP é altamente eficaz na prevenção do HIV, a
+                                    uma taxa de 99%.</p>
+                            </div>
                         </div>
-                        <div class="col-sm-4 imagem">
-                            <img src="../assets/images/modulo2/aula2/img3.png"
-                                alt="E a terceira é a EDL reaproveitada para outro uso pelo residente, o balde está com água e uma mangueira amarela dentro."
-                                class="img-fluid">
+                    </div>
+
+                    <!-- Accordion card 2 -->
+                    <div class="card">
+                        <!-- Card header -->
+                        <div class="card-header" id="headingTwo2">
+                            <a class="collapsed" data-toggle="collapse" data-target="#collapseTwo2"
+                                aria-expanded="false" aria-controls="collapseTwo2">
+                                <p class="pinfo"><b>Adesão</b><i class="fas fa-caret-up caretDown"></i>
+                                </p>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo2">
+                            <div class="card-body">
+                                <p>Para aqueles que estão na modalidade de PrEP oral diária, pode ser mais fácil tomar
+                                    PrEP todos os dias se criar o hábito de vincular a algo que a pessoa já faz
+                                    diariamente e tomar sempre no mesmo horário.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion card 3 -->
+                    <div class="card">
+
+                        <!-- Card header -->
+                        <div class="card-header" id="headingThree3">
+                            <a class="collapsed" data-toggle="collapse" data-target="#collapseThree3"
+                                aria-expanded="false" aria-controls="collapseThree3">
+                                <p class="pinfo"><b>Tempo necessário para estar protegido</b><i
+                                        class="fas fa-caret-up caretDown"></i></p>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapseThree3" class="collapse" aria-labelledby="headingThree3">
+                            <div class="card-body">
+                                <p>I- Mulheres cisgênero, pessoas trans ou não binárias designadas como sexo feminino ao
+                                    nascer, e qualquer pessoa em uso de hormônio a base de estradiol, que iniciem o uso
+                                    de PrEP oral diária, devem tomar o medicamento por pelo menos 7 (sete) dias para
+                                    atingir níveis de proteção ideais. Antes dos sete dias iniciais de introdução da
+                                    PrEP, medidas adicionais de prevenção devem ser adotadas.</p><br>
+
+                                <p>II- Homens cisgênero, pessoas não binárias designadas como do sexo masculino ao
+                                    nascer, e travestis e mulheres transexuais - que não estejam em uso de hormônios à
+                                    base de estradiol - e que iniciem a PrEP, seja ela diária ou sob demanda, devem
+                                    tomar uma dose de 2 (dois) comprimidos de TDF/FTC de 2 a 24 horas antes da relação
+                                    sexual para alcançar níveis protetores do medicamento no organismo para relações
+                                    sexuais anais.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion card 4 -->
+                    <div class="card">
+
+                        <!-- Card header -->
+                        <div class="card-header" id="headingThree4">
+                            <a class="collapsed" data-toggle="collapse" data-target="#collapseThree4"
+                                aria-expanded="false" aria-controls="collapseThree4">
+                                <p class="pinfo"><b>Suspender a PrEP</b><i class="fas fa-caret-up caretDown"></i></p>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapseThree4" class="collapse" aria-labelledby="headingThree4">
+                            <div class="card-body">
+                                <p>I- Mulheres cisgênero, pessoas trans ou não binárias designadas como sexo feminino ao
+                                    nascer podem parar de usar a PrEP se não estiverem mais em risco de infecção pelo
+                                    HIV, embora devam continuar a tomar a PrEP por 7 dias após sua última possível
+                                    exposição de risco ao HIV.</p><br>
+
+                                <p>II- Homens cisgênero, pessoas não binárias designadas como do sexo masculino ao
+                                    nascer, e travestis e mulheres transexuais - que não estejam em uso de hormônios à
+                                    base de estradiol podem interromper a PrEP após tomar duas doses diárias de um único
+                                    comprimido 24 e 48 horas após a última relação sexual com potencial risco à infecção
+                                    pelo HIV.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion card 5 -->
+                    <div class="card">
+
+                        <!-- Card header -->
+                        <div class="card-header" id="headingThree5">
+                            <a class="collapsed" data-toggle="collapse" data-target="#collapseThree5"
+                                aria-expanded="false" aria-controls="collapseThree5">
+                                <p class="pinfo"><b>Álcool e outras drogas</b><i class="fas fa-caret-up caretDown"></i>
+                                </p>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapseThree5" class="collapse" aria-labelledby="headingThree5">
+                            <div class="card-body">
+                                <p>Não há interações entre a PrEP e o uso de álcool e outras drogas. No entanto, vale
+                                    reforçar que o uso de álcool e outras drogas recreativas (inclusive no contexto do
+                                    chemsex, que é a prática sexual sob a influência de drogas psicoativas, como
+                                    metanfetaminas, GHB, MDMA, cocaína, poppers, com a finalidade de melhorar ou
+                                    facilitar as experiências sexuais) não reduzem a eficácia da PrEP, mas podem
+                                    prejudicar a adesão ao uso do medicamento.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion card 6 -->
+                    <div class="card">
+
+                        <!-- Card header -->
+                        <div class="card-header" id="headingThree6">
+                            <a class="collapsed" data-toggle="collapse" data-target="#collapseThree6"
+                                aria-expanded="false" aria-controls="collapseThree6">
+                                <p class="pinfo"><b>Ausência de proteção quanto às IST</b><i
+                                        class="fas fa-caret-up caretDown"></i></p>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapseThree6" class="collapse" aria-labelledby="headingThree6">
+                            <div class="card-body">
+                                <p>Embora a PrEP proteja contra HIV, não previne as outras IST. Indivíduos elegíveis
+                                    para PrEP podem estar sob risco para aquisição de outras infecções sexualmente
+                                    transmissíveis (IST), uma vez que essas infecções compartilham as mesmas vias de
+                                    transmissão do HIV. É necessário adotar métodos adicionais de prevenção contra as
+                                    IST. No entanto, a pessoa em PrEP realiza acompanhamento regular de sua saúde, com
+                                    testagem, monitoramento e tratamento, quando indicado, também para outras IST.
+                                    Ressalta-se que a investigação e o tratamento das IST não devem ser impeditivos para
+                                    o início da PrEP.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion card 7 -->
+                    <div class="card" style="margin-bottom: 30px;">
+
+                        <!-- Card header -->
+                        <div class="card-header" id="headingThree7">
+                            <a class="collapsed" data-toggle="collapse" data-target="#collapseThree7"
+                                aria-expanded="false" aria-controls="collapseThree7">
+                                <p class="pinfo"><b>Ausência do efeito anticoncepcional</b><i
+                                        class="fas fa-caret-up caretDown"></i></p>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapseThree7" class="collapse" aria-labelledby="headingThree7">
+                            <div class="card-body">
+                                <p>O uso de PrEP não previne gravidez. A PrEP não afeta a eficácia dos contraceptivos e
+                                    repositores hormonais, assim como os contraceptivos e repositores hormonais não
+                                    afetam a eficácia da PrEP.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <!-- Fim Accordion -->
 
-            <div class="row blocoTexto">
-                <p><b>Lembre-se sempre de orientar e sensibilizar o residente sobre a probabilidade ocasional da EDL
-                        apresentar larvas de <i>Aedes aegypti</i> ou <i>Aedes albopictus</i> na água contida no
-                        interior
-                        do pote.
-                        Lembre-se também que o piriproxifem não atua de imediato nas larvas, pode aumentar o tempo
-                        de
-                        desenvolvimento da larva até sua morte.</b></p>
-            </div>
+                <h2>Mensagem ao(à) usuário(a) sobre a eficácia</h2>
 
+                <p>Informe ao(à) usuário(a) que, quando utilizado de acordo com a prescrição, a PrEP oral, tomada
+                    diariamente ou sob demanda, é altamente eficaz, para prevenir a infecção por HIV, em aproximadamente
+                    99%.</p>
 
-            <div class="conteudo">
+                <p>Vale informar também que a PrEP pode ser ingerida com ou sem alimentos.</p>
 
-                <h3>Registro de manutenção de estações disseminadoras de larvicida. Passe o mouse sobre os números
-                    para
-                    conhecer as informações de manutenção das EDL’s</h3>
+                <p>Exemplos de lembretes para tomar a PrEP oral todos os dias para as doses diárias prescritas:</p>
 
-                <img src="../assets/images/modulo2/aula2/img4.png" alt="Planilha de Controle"
-                    class="img-fluid imagem-mapeada" usemap="#image-map">
-
-                <map name="image-map">
-                    <area alt="a"
-                    onmouseover="Tip('Nº EDL: Número da<br>Estação Disseminadora<br>definida para o imóvel.')"
-                    onmouseout="UnTip()" coords="13,86,22" shape="circle">
-
-                    <area alt="b"
-                    onmouseover="Tip('Logradouro (nome, número):<br>Revisar se o endereço onde<br>está a EDL, está correto, se<br>não, atualizar na coluna de<br> observações.')"
-                    onmouseout="UnTip()" coords="223,87,23" shape="circle">
-
-                    <area alt="c"
-                    onmouseover="Tip('Local de instalação: Local no<br> imóvel onde ficou a EDL, o<br> qual foi definido junto com<br> o residente no momento da<br> implantação.')"
-                    onmouseout="UnTip()" coords="428,87,21" shape="circle">
-
-                    <area alt="d"
-                    onmouseover="Tip('Responsável do imóvel: Pessoa que<br> autorizou a entrada ao domicílio e<br> acompanhou a instalação das EDLs.')"
-                    onmouseout="UnTip()" coords="548,76,21" shape="circle">
-
-                    <area alt="e"
-                    onmouseover="Tip('Profissional encarregado da <br>manutenção: Profissional de<br> campo encarregado da<br> manutenção mensal da EDL,<br> designado pelo gestor ou<br> profissional encarregado da<br> estratégia no município.')"
-                    onmouseout="UnTip()" coords="671,76,20" shape="circle">
-
-                    <area alt="f"
-                    onmouseover="Tip('Nível de água na EDL:<br>Verificar o nível de água <br>da EDL e marcar *Seca*,<br> se a EDL se encontra<br> sem água no momento<br> da manutenção; *< 50%*,<br> se a EDL se encontra com<br> o nível de água embaixo<br> da metade do pote; e<br> *>= 50%*, se a EDL se<br> encontra com o nível de<br> água acima da metade<br> do pote.')"
-                    onmouseout="UnTip()" coords="802,69,20" shape="circle">
-
-                    <area alt="g"
-                    onmouseover="Tip('Tipo de novidades: Marcar<br> com X a novidade apresentada<br> no momento da manutenção.')"
-                    onmouseout="UnTip()" coords="1001,69,19" shape="circle">
-
-                    <area alt="h"
-                    onmouseover="Tip('Observações:<br>Informações adicionais que<br>o ACE acredite necessárias<br>para complementar a vistoria<br>realizada ou condições que<br>possam comprometer a<br>qualidade da EDL.')"
-                    onmouseout="UnTip()" coords="1190,69,21" shape="circle">
-
-                    <area alt="1"
-                    onmouseover="Tip('Presença de larvas:<br>Presença de larvas de <i>Ae.<br> Aegypti ou Ae. Albopictus</i><br>na água contida no<br>interior da EDL.')"
-                    onmouseout="UnTip()" coords="875,148,17" shape="circle">
-
-                    <area alt="2"
-                    onmouseover="Tip('Presença de pupas:<br>Presença de pupas de<br><i>Ae. Aegypti ou Ae.<br>Albopictus</i> na água <br>contida no interior<br> da EDL.')"
-                    onmouseout="UnTip()" coords="913,149,18" shape="circle">
-
-                    <area alt="3"
-                    onmouseover="Tip('Tecido desaparecido:<br>Ausência do tecido <br>no momento da<br>manutenção da EDL.')"
-                    onmouseout="UnTip()" coords="950,149,15" shape="circle">
-
-                    <area alt="4"
-                    onmouseover="Tip('Imóvel fechado:<br>No momento da visita<br>para a manutenção da<br>EDL, o imóvel se<br>encontra fechado.')"
-                    onmouseout="UnTip()" coords="986,149,16" shape="circle">
-
-                    <area alt="5"
-                    onmouseover="Tip('Estação Disseminadora<br>não instalada:<br>No momento da visita<br> para a manutenção da EDL,<br> o residente informou que a <br>EDL nunca foi instalada, o<br>qual pode acontecer por<br>erros no preenchimento ou<br>digitação do endereço.')"
-                    onmouseout="UnTip()" coords="1022,149,15" shape="circle">
-
-                    <area alt="6"
-                    onmouseover="Tip('Estação Disseminadora<br> desaparecida:<br> No momento da visita<br> para a manutenção da<br> EDL, o profissional não <br>localiza a EDL no local<br> de instalação, o qual <br>pode acontecer porque <br>a EDL é reaproveitada <br>para outros fins ou <br>foi descartada por<br> desconhecimento do<br>objetivo da EDL no<br> imóvel.')"
-                    onmouseout="UnTip()" coords="1056,149,15" shape="circle">
-
-                    <area alt="7"
-                    onmouseover="Tip('Estação Disseminadora<br> quebrada:<br>EDL danificada que<br>impeça seu bom<br>funcionamento.')"
-                    onmouseout="UnTip()" coords="1089,148,15" shape="circle">
-
-                    <area alt="8"
-                    onmouseover="Tip('Estação Disseminadora retirada:<br>EDL retirada do imóvel por<br> desistência de participação<br> ou mudança do residente,<br> ou dificuldade de acesso<br> ao imóvel, em pelo menos<br> duas visitas de manutenção.')"
-                    onmouseout="UnTip()" coords="1124,149,16" shape="circle">
-                </map>
-            </div>
-
-            <div class="row blocoTexto">
-                <p><b>As informações devem ser preenchidas com letra clara e legível. O preenchimento correto das
-                        informações facilitará a logística da manutenção das EDL’s, caso tenha troca ou ausência do
-                        ACE
-                        ou profissional encarregado da visita, diminuindo o tempo e gastos operacionais de visita ou
-                        deslocamento adicionais.</b></p>
-            </div>
-
-            <div class="conteudo">
-
-                <div class="row imagem">
-                    <div class="col-lg-8">
-                        <img src="../assets/images/modulo2/aula2/img5.png"
-                            alt="Foto de um local com janelas grandes e diversas madeiras em vários tamanhos apoiados nas janelas, há também um maquinário quebrado."
-                            class="img-fluid">
-                        <small class="text-muted">Crédito: Pixaby</small>
-                    </div>
-                    <div class="col-lg-4 centro">
-                        <div class="row">
-                            <img src="../assets/images/icones/alerta.png" alt="Atenção" class="imgfluid">
-                            <p class="atencao">ATENÇÃO</p>
-                            <hr>
-
-                            <p>Caso o imóvel se encontre fechado, o agente deverá informar ao supervisor ou chefe
-                                imediato
-                                sobre a situação para reprogramar a visita de manutenção ou supervisão.</p>
-                            <p>Orientar e sensibilizar sempre o residente sobre a importância e compromisso no
-                                cuidado
-                                da
-                                EDL, mantendo em lugares protegidos e fora do alcance de crianças e animais
-                                domésticos,
-                                comunicar aos outros residentes sobre a localização das EDL’s e a visita mensal pelo
-                                ACE.
-                            </p>
+                <!-- ALERTAS -->
+                <div class="centro">
+                    <div class="row alerta">
+                        <div class="col-md-2 centro">
+                            <img class="img-fluid" src="../assets/images/icones/alerta.png" alt="Saiba mais">
+                        </div>
+                        <div class="col-md-8">
+                            <p><b>Tome a PrEP todas as noites, antes de dormir.</b></p>
                         </div>
                     </div>
                 </div>
+
+                <div class="centro">
+                    <div class="row alerta">
+                        <div class="col-md-2 centro">
+                            <img class="img-fluid" src="../assets/images/icones/alerta.png" alt="Saiba mais">
+                        </div>
+                        <div class="col-md-8">
+                            <p><b>Tome a PrEP todas as manhãs, após escovar os dentes.</b></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="centro">
+                    <div class="row alerta">
+                        <div class="col-md-2 centro">
+                            <img class="img-fluid" src="../assets/images/icones/alerta.png" alt="Saiba mais">
+                        </div>
+                        <div class="col-md-10">
+                            <p><b>Se esquecer de tomar o comprimido, tome-o assim que lembrar, no mesmo dia.</b></p>
+                        </div>
+                    </div>
+                </div>
+
+                <p>E não esqueça de informar ao(à) usuário(a) sobre a quantidade mínima para eficácia:</p>
+
+                <div class="centro">
+                    <div class="text-center textoDestacado col-md-8">
+                        <p>Estudos de eficácia de PrEP oral demonstraram que para evitar infecção pelo HIV em uso de
+                            PrEP oral diária, deve-se tomar uma quantidade mínima de comprimidos por semana para estar
+                            protegido, como segue:</p>
+
+                        <ul>
+                            <li class="icon circle">Homens cisgênero, pessoas não binárias designadas como do sexo
+                                masculino ao nascer, e travestis e mulheres transexuais - que não estejam em uso de
+                                hormônios à base de estradiol - devem tomar pelo menos 4 comprimidos por semana.</li>
+                            <li class="icon circle">Mulheres cis, pessoas trans designadas do sexo feminino ao nascer e
+                                qualquer pessoa em uso de hormônio à base de estradiol devem ingerir pelo menos 6
+                                comprimidos por semana.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p>Vale ressaltar que a orientação deve ser para a tomada dos comprimidos todos os dias.</p>
+
+                <h2>Possíveis dúvidas do usuário sobre a eficácia da PrEP</h2>
+
+                <p class="listaTexto" style="color: #00B9B9;"><b>Álcool e outras drogas: Álcool e outras drogas: </b>
+                </p>
+                <p class="listaTexto"><b>Qual a eficácia da PrEP caso o usuário faça uso de álcool ou outras drogas?</b>
+                </p>
+                <p>Não há interações entre a PrEP e o uso de álcool ou outras drogas. A PrEP mantém a eficácia para
+                    prevenir o HIV sempre que tomada conforme a prescrição. O uso de álcool e outras drogas não
+                    reduzem
+                    a eficácia da PrEP, mas podem prejudicar a adesão ao uso do medicamento.</p>
+
+                <p class="listaTexto" style="color: #00B9B9;"><b>IST</b></p>
+                <p class="listaTexto"><b>Fazendo uso de PrEP estou protegido contra outras IST?</b></p>
+                <p>Não, a PrEP protege contra o HIV, mas não previne as outras IST. O usuário deve ser orientado
+                    sobre o
+                    uso de preservativos. Apesar de não prevenir contra outras IST, os usuários de PrEP realizam
+                    avaliação e exames regulares para essas outras infecções. A investigação e o tratamento das IST
+                    não
+                    devem ser impeditivos para o início da PrEP.Não, a PrEP protege contra o HIV, mas não previne as
+                    outras IST. O usuário deve ser orientado sobre o uso de preservativos. Apesar de não prevenir
+                    contra
+                    outras IST, os usuários de PrEP realizam avaliação e exames regulares para essas outras
+                    infecções. A
+                    investigação e o tratamento das IST não devem ser impeditivos para o início da PrEP.</p>
+
+                <p class="listaTexto" style="color: #00B9B9;"><b>Efeito anticoncepcional</b></p>
+                <p class="listaTexto"><b>Fazendo uso de PrEP estou protegido da gravidez?</b></p>
+                <p>Não, a PrEP não previne gravidez, e seu uso não diminui a eficácia dos anticoncepcionais e
+                    vice-versa, anticoncepcionais não reduzem a eficácia da PrEP.Não, a PrEP não previne gravidez, e
+                    seu
+                    uso não diminui a eficácia dos anticoncepcionais e vice-versa, anticoncepcionais não reduzem a
+                    eficácia da PrEP.</p>
+
                 <!-- Botões de navegação -->
                 <div class="row botao">
-                    <a href="modulo2-aula1.html" class="btn btn-sm" id="botaoVoltar" role="button" alt="Voltar">
-                        <strong>VOLTAR</strong></a>
-                    <a href="modulo2-aula3.html" class="btn btn-sm" id="botaoAvancar" role="button" alt="Avançar">
-                        <strong>AVANÇAR</strong></a>
+                    <a href="modulo3-aula1.html" class="btn btn-sm" id="botaoVoltar" role="button" alt="Voltar">
+                        <i class="fas fa-chevron-left"></i><strong>Módulo 3 Aula 1</strong></a>
+                    <a href="modulo3-aula3.html" class="btn btn-sm" id="botaoAvancar" role="button" alt="Avançar">
+                        <strong>Módulo 3 Aula 3</strong><i class="fas fa-chevron-right"></i></a>
                 </div>
             </div>
 
@@ -422,11 +716,47 @@
         </div>
     </div>
 
+    <!-- Modal Referências -->
+    <div class="modal fade" id="modalReferencias" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="TituloModalCentralizado">Referências Bibliográficas</h1>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <modal-referencias></modal-referencias>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Créditos -->
+    <div class="modal fade" id="modalCreditos" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="TituloModalCentralizado">Créditos</h1>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <modal-creditos></modal-creditos>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Arquivos JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <script src="../assets/js/imageMapResizer.js"></script>
-    <script src="../assets/js/wz_tooltip.js"></script>
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/modalReferencias.js"></script>
+    <script src="../assets/js/modalCreditos.js"></script>
 </body>

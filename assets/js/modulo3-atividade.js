@@ -1,4 +1,4 @@
-// MÓDULO 1 QUESTÃO 1
+// MÓDULO 3 QUESTÃO 1
 var resposta = "Verdadeiro"; // Resposta correta
 $("input[name=questao1]").on("click", function () {
     var value = "";
@@ -20,8 +20,8 @@ $("input[name=questao1]").on("click", function () {
         }
 
         var mensagem = "";
-        resposta == value ? mensagem = "Você pode usar a equação de Cockcroft-Gault para calcular o clearence da creatinina com base na creatinina sérica medida, o sexo da pessoa ao nascer, a idade e o peso corporal calculado."
-            : mensagem = "Você pode usar a equação de Cockcroft-Gault para calcular o clearence da creatinina com base na creatinina sérica medida, o sexo da pessoa ao nascer, a idade e o peso corporal calculado.";
+        resposta == value ? mensagem = "A afirmação é verdadeira. O uso de PrEP é seguro para gestantes e lactantes."
+            : mensagem = "A afirmação é verdadeira. O uso de PrEP é seguro para gestantes e lactantes.";
         $("#mensagem1").html(mensagem);
     } else {
         // esvazia a div de mensagem
@@ -29,7 +29,7 @@ $("input[name=questao1]").on("click", function () {
     }
 });
 
-// MÓDULO 1 QUESTÃO 2
+// MÓDULO 3 QUESTÃO 2
 var resposta2 = "C2"; // Resposta correta
 $("input[name=questao2]").on("click", function () {
     var value = "";
@@ -41,8 +41,9 @@ $("input[name=questao2]").on("click", function () {
             // concatena os values
             value += $(this).val();
         });
+
         // Altera cor mensagem da resposta
-        if (value !== "C2") {
+        if (value !== "C2"){
             $("#feedback2").addClass("resposta-incorreta")
             $("#feedback2").removeClass("resposta-correta")
         } else {
@@ -50,23 +51,32 @@ $("input[name=questao2]").on("click", function () {
             $("#feedback2").addClass("resposta-correta")
         }
 
+        // Altera cor do input 
         if (value === "C2") {
-            $("#C2").addClass("resposta-correta")
             $("#A2").removeClass("resposta-incorreta")
             $("#B2").removeClass("resposta-incorreta")
+            $("#C2").addClass("resposta-correta")
+            $("#D2").removeClass("resposta-incorreta")
         } else if (value === "A2") {
-            $("#C2").removeClass("resposta-correta")
             $("#A2").addClass("resposta-incorreta")
             $("#B2").removeClass("resposta-incorreta")
-        } else if (value === "B2") {
             $("#C2").removeClass("resposta-correta")
+            $("#D2").removeClass("resposta-incorreta")
+        } else if (value === "B2") {
             $("#A2").removeClass("resposta-incorreta")
             $("#B2").addClass("resposta-incorreta")
+            $("#C2").removeClass("resposta-correta")
+            $("#D2").removeClass("resposta-incorreta")
+        } else if (value === "D2") {
+            $("#C2").removeClass("resposta-correta")
+            $("#A2").removeClass("resposta-incorreta")
+            $("#B2").removeClass("resposta-incorreta")
+            $("#D2").addClass("resposta-incorreta")
         }
 
         var mensagem = "";
-        resposta2 == value ? mensagem = "O desejo de utilizar a PrEP pode ser uma indicação de um risco significativo de infecção pelo HIV." :
-            mensagem = "O desejo de utilizar a PrEP pode ser uma indicação de um risco significativo de infecção pelo HIV.";
+        resposta2 == value ? mensagem = "As afirmações verdadeiras sobre as necessidades especiais de adolescentes e jovens que usam a PrEP são: “Podem se beneficiar de horários de atendimento flexíveis” e “Podem precisar de consultas de acompanhamento mais frequentes devido à mudança de rotina e às múltiplas necessidades”. Os adolescentes “podem achar a dosagem diária mais fácil de seguir do que a dosagem sob demanda, mesmo se forem candidatos à PrEP sob demanda”. Em vez de visitas frequentes para adolescentes e adultos jovens, as interações remotas entre profissionais de saúde e usuários podem ser interessantes e facilitar o atendimento às necessidades adicionais desses jovens." :
+            mensagem = "As afirmações verdadeiras sobre as necessidades especiais de adolescentes e jovens que usam a PrEP são: “Podem se beneficiar de horários de atendimento flexíveis” e “Podem precisar de consultas de acompanhamento mais frequentes devido à mudança de rotina e às múltiplas necessidades”. Os adolescentes “podem achar a dosagem diária mais fácil de seguir do que a dosagem sob demanda, mesmo se forem candidatos à PrEP sob demanda”. Em vez de visitas frequentes para adolescentes e adultos jovens, as interações remotas entre profissionais de saúde e usuários podem ser interessantes e facilitar o atendimento às necessidades adicionais desses jovens.";
         $("#mensagem2").html(mensagem);
     } else {
         // esvazia a div de mensagem
@@ -74,7 +84,7 @@ $("input[name=questao2]").on("click", function () {
     }
 });
 
-// MÓDULO 1 QUESTÃO 3
+// MÓDULO 3 QUESTÃO 3
 var resposta3 = "Falso"; // Resposta correta
 $("input[name=questao3]").on("click", function () {
     var value = "";
@@ -96,8 +106,8 @@ $("input[name=questao3]").on("click", function () {
         }
 
         var mensagem = "";
-        resposta3 == value ? mensagem = "A afirmação é falsa. Dada a equação de Cockcroft-Gault, o clearance de creatinina de Sarah é de 95,56 mL/min, o que significa que ela atende aos critérios para a PrEP oral."
-            : mensagem = "A afirmação é falsa. Dada a equação de Cockcroft-Gault, o clearance de creatinina de Sarah é de 95,56 mL/min, o que significa que ela atende aos critérios para a PrEP oral.";
+        resposta3 == value ? mensagem = "A afirmação é falsa. Quando os usuários da PrEP se esquecem de tomar uma dose, sendo no mesmo dia, devem tomá-la assim que se lembrarem e não esperar até o dia seguinte."
+            : mensagem = "A afirmação é falsa. Quando os usuários da PrEP se esquecem de tomar uma dose, sendo no mesmo dia, devem tomá-la assim que se lembrarem e não esperar até o dia seguinte.";
         $("#mensagem3").html(mensagem);
     } else {
         // esvazia a div de mensagem
@@ -105,8 +115,8 @@ $("input[name=questao3]").on("click", function () {
     }
 });
 
-// MÓDULO 1 QUESTÃO 4
-var resposta4 = "Falso"; // Resposta correta
+// MÓDULO 3 QUESTÃO 4
+var resposta4 = "Verdadeiro"; // Resposta correta
 $("input[name=questao4]").on("click", function () {
     var value = "";
     // seleciona apenas o que foi checado
@@ -119,16 +129,16 @@ $("input[name=questao4]").on("click", function () {
         });
 
         if (value === "Verdadeiro") {
-            $("#true4,#feedback4").addClass("resposta-incorreta")
-            $("#false4,#feedback4").removeClass("resposta-correta")
+            $("#true4,#feedback4").addClass("resposta-correta")
+            $("#false4,#feedback4").removeClass("resposta-incorreta")
         } else if (value === "Falso") {
-            $("#true4,#feedback4").removeClass("resposta-incorreta")
-            $("#false4,#feedback4").addClass("resposta-correta")
+            $("#true4,#feedback4").removeClass("resposta-correta")
+            $("#false4,#feedback4").addClass("resposta-incorreta")
         }
 
         var mensagem = "";
-        resposta4 == value ? mensagem = "A afirmação é falsa. Francisco atende aos critérios para PrEP oral, por se relacionar sexualmente com pessoas para além da parceria sorodiferente, e não utilizar o preservativo em todas as relações."
-            : mensagem = "A afirmação é falsa. Francisco atende aos critérios para PrEP oral, por se relacionar sexualmente com pessoas para além da parceria sorodiferente, e não utilizar o preservativo em todas as relações.";
+        resposta4 == value ? mensagem = "A afirmação é verdadeira. Embora a PrEP proteja contra HIV, não previne as outras IST, e outras medidas de prevenção devem ser adotadas."
+            : mensagem = "A afirmação é verdadeira. Embora a PrEP proteja contra HIV, não previne as outras IST, e outras medidas de prevenção devem ser adotadas.";
         $("#mensagem4").html(mensagem);
     } else {
         // esvazia a div de mensagem

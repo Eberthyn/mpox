@@ -17,7 +17,7 @@
 <body>
     <!-- Toolbar -->
     <header>
-        <img id="menuSuperior" src="../assets/images/logos/header.png" alt="Campus Virtual Fiocruz">
+        <img id="menuSuperior" class="img-fluid" src="../assets/images/logos/header.png" alt="Campus Virtual Fiocruz">
     </header>
 
     <div class="row" id="row-main">
@@ -40,334 +40,368 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+
+                    <div class="accordionMenu" id="headingModulo1">
                         <div class="row">
                             <div class="sectionTitle">
-                                <span class="tituloLista">Módulo 1</span>
+                                <span class="tituloLista" data-toggle="collapse" data-target="#collapseModulo1"
+                                    aria-expanded="false" aria-controls="collapseModulo1">Módulo 1<i
+                                        class="fas fa-caret-up caretDown"></i></span>
                             </div>
                         </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="barraStepper active">
-                                <div class="item active"></div>
+                    </div>
+
+                    <div id="collapseModulo1" class="collapse show" aria-labelledby="headingModulo1">
+                        <li>
+                            <div class="row">
+                                <div class="barraStepper active">
+                                    <div class="item active"></div>
+                                </div>
+                                <div class="sectionTitle">
+                                    <span class="tituloItem">Introdução</span>
+                                </div>
                             </div>
-                            <div class="sectionTitle">
-                                <span class="tituloItem">Introdução</span>
+                            <div class="row">
+                                <div class="barraStepper active"></div>
+                                <div class="sectionTitle">
+                                    <div class="iconeMenu"></div>
+                                    <a href="modulo1-introducao.html" class="subItem">Identificar os candidatos à
+                                        PrEP</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="barraStepper active"></div>
-                            <div class="sectionTitle">
-                                <div class="iconeMenu"></div>
-                                <a href="modulo1-introducao.html" class="subItem">Identificar os candidatos à PrEP</a>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="barraStepper">
+                                    <div class="item active"></div>
+                                </div>
+                                <div class="sectionTitle">
+                                    <span class="tituloItem">Aula 1</span>
+                                </div>
                             </div>
-                        </div>
-                    <li>
-                        <div class="row">
-                            <div class="barraStepper">
-                                <div class="item active"></div>
+                            <div class="row">
+                                <div class="barraStepper">
+                                </div>
+                                <div class="sectionTitle">
+                                    <div class="iconeMenu"></div>
+                                    <a href="modulo1-aula1.html" class="subItem">Critérios necessários para iniciar a
+                                        PrEP</a>
+                                </div>
                             </div>
-                            <div class="sectionTitle">
-                                <span class="tituloItem">Aula 1</span>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="barraStepper">
+                                    <div class="item"></div>
+                                </div>
+                                <div class="sectionTitle">
+                                    <span class="tituloItem">Aula 2</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="barraStepper">
+                            <div class="row">
+                                <div class="barraStepper"></div>
+                                <div class="sectionTitle">
+                                    <div class="iconeMenu"></div>
+                                    <a href="modulo1-aula2.html" class="subItem">Contraindicações para o uso da
+                                        PrEP</a>
+                                </div>
                             </div>
-                            <div class="sectionTitle">
-                                <div class="iconeMenu"></div>
-                                <a href="#" class="subItem">Critérios necessários para iniciar a
-                                    PrEP</a>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="barraStepper">
+                                    <div class="item"></div>
+                                </div>
+                                <div class="sectionTitle">
+                                    <a href="modulo1-atividade.html" class="tituloItem">Atividades Módulo 1</a>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="barraStepper">
-                                <div class="item"></div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="barraStepper" style="background-color: #00B9B9;">
+                                    <div class="item"></div>
+                                </div>
+                                <div class="sectionTitle">
+                                    <a href="modulo1-encerramento.html" class="tituloItem">Encerramento Módulo 1</a>
+                                </div>
                             </div>
-                            <div class="sectionTitle">
-                                <span class="tituloItem">Aula 2</span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="barraStepper"></div>
-                            <div class="sectionTitle">
-                                <div class="iconeMenu"></div>
-                                <a href="modulo1-aula2.html" class="subItem">Contraindicações para o uso da PrEP</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="barraStepper">
-                                <div class="item"></div>
-                            </div>
-                            <div class="sectionTitle">
-                                <a href="modulo1-atividade.html" class="tituloItem">Atividades Módulo 1</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="barraStepper" style="background-color: #00B9B9;">
-                                <div class="item"></div>
-                            </div>
-                            <div class="sectionTitle">
-                                <a href="modulo1-encerramento.html" class="tituloItem">Encerramento Módulo 1</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="sectionTitle">
-                                <span class="tituloLista">Módulo 2</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="barraStepper">
-                                <div class="item"></div>
-                            </div>
-                            <div class="sectionTitle">
-                                <span class="tituloItem">Introdução</span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="barraStepper"></div>
-                            <div class="sectionTitle">
-                                <div class="iconeMenu"></div>
-                                <a href="../modulo2/modulo2-introducao.html" class="subItem">Iniciar a PrEP oral</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="barraStepper">
-                                <div class="item"></div>
-                            </div>
-                            <div class="sectionTitle">
-                                <span class="tituloItem">Aula 1</span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="barraStepper"></div>
-                            <div class="sectionTitle">
-                                <div class="iconeMenu"></div>
-                                <a href="../modulo2/modulo2-aula1.html" class="subItem">Avaliação do uso da PrEP</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="barraStepper">
-                                <div class="item"></div>
-                            </div>
-                            <div class="sectionTitle">
-                                <span class="tituloItem">Aula 2</span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="barraStepper"></div>
-                            <div class="sectionTitle">
-                                <div class="iconeMenu"></div>
-                                <a href="../modulo2/modulo2-aula2.html" class="subItem">Introdução às modalidades da
-                                    PrEP</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="barraStepper">
-                                <div class="item"></div>
-                            </div>
-                            <div class="sectionTitle">
-                                <span class="tituloItem">Aula 3</span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="barraStepper"></div>
-                            <div class="sectionTitle">
-                                <div class="iconeMenu"></div>
-                                <a href="../modulo2/modulo2-aula3.html" class="subItem">Procedimentos para as consultas
-                                    inicial e de acompanhamento da PrEP</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="barraStepper">
-                                <div class="item"></div>
-                            </div>
-                            <div class="sectionTitle">
-                                <span class="tituloItem">Aula 4</span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="barraStepper"></div>
-                            <div class="sectionTitle">
-                                <div class="iconeMenu"></div>
-                                <a href="../modulo2/modulo2-aula4.html" class="subItem">Dispensa do medicamento</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="barraStepper">
-                                <div class="item"></div>
-                            </div>
-                            <div class="sectionTitle">
-                                <a href="../modulo2/modulo2-atividade.html" class="tituloItem">Atividades Módulo 2</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="barraStepper" style="background-color: #00B9B9;">
-                                <div class="item"></div>
-                            </div>
-                            <div class="sectionTitle">
-                                <a href="../modulo2/modulo2-encerramento.html" class="tituloItem">Encerramento Módulo
-                                    2</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
+                        </li>
+                    </div>
+                    <div class="accordionMenu" id="headingModulo2">
                         <div class="row">
                             <div class="sectionTitle">
-                                <span class="tituloLista">Módulo 3</span>
+                                <span class="tituloLista collapsed" data-toggle="collapse" data-target="#collapseModulo2"
+                                    aria-expanded="false" aria-controls="collapseModulo2">Módulo 2<i
+                                        class="fas fa-caret-up caretDown"></i></span>
                             </div>
                         </div>
-                    </li>
-                    <li>
+                        <div id="collapseModulo2" class="collapse" aria-labelledby="headingModulo2">
+                            <li>
+                                <div class="row">
+                                    <div class="barraStepper">
+                                        <div class="item"></div>
+                                    </div>
+                                    <div class="sectionTitle">
+                                        <span class="tituloItem">Introdução</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="barraStepper"></div>
+                                    <div class="sectionTitle">
+                                        <div class="iconeMenu"></div>
+                                        <a href="../modulo2/modulo2-introducao.html" class="subItem">Iniciar a PrEP
+                                            oral</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="barraStepper">
+                                        <div class="item"></div>
+                                    </div>
+                                    <div class="sectionTitle">
+                                        <span class="tituloItem">Aula 1</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="barraStepper"></div>
+                                    <div class="sectionTitle">
+                                        <div class="iconeMenu"></div>
+                                        <a href="../modulo2/modulo2-aula1.html" class="subItem">Avaliação do uso da
+                                            PrEP</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="barraStepper">
+                                        <div class="item"></div>
+                                    </div>
+                                    <div class="sectionTitle">
+                                        <span class="tituloItem">Aula 2</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="barraStepper"></div>
+                                    <div class="sectionTitle">
+                                        <div class="iconeMenu"></div>
+                                        <a href="../modulo2/modulo2-aula2.html" class="subItem">Introdução às
+                                            modalidades da
+                                            PrEP</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="barraStepper">
+                                        <div class="item"></div>
+                                    </div>
+                                    <div class="sectionTitle">
+                                        <span class="tituloItem">Aula 3</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="barraStepper"></div>
+                                    <div class="sectionTitle">
+                                        <div class="iconeMenu"></div>
+                                        <a href="../modulo2/modulo2-aula3.html" class="subItem">Procedimentos para as
+                                            consultas
+                                            inicial e de acompanhamento da PrEP</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="barraStepper">
+                                        <div class="item"></div>
+                                    </div>
+                                    <div class="sectionTitle">
+                                        <span class="tituloItem">Aula 4</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="barraStepper"></div>
+                                    <div class="sectionTitle">
+                                        <div class="iconeMenu"></div>
+                                        <a href="../modulo2/modulo2-aula4.html" class="subItem">Dispensa do
+                                            medicamento</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="barraStepper">
+                                        <div class="item"></div>
+                                    </div>
+                                    <div class="sectionTitle">
+                                        <a href="../modulo2/modulo2-atividade.html" class="tituloItem">Atividades Módulo
+                                            2</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="barraStepper" style="background-color: #00B9B9;">
+                                        <div class="item"></div>
+                                    </div>
+                                    <div class="sectionTitle">
+                                        <a href="../modulo2/modulo2-encerramento.html" class="tituloItem">Encerramento
+                                            Módulo
+                                            2</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+
+
+                    <div class="accordionMenu" id="headingModulo3">
                         <div class="row">
-                            <div class="barraStepper">
-                                <div class="item"></div>
-                            </div>
                             <div class="sectionTitle">
-                                <span class="tituloItem">Introdução</span>
+                                <span class="tituloLista collapsed" data-toggle="collapse" data-target="#collapseModulo3"
+                                    aria-expanded="false" aria-controls="collapseModulo3">Módulo 3<i
+                                        class="fas fa-caret-up caretDown"></i></span>
                             </div>
+                        </div>
+
+                        <div id="collapseModulo3" class="collapse" aria-labelledby="headingModulo3">
+                            <li>
+                                <div class="row">
+                                    <div class="barraStepper">
+                                        <div class="item"></div>
+                                    </div>
+                                    <div class="sectionTitle">
+                                        <span class="tituloItem">Introdução</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="barraStepper"></div>
+                                    <div class="sectionTitle">
+                                        <div class="iconeMenu"></div>
+                                        <a href="../modulo3/modulo3-introducao.html" class="subItem">Orientações e
+                                            mensagens
+                                            sobre PrEP</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="barraStepper">
+                                        <div class="item"></div>
+                                    </div>
+                                    <div class="sectionTitle">
+                                        <span class="tituloItem">Aula 1</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="barraStepper"></div>
+                                    <div class="sectionTitle">
+                                        <div class="iconeMenu"></div>
+                                        <a href="../modulo3/modulo3-aula1.html" class="subItem">Análise de situações
+                                            especiais
+                                            da PrEP
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="barraStepper">
+                                        <div class="item"></div>
+                                    </div>
+                                    <div class="sectionTitle">
+                                        <span class="tituloItem">Aula 2</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="barraStepper"></div>
+                                    <div class="sectionTitle">
+                                        <div class="iconeMenu"></div>
+                                        <a href="../modulo3/modulo3-aula2.html" class="subItem">Mensagem de orientação
+                                            sobre a
+                                            eficácia da PrEP</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="barraStepper">
+                                        <div class="item"></div>
+                                    </div>
+                                    <div class="sectionTitle">
+                                        <span class="tituloItem">Aula 3</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="barraStepper"></div>
+                                    <div class="sectionTitle">
+                                        <div class="iconeMenu"></div>
+                                        <a href="../modulo3/modulo3-aula3.html" class="subItem">Mensagem de orientação
+                                            sobre a
+                                            segurança da PrEP</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="barraStepper">
+                                        <div class="item"></div>
+                                    </div>
+                                    <div class="sectionTitle">
+                                        <span class="tituloItem">Aula 4</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="barraStepper"></div>
+                                    <div class="sectionTitle">
+                                        <div class="iconeMenu"></div>
+                                        <a href="../modulo3/modulo3-aula4.html" class="subItem">Mensagem de orientação
+                                            para
+                                            reduzir o estigma dos usuários da PrEP</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="barraStepper">
+                                        <div class="item"></div>
+                                    </div>
+                                    <div class="sectionTitle">
+                                        <a href="../modulo3/modulo3-atividade.html" class="tituloItem">Atividade Módulo
+                                            3</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="barraStepper" style="background-color: #00B9B9;">
+                                        <div class="item"></div>
+                                    </div>
+                                    <div class="sectionTitle">
+                                        <a href="../modulo3/modulo3-encerramento.html" class="tituloItem">Encerramento
+                                            Módulo
+                                            3</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
                         </div>
                         <div class="row">
-                            <div class="barraStepper"></div>
                             <div class="sectionTitle">
-                                <div class="iconeMenu"></div>
-                                <a href="../modulo3/modulo3-introducao.html" class="subItem">Orientações e mensagens
-                                    sobre PrEP</a>
+                                <a class="tituloLista" role="button" data-toggle="modal"
+                                    data-target="#modalReferencias"><i class="fas fa-file-alt"></i>Referências</a>
                             </div>
                         </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="barraStepper">
-                                <div class="item"></div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="sectionTitle">
+                                    <a data-toggle="modal" data-target="#modalCreditos" class="tituloLista"><i
+                                            class="fas fa-list"></i>Créditos</a>
+                                </div>
                             </div>
-                            <div class="sectionTitle">
-                                <span class="tituloItem">Aula 1</span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="barraStepper"></div>
-                            <div class="sectionTitle">
-                                <div class="iconeMenu"></div>
-                                <a href="../modulo3/modulo3-aula1.html" class="subItem">Análise de situações especiais
-                                    da PrEP
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="barraStepper">
-                                <div class="item"></div>
-                            </div>
-                            <div class="sectionTitle">
-                                <span class="tituloItem">Aula 2</span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="barraStepper"></div>
-                            <div class="sectionTitle">
-                                <div class="iconeMenu"></div>
-                                <a href="../modulo3/modulo3-aula2.html" class="subItem">Mensagem de orientação sobre a
-                                    eficácia da PrEP</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="barraStepper">
-                                <div class="item"></div>
-                            </div>
-                            <div class="sectionTitle">
-                                <span class="tituloItem">Aula 3</span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="barraStepper"></div>
-                            <div class="sectionTitle">
-                                <div class="iconeMenu"></div>
-                                <a href="../modulo3/modulo3-aula3.html" class="subItem">Mensagem de orientação sobre a
-                                    segurança da PrEP</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="barraStepper">
-                                <div class="item"></div>
-                            </div>
-                            <div class="sectionTitle">
-                                <span class="tituloItem">Aula 4</span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="barraStepper"></div>
-                            <div class="sectionTitle">
-                                <div class="iconeMenu"></div>
-                                <a href="../modulo3/modulo3-aula4.html" class="subItem">Mensagem de orientação para
-                                    reduzir o estigma dos usuários da PrEP</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="barraStepper">
-                                <div class="item"></div>
-                            </div>
-                            <div class="sectionTitle">
-                                <a href="../modulo3/modulo3-atividade.html" class="tituloItem">Atividade Módulo 3</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="barraStepper" style="background-color: #00B9B9;">
-                                <div class="item"></div>
-                            </div>
-                            <div class="sectionTitle">
-                                <a href="../modulo3/modulo3-encerramento.html" class="tituloItem">Encerramento Módulo
-                                    3</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="sectionTitle">
-                                <a href="../referencias.html" class="tituloLista"><i
-                                        class="fas fa-file-alt"></i>Referências</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="sectionTitle">
-                                <a href="../creditos.html" class="tituloLista"><i class="fas fa-list"></i>Créditos</a>
-                            </div>
-                        </div>
-                    </li>
+                        </li>
                 </ul>
             </nav>
         </div>
@@ -382,17 +416,32 @@
                     o uso da profilaxia pré-exposição oral (PrEP) e, para isso, é necessário realizar as seguintes
                     investigações, que são:</p>
 
-                <div class="row centro imagem">
-                    <div class="col-md-4">
-                        <img src="../assets/images/modulo1/aula1/img1.png" alt="" class="img-fluid">
+                <div class="row centro">
+                    <div class="col-md-5">
+                        <div class="imagem">
+                            <img src="../assets/images/modulo1/aula1/img1.png" alt="" class="img-fluid">
+                            <div><small class="text-muted">Fonte: Fiocruz Imagem</small></div>
+                        </div>
                     </div>
                     <div class="col-md-6">
-                        <h2>Testar negativo/não reagente no teste de HIV</h2>
-                        <p>Realize o teste de HIV preferencialmente no mesmo dia em que a pessoa iniciar a PrEP e use
-                            preferencialmente testes rápidos de HIV no local de atendimento. Em caso de teleatendimento,
-                            pode-se utilizar o autoteste para HIV.</p>
+                        <ol>
+                            <li>Testar negativo/não reagente no teste de HIV</li>
+                            <li>Não haver exposição de risco ao HIV nas últimas 72 horas</li>
+                            <li>Não haver suspeita de infecção aguda pelo HIV</li>
+                            <li>Não haver contraindicações para os medicamentos da PrEP</li>
+                            <li>Possuir cálculo de clearance da creatinina ≥ 60ml/min</li>
+                            <li>Ter disposição para usar a PrEP de acordo com a prescrição e para fazer o teste de HIV e
+                                outras Infecções Sexualmente Transmissíveis (IST) de forma periódica</li>
+                            <li>Indicar vulnerabilidade para infecção pelo HIV</li><br>
+                            <p>Veja os detalhes a seguir.</p>
+                        </ol>
                     </div>
                 </div>
+
+                <h2>1. Testar negativo/não reagente no teste</h2>
+                <p>Realize o teste de HIV preferencialmente no mesmo dia em que a pessoa iniciar a PrEP e use
+                    preferencialmente testes rápidos de HIV no local de atendimento. Em caso de teleatendimento,
+                    pode-se utilizar o autoteste para HIV.</p>
 
                 <div class="row saibaMais">
                     <div class="col-md-2 centro">
@@ -411,10 +460,12 @@
                     gratuitamente.</p>
 
 
-                <h2>Sem exposição de risco ao HIV nas últimas 72 horas</h2>
+                <h2>2. Não haver exposição de risco ao HIV nas últimas 72 horas</h2>
 
-                <p>Verifique se a pessoa não foi exposta ao HIV nas últimas 72 horas. Caso ela tenha alguma
-                    exposição de risco nesse período, avalie a indicação da PEP.</p>
+                <p>Verifique se a pessoa não foi exposta ao HIV nas últimas 72 horas. Caso ela tenha alguma exposição de
+                    risco nesse período, avalie a indicação da <a data-toggle="tooltip" class="nobr"
+                        data-original-title="Como profilaxia para o risco de infecção pelo HIV, a PEP tem por base o uso de medicamentos antirretrovirais com o objetivo de reduzir o risco de infecção em situações de exposição ao vírus."><u>PEP
+                            (Profilaxia Pós-Exposição ao HIV).</u></a></p>
 
 
 
@@ -424,7 +475,7 @@
                         <img class="img-fluid" src="../assets/images/icones/pergunte.png" alt="Saiba mais">
                     </div>
                     <div class="col-md-8">
-                        <h3>Pergunte ao(à) usuário(a) quando foi sua última exposição sexual de risco?</h3>
+                        <p><b>Pergunte ao(à) usuário(a) quando foi sua última exposição sexual de risco?</b></p>
                     </div>
                 </div>
 
@@ -432,7 +483,7 @@
                     novamente, e ela continua tendo um risco significativo de infecção pelo HIV, inicie a PrEP
                     imediatamente.</p>
 
-                <h3>Não há suspeita de infecção aguda pelo HIV</h3>
+                <h3>3. Não haver suspeita de infecção aguda pelo HIV</h3>
 
                 <p>Verifique se a pessoa apresenta sinais e sintomas que possam representar uma infecção aguda pelo HIV,
                     sem que existam outras hipóteses diagnósticas mais prováveis. Verifique se há sinais e sintomas de
@@ -444,7 +495,8 @@
                         <img class="img-fluid" src="../assets/images/icones/pergunte.png" alt="Saiba mais">
                     </div>
                     <div class="col-md-8">
-                        <h3>Pergunte ao(à) usuário(a) sobre suas exposições de risco recentes com relação ao HIV.</h3>
+                        <p><b>Pergunte ao(à) usuário(a) sobre suas exposições de risco recentes com relação ao HIV.</b>
+                        </p>
                     </div>
                 </div>
 
@@ -467,7 +519,7 @@
                         a oito semanas.</li>
                 </ul>
 
-                <h3>Não há contraindicações para os medicamentos da PrEP</h3>
+                <h3>4. Não haver contraindicações para os medicamentos da PrEP</h3>
 
                 <p>O(a) usuário(a) não deve ter alergia a nenhum medicamento do esquema da PrEP. No Brasil a PrEP oral é
                     composta por Fumarato de Tenofovir Desoproxila (TDF) e Entricitabina (FTC).</p>
@@ -478,14 +530,13 @@
                     usada concomitantemente, desde que o uso dessas substâncias não interfira na adesão à tomada do
                     medicamento.</p>
 
-                <h3>Cálculo de clearance da creatinina ≥ 60ml/min</h3>
+                <h3>5. Possuir cálculo de clearance da creatinina ≥ 60ml/min</h3>
 
                 <p>Para realizar a avaliação renal, é necessário calcular o clearance estimado da creatinina. Esse
                     cálculo é realizado por meio da equação de COCKCROFT-GAULT ou Fórmula de CKD – EPI19.</p>
 
                 <div class="centro">
-                    <div class="blocoTexto">
-
+                    <div class="textoDestacado">
                         <h3>COCKCROFT-GAULT</h3>
                         <hr>
                         <p>Homens: ClCr = [140 – idade (anos)] x peso (kg) x 1 x creatinina sérica (mg/dL) x 72<br>
@@ -494,266 +545,320 @@
                     </div>
                 </div>
 
-                <div class="centro">
-                    <table class="tabela ">
-                        <tr>
-                            <th style="border-right: 1px solid white">Variável</th>
-                            <th style="border-left: 1px solid white">Unidade de Medida</th>
-                        </tr>
-                        <tr>
-                            <td>Idade</td>
-                            <td>Anos</td>
-                        </tr>
-                        <tr>
-                            <td>SerumCreat (creatinina sérica)</td>
-                            <td>Miligramas/decilitros (mg/dl) ou Micromol/litros (µmol/L)</td>
-                        </tr>
-                        <tr>
-                            <td>Pesos</td>
-                            <td>Quilogramas (kg)</td>
-                        </tr>
-                        <tr>
-                            <td>Sexo</td>
-                            <td>Em mg/dl <br>
-                                Homens = 1 <br>
-                                Mulheres = 0,85 <br>
-                                <br>
-                                Em µmol/L <br>
-                                Homens = 1,23 <br>
-                                Mulheres = 1,04 <br>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-
-                <p>A solicitação e coleta do exame de creatinina deve ser feita preferencialmente no dia da primeira
-                    dispensação de PrEP, podendo-se aguardar seu resultado dentro do prazo do primeiro retorno do(a)
-                    usuário(a) em 30 dias, sem prejuízo para a primeira dispensação da profilaxia.</p>
-
-                <p>Para pessoas sem histórico de doença renal ou fator de risco, o resultado do exame não deve atrasar o
-                    início da PrEP.</p>
-
-                <div class="row saibaMais">
-                    <div class="col-md-2 centro">
-                        <img src="../assets/images/icones/saibaMais.png" alt="Saiba mais" class="img-fluid">
-                    </div>
-                    <div class="col-md-8">
-                        <h3>SAIBA MAIS</h3>
-                        <p>Para calcular o clearance da creatinina, você pode utilizar a
-                            <a href="https://www.sbn.org.br/profissional/utilidades/calculadoras-nefrologicas"
-                                target="_blank" rel="noopener noreferrer">Calculadora Virtual de CICr.</a>
-                        </p>
+                <div class="tabela">
+                    <div class="centro">
+                        <table>
+                            <tr>
+                                <th style="border-right: 1px solid white">Variável</th>
+                                <th style="border-left: 1px solid white">Unidade de Medida</th>
+                            </tr>
+                            <tr>
+                                <td>Idade</td>
+                                <td>Anos</td>
+                            </tr>
+                            <tr>
+                                <td>SerumCreat (creatinina sérica)</td>
+                                <td>Miligramas/decilitros (mg/dl) ou<br> Micromol/litros (µmol/L)</td>
+                            </tr>
+                            <tr>
+                                <td>Pesos</td>
+                                <td>Quilogramas (kg)</td>
+                            </tr>
+                            <tr>
+                                <td>Sexo</td>
+                                <td>Em mg/dl <br>
+                                    Homens = 1 <br>
+                                    Mulheres = 0,85 <br>
+                                    <br>
+                                    Em µmol/L <br>
+                                    Homens = 1,23 <br>
+                                    Mulheres = 1,04 <br>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
 
-                <h3>Disposição para usar a PrEP de acordo com a prescrição e para fazer o teste de HIV e outras
-                    Infecções Sexualmente Transmissíveis (IST) de forma periódica</h3>
+                <p>Indica-se a dosagem da creatinina na avaliação inicial, conforme a faixa etária e histórico do
+                    usuário:</p>
 
-                <p>A PrEP oferece altos níveis de proteção contra a infecção pelo HIV para aqueles que tomam o
-                    medicamento de acordo com a prescrição, e para isso, as pessoas devem:</p>
+                <p>Idade < 30 anos e sem fatores de risco para redução da função renal: opcional.</p>
 
-                <ul>
-                    <li class="icon circle">Tomar a PrEP de acordo com a prescrição.</li>
-                    <li class="icon circle">Para evitar esquecimentos, indica-se, de preferência, sempre no mesmo
-                        horário.</li>
-                    <li class="icon circle">Tomar a PrEP com ou sem alimentos.</li>
-                    <li class="icon circle">Fazer o teste a cada três meses ou quatro meses, ou seja, o(a) usuário(a)
-                        deve estar disposto a fazer o teste de HIV de forma periódica. O Ministério da Saúde recomenda
-                        que o teste de HIV seja feito a cada 3 ou 4 meses. Evidências científicas têm demonstrado que
-                        PrEP, quando tomada conforme prescrito, tem níveis de proteção ao HIV superiores a 99%.</li>
-                </ul>
+                        <p>Idade ≥ 30 anos e/ou presença de fatores de risco para redução da função renal: avaliar
+                            solicitar na primeira consulta.</p>
 
-                <h3>Indicações de vulnerabilidade para infecção pelo HIV</h3>
+                        <p>A solicitação e coleta do exame de função renal deve ser feita preferencialmente no dia da
+                            primeira dispensação de PrEP, podendo-se aguardar seu resultado dentro do prazo do primeiro
+                            retorno do usuário em 30 dias, sem prejuízo para a primeira dispensação da profilaxia. Para
+                            pessoas sem histórico de doença renal ou fator de risco, o resultado do exame não deve
+                            atrasar o início da PrEP.</p>
 
-                <p>Confira a seguir, as orientações para identificação de indivíduos com risco significativo de infecção
-                    pelo HIV.</p>
+                        <p>Para indivíduos com idade menor do que 30 anos e sem fator de risco, a realização do exame de
+                            creatinina no seguimento é opcional. Para pessoas com idade entre 30 e 50 anos, sem fator de
+                            risco, o exame pode ser realizado a cada 12 meses. Nos indivíduos com idade superior a 50
+                            anos OU com história de comorbidades, tais como HAS e diabetes, OU com estimativa inicial do
+                            ClCr menor que 90 mL/min, a reavaliação da função renal deve ser mais frequente, a cada seis
+                            meses, pelo maior risco de declínio para valores anormais do clearance de creatinina.</p>
 
-                <!-- Accordion 1 -->
-                <div class="accordion">
-                    <!-- Accordion card 1-->
-                    <div class="card">
-                        <!-- Card header -->
-                        <div class="card-header" id="headingOne1">
-                            <a class="collapsed" data-toggle="collapse" data-target="#collapseOne1"
-                                aria-expanded="false" aria-controls="collapseOne1">
-                                <p class="pinfo"><b>Solicitou a PrEP, independentemente dos riscos informados</b><i
-                                        class="fas fa-caret-up caretDown"></i></p>
-                            </a>
-                        </div>
-
-                        <!-- Card body -->
-                        <div id="collapseOne1" class="collapse" aria-labelledby="headingOne1">
-                            <div class="card-body">
-                                <p>As pessoas com alto risco de infecção pelo HIV que solicitam a PrEP tendem a
-                                    apresentar maior:</p>
-                                <ul>
-                                    <li class="icon circle">Uso da PrEP</li>
-                                    <li class="icon circle">Adesão à PrEP</li>
-                                    <li class="icon circle">Permanência na PrEP</li>
-                                </ul>
-                                <p>Lembre-se de considerar sempre a possibilidade de administrar a PrEP a qualquer
-                                    pessoa com um risco significativo de HIV!</p>
+                        <div class="row saibaMais">
+                            <div class="col-md-2 centro">
+                                <img src="../assets/images/icones/saibaMais.png" alt="Saiba mais" class="img-fluid">
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- Accordion card 2 -->
-                    <div class="card">
-                        <!-- Card header -->
-                        <div class="card-header" id="headingTwo2">
-                            <a class="collapsed" data-toggle="collapse" data-target="#collapseTwo2"
-                                aria-expanded="false" aria-controls="collapseTwo2">
-                                <p class="pinfo"><b>Tem uma parceria sexual com HIV sem supressão viral</b><i
-                                        class="fas fa-caret-up caretDown"></i>
+                            <div class="col-md-8">
+                                <h3>SAIBA MAIS</h3>
+                                <p>Para calcular o clearance da creatinina, você pode utilizar a
+                                    <a href="https://www.sbn.org.br/profissional/utilidades/calculadoras-nefrologicas"
+                                        target="_blank" rel="noopener noreferrer">Calculadora Virtual de CICr.</a>
                                 </p>
-                            </a>
-                        </div>
-
-                        <!-- Card body -->
-                        <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo2">
-                            <div class="card-body">
-                                <p>A PrEP fornece proteção adicional para as parcerias sorodiferentes nas seguintes
-                                    situações:</p>
-                                <ul>
-                                    <li class="icon circle">Durante o tempo que o tratamento antirretroviral leva para
-                                        suprimir a carga viral (até 6 meses).</li>
-                                    <li class="icon circle">Se tiver dúvidas sobre a eficácia do tratamento de sua
-                                        parceria, ou em caso de interrupções na adesão terapêutica da parceria.</li>
-                                    <li class="icon circle">Se tiver outras parcerias sexuais além da parceria com a
-                                        pessoa que vive com HIV/aids em tratamento antirretroviral.</li>
-                                </ul>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Accordion card 3 -->
-                    <div class="card" style="margin-bottom: 30px;">
+                        <h3>6. Ter disposição para usar a PrEP de acordo com a prescrição e para fazer o teste de HIV e
+                            outras Infecções Sexualmente Transmissíveis (IST) de forma periódica</h3>
 
-                        <!-- Card header -->
-                        <div class="card-header" id="headingThree3">
-                            <a class="collapsed" data-toggle="collapse" data-target="#collapseThree3"
-                                aria-expanded="false" aria-controls="collapseThree3">
-                                <p class="pinfo"><b>Usou PEP por exposição sexual</b><i
-                                        class="fas fa-caret-up caretDown"></i></p>
-                            </a>
-                        </div>
+                        <p>A PrEP oferece altos níveis de proteção contra a infecção pelo HIV para aqueles que tomam o
+                            medicamento de acordo com a prescrição, e para isso, as pessoas devem:</p>
 
-                        <!-- Card body -->
-                        <div id="collapseThree3" class="collapse" aria-labelledby="headingThree3">
-                            <div class="card-body">
-                                <p>Na busca repetida por PEP por exposição sexual, há maior vulnerabilidade à infecção
-                                    do HIV, se há relato de uso de Profilaxia Pós-Exposição (PEP) sexual ao HIV nos
-                                    últimos 6 meses.</p>
+                        <ul>
+                            <li class="icon circle">Tomar a PrEP de acordo com a prescrição.</li>
+                            <li class="icon circle">Para evitar esquecimentos, indica-se, de preferência, sempre no
+                                mesmo
+                                horário.</li>
+                            <li class="icon circle">Tomar a PrEP com ou sem alimentos.</li>
+                            <li class="icon circle">Fazer o teste a cada três meses ou quatro meses, ou seja, o(a)
+                                usuário(a)
+                                deve estar disposto a fazer o teste de HIV de forma periódica. O Ministério da Saúde
+                                recomenda
+                                que o teste de HIV seja feito a cada 3 ou 4 meses.
+                            </li>
+                        </ul>
+
+                        <p>Evidências científicas têm demonstrado que PrEP, quando tomada conforme prescrito, tem níveis
+                            de proteção ao HIV superiores a 99%.</p>
+
+                        <h3>7. Indicar vulnerabilidade para infecção pelo HIV</h3>
+
+                        <p>Confira a seguir, as orientações para identificação de indivíduos com risco significativo de
+                            infecção
+                            pelo HIV.</p>
+
+                        <!-- Accordion -->
+                        <div class="accordion">
+                            <!-- Accordion card 1-->
+                            <div class="card">
+                                <!-- Card header -->
+                                <div class="card-header" id="headingOne1">
+                                    <a class="collapsed" data-toggle="collapse" data-target="#collapseOne1"
+                                        aria-expanded="false" aria-controls="collapseOne1">
+                                        <p class="pinfo"><b>Solicitou a PrEP, independentemente dos riscos
+                                                informados</b><i class="fas fa-caret-up caretDown"></i></p>
+                                    </a>
+                                </div>
+
+                                <!-- Card body -->
+                                <div id="collapseOne1" class="collapse" aria-labelledby="headingOne1">
+                                    <div class="card-body">
+                                        <p>As pessoas com alto risco de infecção pelo HIV que solicitam a PrEP tendem a
+                                            apresentar maior:</p>
+                                        <ul>
+                                            <li class="icon circle">Uso da PrEP</li>
+                                            <li class="icon circle">Adesão à PrEP</li>
+                                            <li class="icon circle">Permanência na PrEP</li>
+                                        </ul>
+                                        <p>Lembre-se de considerar sempre a possibilidade de administrar a PrEP a
+                                            qualquer
+                                            pessoa com um risco significativo de HIV!</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Accordion card 2 -->
+                            <div class="card">
+                                <!-- Card header -->
+                                <div class="card-header" id="headingTwo2">
+                                    <a class="collapsed" data-toggle="collapse" data-target="#collapseTwo2"
+                                        aria-expanded="false" aria-controls="collapseTwo2">
+                                        <p class="pinfo"><b>Tem uma parceria sexual com HIV sem supressão viral</b><i
+                                                class="fas fa-caret-up caretDown"></i>
+                                        </p>
+                                    </a>
+                                </div>
+
+                                <!-- Card body -->
+                                <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo2">
+                                    <div class="card-body">
+                                        <p>A PrEP fornece proteção adicional para as parcerias sorodiferentes nas
+                                            seguintes
+                                            situações:</p>
+                                        <ul>
+                                            <li class="icon circle">Durante o tempo que o tratamento antirretroviral
+                                                leva para
+                                                suprimir a carga viral (até 6 meses).</li>
+                                            <li class="icon circle">Se tiver dúvidas sobre a eficácia do tratamento de
+                                                sua
+                                                parceria, ou em caso de interrupções na adesão terapêutica da parceria.
+                                            </li>
+                                            <li class="icon circle">Se tiver outras parcerias sexuais além da parceria
+                                                com a
+                                                pessoa que vive com HIV/aids em tratamento antirretroviral.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Accordion card 3 -->
+                            <div class="card">
+
+                                <!-- Card header -->
+                                <div class="card-header" id="headingThree3">
+                                    <a class="collapsed" data-toggle="collapse" data-target="#collapseThree3"
+                                        aria-expanded="false" aria-controls="collapseThree3">
+                                        <p class="pinfo"><b>Usou PEP por exposição sexual</b><i
+                                                class="fas fa-caret-up caretDown"></i></p>
+                                    </a>
+                                </div>
+
+                                <!-- Card body -->
+                                <div id="collapseThree3" class="collapse" aria-labelledby="headingThree3">
+                                    <div class="card-body">
+                                        <p>Na busca repetida por PEP por exposição sexual, há maior vulnerabilidade à
+                                            infecção
+                                            do HIV, se há relato de uso de Profilaxia Pós-Exposição (PEP) sexual ao HIV
+                                            nos
+                                            últimos 6 meses.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Accordion card 4 -->
+                            <div class="card">
+
+                                <!-- Card header -->
+                                <div class="card-header" id="headingThree4">
+                                    <a class="collapsed" data-toggle="collapse" data-target="#collapseThree4"
+                                        aria-expanded="false" aria-controls="collapseThree4">
+                                        <p class="pinfo"><b>Uso irregular de preservativos</b><i
+                                                class="fas fa-caret-up caretDown"></i></p>
+                                    </a>
+                                </div>
+
+                                <!-- Card body -->
+                                <div id="collapseThree4" class="collapse" aria-labelledby="headingThree4">
+                                    <div class="card-body">
+                                        <p>Não usar preservativos aumenta o risco de infecção pelo HIV.<br>
+                                            Considere a possibilidade de oferecer PrEP para pessoas que:</p>
+                                        <ul>
+                                            <li class="icon circle">Referem ter tido relações sexuais sem preservativo.
+                                            </li>
+                                            <li class="icon circle">Expressam preocupação pelo uso futuro de
+                                                preservativos.</li>
+                                            <li class="icon circle">Expressam o desejo de deixar de usar preservativos.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Accordion card 5 -->
+                            <div class="card">
+
+                                <!-- Card header -->
+                                <div class="card-header" id="headingThree5">
+                                    <a class="collapsed" data-toggle="collapse" data-target="#collapseThree5"
+                                        aria-expanded="false" aria-controls="collapseThree5">
+                                        <p class="pinfo"><b>Parceria sexual com alto risco de infecção pelo HIV</b><i
+                                                class="fas fa-caret-up caretDown"></i></p>
+                                    </a>
+                                </div>
+
+                                <!-- Card body -->
+                                <div id="collapseThree5" class="collapse" aria-labelledby="headingThree5">
+                                    <div class="card-body">
+                                        <p>Pode-se considerar que os indivíduos correm um risco considerável de infecção
+                                            pelo
+                                            HIV se tiverem parcerias sexuais com alto risco de infecção pelo HIV. Por
+                                            exemplo,
+                                            vivem em uma zona de alta prevalência com uma parceria que tem outras
+                                            parcerias
+                                            sexuais simultâneas.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Accordion card 6 -->
+                            <div class="card" style="margin-bottom: 30px;">
+
+                                <!-- Card header -->
+                                <div class="card-header" id="headingThree6">
+                                    <a class="collapsed" data-toggle="collapse" data-target="#collapseThree6"
+                                        aria-expanded="false" aria-controls="collapseThree6">
+                                        <p class="pinfo"><b>Históricos recentes de Infecções Sexualmente Transmissíveis
+                                                (IST)</b><i class="fas fa-caret-up caretDown"></i></p>
+                                    </a>
+                                </div>
+
+                                <!-- Card body -->
+                                <div id="collapseThree6" class="collapse" aria-labelledby="headingThree6">
+                                    <div class="card-body">
+                                        <p>Históricos recentes de IST determinados por meio de testagem ou relatados
+                                            pela pessoa
+                                            ou tratamento sindrômico, determinado por:</p>
+                                        <ul>
+                                            <li class="icon circle">Testagem ou indicados pela pessoa.</li>
+                                            <li class="icon circle">Tratamento sindrômico de IST.</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                        <!-- Fim Accordion -->
 
-                    <!-- Accordion card 4 -->
-                    <div class="card" style="margin-bottom: 30px;">
+                        <h3>Indicações de vulnerabilidade para infecção pelo HIV</h3>
 
-                        <!-- Card header -->
-                        <div class="card-header" id="headingThree4">
-                            <a class="collapsed" data-toggle="collapse" data-target="#collapseThree4"
-                                aria-expanded="false" aria-controls="collapseThree4">
-                                <p class="pinfo"><b>Uso irregular de preservativos</b><i
-                                        class="fas fa-caret-up caretDown"></i></p>
-                            </a>
-                        </div>
+                        <div class="centro">
+                            <div class="col-md-10">
+                                <div class="imagem">
+                                    <img src="../assets/images/modulo1/aula1/img2.png"
+                                        alt="Mulher com palma da mão aberta" class="img-fluid">
+                                    <div><small class="text-muted">Fonte: Freepik</small></div>
 
-                        <!-- Card body -->
-                        <div id="collapseThree4" class="collapse" aria-labelledby="headingThree4">
-                            <div class="card-body">
-                                <p>Não usar preservativos aumenta o risco de infecção pelo HIV.<br>
-                                    Considere a possibilidade de oferecer PrEP para pessoas que:</p>
-                                <ul>
-                                    <li class="icon circle">Referem ter tido relações sexuais sem preservativo.</li>
-                                    <li class="icon circle">Expressam preocupação pelo uso futuro de preservativos.</li>
-                                    <li class="icon circle">Expressam o desejo de deixar de usar preservativos.</li>
-                                </ul>
+                                    <ol class="lista-imagem">
+                                        <li>Solicitação ou desejo de usar PrEP, independente de relatar riscos.</li>
+                                        <li>Repetição de práticas sexuais anais ou vaginais com penetração sem o uso de
+                                            preservativo.
+                                        </li>
+                                        <li>Frequência de relações sexuais com parcerias eventuais, quantidade e
+                                            diversidade
+                                            dessas
+                                            parcerias.</li>
+                                        <li>Histórico de episódios de IST.</li>
+                                        <li>Busca repetida por PEP.</li>
+                                        <li>Contextos de relações sexuais em troca de dinheiro, objetos de valor,
+                                            drogas,
+                                            moradia
+                                            etc.
+                                        </li>
+                                        <li>Uso de Chemsex: prática sexual sob a influência de drogas psicoativas
+                                            (metanfetaminas,
+                                            gama-hidroxibutirato – GHB, MDMA, cocaína, poppers) com a finalidade de
+                                            melhorar
+                                            ou
+                                            facilitar as
+                                            experiências sexuais.</li>
+                                    </ol>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Accordion card 5 -->
-                    <div class="card" style="margin-bottom: 30px;">
-
-                        <!-- Card header -->
-                        <div class="card-header" id="headingThree5">
-                            <a class="collapsed" data-toggle="collapse" data-target="#collapseThree5"
-                                aria-expanded="false" aria-controls="collapseThree5">
-                                <p class="pinfo"><b>Parceria sexual com alto risco de infecção pelo HIV</b><i
-                                        class="fas fa-caret-up caretDown"></i></p>
-                            </a>
+                        <!-- Botões de navegação -->
+                        <div class="row botao">
+                            <a href="modulo1-introducao.html" class="btn btn-sm" id="botaoVoltar" role="button"
+                                alt="Voltar">
+                                <strong><i class="fas fa-chevron-left"></i>Introdução Módulo 1</strong></a>
+                            <a href="modulo1-aula2.html" class="btn btn-sm" id="botaoAvancar" role="button"
+                                alt="Avançar">
+                                <strong>Módulo 1 Aula 2<i class="fas fa-chevron-right"></i></strong></a>
                         </div>
-
-                        <!-- Card body -->
-                        <div id="collapseThree5" class="collapse" aria-labelledby="headingThree5">
-                            <div class="card-body">
-                                <p>Pode-se considerar que os indivíduos correm um risco considerável de infecção pelo
-                                    HIV se tiverem parcerias sexuais com alto risco de infecção pelo HIV. Por exemplo,
-                                    vivem em uma zona de alta prevalência com uma parceria que tem outras parcerias
-                                    sexuais simultâneas.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Accordion card 6 -->
-                    <div class="card" style="margin-bottom: 30px;">
-
-                        <!-- Card header -->
-                        <div class="card-header" id="headingThree6">
-                            <a class="collapsed" data-toggle="collapse" data-target="#collapseThree6"
-                                aria-expanded="false" aria-controls="collapseThree6">
-                                <p class="pinfo"><b>Históricos recentes de Infecções Sexualmente Transmissíveis
-                                        (IST)</b><i class="fas fa-caret-up caretDown"></i></p>
-                            </a>
-                        </div>
-
-                        <!-- Card body -->
-                        <div id="collapseThree6" class="collapse" aria-labelledby="headingThree6">
-                            <div class="card-body">
-                                <p>Históricos recentes de IST determinados por meio de testagem ou relatados pela pessoa
-                                    ou tratamento sindrômico, determinado por:</p>
-                                <ul>
-                                    <li class="icon circle">Testagem ou indicados pela pessoa.</li>
-                                    <li class="icon circle">Tratamento sindrômico de IST.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Fim Accordion 1 -->
-
-                <h3>Indicações de vulnerabilidade para infecção pelo HIV</h3>
-
-                <div class="imagem centro">
-                    <img src="../assets/images/modulo1/aula1/img2.png" alt="Mulher com palma da mão aberta"
-                        class="img-fluid">
-                </div>
-
-                <ol>
-                    <li>Solicitação ou desejo de usar PrEP, independente de relatar riscos.</li>
-                    <li>Repetição de práticas sexuais anais ou vaginais com penetração sem o uso de preservativo.
-                    </li>
-                    <li>Frequência de relações sexuais com parcerias eventuais, quantidade e diversidade dessas
-                        parcerias.</li>
-                    <li>Histórico de episódios de IST.</li>
-                    <li>Busca repetida por PEP.</li>
-                    <li>Contextos de relações sexuais em troca de dinheiro, objetos de valor, drogas, moradia etc.
-                    </li>
-                    <li>Uso de Chemsex: prática sexual sob a influência de drogas psicoativas (metanfetaminas,
-                        gama-hidroxibutirato – GHB, MDMA, cocaína, poppers) com a finalidade de melhorar ou
-                        facilitar as
-                        experiências sexuais.</li>
-                </ol>
-
-                <!-- Botões de navegação -->
-                <div class="row botao">
-                    <a href="modulo1-introducao.html" class="btn btn-sm" id="botaoVoltar" role="button" alt="Voltar">
-                        <strong><i class="fas fa-chevron-left"></i>Introdução Módulo 1</strong></a>
-                    <a href="modulo1-aula2.html" class="btn btn-sm" id="botaoAvancar" role="button" alt="Avançar">
-                        <strong>Módulo 1 Aula 2 <i class="fas fa-chevron-right"></i></strong></a>
-                </div>
             </div>
 
             <!-- Rodapé -->
@@ -768,9 +873,47 @@
         </div>
     </div>
 
+    <!-- Modal Referências -->
+    <div class="modal fade" id="modalReferencias" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="TituloModalCentralizado">Referências Bibliográficas</h1>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <modal-referencias></modal-referencias>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Créditos -->
+    <div class="modal fade" id="modalCreditos" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="TituloModalCentralizado">Créditos</h1>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <modal-creditos></modal-creditos>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Arquivos JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/modalReferencias.js"></script>
+    <script src="../assets/js/modalCreditos.js"></script>
 </body>

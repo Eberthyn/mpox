@@ -12,17 +12,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <link href="./assets/css/styles.css" rel="stylesheet">
+    <style>
+        h1 {
+            font-size: 34px;
+        }
+    </style>
 </head>
 
 <body>
+    <section class="homePage">
+        <!-- Toolbar -->
+        <header>
+            <img src="assets/images/home/imgCapa.png" class="img-fluid" alt="Capa do Curso">
+        </header>
 
-    <!-- Toolbar -->
-    <header>
-        <img src="assets/images/home/imgCapa.png" class="img-fluid" alt="Capa do Curso">
-    </header>
+        <!-- Capa do Curso-->
 
-    <!-- Capa do Curso-->
-    <div>
         <h1 class="text-center">
             <span style="color: #00B9B9;">Curso</span><br>
             <span style="color: #0545A6;">PROFILAXIA PRÉ-EXPOSIÇÃO DE RISCO<br>
@@ -32,210 +37,169 @@
 
         <!-- Botão Conheça o Curso -->
         <div class="row botao">
-            <a class="btn btn-sm collapsed" id="botaoConhecer" role="button" data-toggle="collapse"
-                data-target=".mostraAula" aria-expanded="false" aria-controls="collapseExample" alt="Conheça o curso">
-                <strong>Conheça o curso</strong>
-                <i class="fas fa-chevron-up chevronUp"></i></a>
+            <a href="#apresentacao" class="btn btn-sm" id="botaoConhecer" role="button" alt="Conheça o curso">
+                <strong>Conheça o curso</strong><i class="fas fa-chevron-down chevronUp"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Apresentação -->
+    <div class="conteudoHome fundoTexto">
+        <h1 class="text-center" id="apresentacao">Apresentação</h1>
+
+        <p>Olá, seja bem-vindo(a) ao curso Profilaxia <b>Pré-Exposição de Risco à Infecção pelo HIV PreP Oral</b>.
+            Neste
+            curso, você irá conhecer como realizar a identificação de pessoas em situação de vulnerabilidade para a
+            infecção por HIV que sejam possíveis candidatas para uso da PrEP oral, o manejo inicial e o seguimento
+            destes usuários e situações especiais que os profissionais de saúde podem encontrar em sua prática,
+            assim
+            como sugestões de estratégias de aconselhamento e de minimização do estigma sobre a PrEP.</p>
+
+        <p>Este é um curso on-line na modalidade autoinstrucional, em que o protagonismo do aprendizado está no
+            aprendiz, sendo direcionado aos profissionais da saúde que atendam pessoas em situação de maior
+            vulnerabilidade para o HIV e tem o objetivo desenvolver as capacidades e habilidades desses
+            profissionais
+            para ofertar a PrEP oral de acordo com as recomendações do Ministério da Saúde.</p>
+
+        <!-- Video 1 -->
+        <div class="row justify-content-center video">
+            <div class="col-md-8">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://drive.google.com/file/d/1j0K8POtCovxpwfhJ9zqOHXo_I5najuhr/preview" width="640" height="480" allow="autoplay"></iframe>
+                </div>
+                <!-- <small class="text-muted">Crédito: Elaborado pelos autores</small> -->
+            </div>
         </div>
     </div>
 
-    <!-- Apresentação -->
-    <div class="mostraAula collapse">
-        <div class="conteudoHome fundoTexto">
-            <h1 class="text-center">Apresentação</h1>
+    <div class="text-center">
+        <img src="assets/images/home/estruturaCurso.png" class="imagem img-fluid" style="max-width: 45%"
+            alt="Estrutura do Curso">
+    </div>
 
-            <p>Olá, seja bem-vindo(a) ao curso Profilaxia <b>Pré-Exposição de Risco à Infecção pelo HIV PreP Oral</b>.
-                Neste
-                curso, você irá conhecer como realizar a identificação de pessoas em situação de vulnerabilidade para a
-                infecção por HIV que sejam possíveis candidatas para uso da PrEP oral, o manejo inicial e o seguimento
-                destes usuários e situações especiais que os profissionais de saúde podem encontrar em sua prática,
-                assim
-                como sugestões de estratégias de aconselhamento e de minimização do estigma sobre a PrEP.</p>
+    <div class="conteudoHome fundoCapa">
+        <div style="color: white">
+            <h1 class="text-center">Introdução</h1><br>
+            <p>Uma das formas de se prevenir do HIV é a PrEP (Profilaxia Pré-Exposição). Ela consiste na tomada de
+                comprimidos antes da relação sexual, que permite ao organismo estar preparado para enfrentar um
+                possível
+                contato com o HIV. A pessoa que usa PrEP também realiza um acompanhamento regular de saúde sexual,
+                com
+                testagem para o HIV e para outras Infecções Sexualmente Transmissíveis (IST).</p>
 
-            <p>Este é um curso on-line na modalidade autoinstrucional, em que o protagonismo do aprendizado está no
-                aprendiz, sendo direcionado aos profissionais da saúde que atendam pessoas em situação de maior
-                vulnerabilidade para o HIV e tem o objetivo desenvolver as capacidades e habilidades desses
-                profissionais
-                para ofertar a PrEP oral de acordo com as recomendações do Ministério da Saúde.</p>
-
-            <!-- Video 1 -->
-            <div class="row justify-content-center video">
-                <div class="col-md-8">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <video width="560" height="315" class="embed-responsive-item" controls>
-                            <source src="" type="video/mp4" frameborder="0" allow="encrypted-media"
-                                allowfullscreen="allowfullscreen">
-                        </video>
-                    </div>
-                    <!-- <small class="text-muted">Crédito: Elaborado pelos autores</small> -->
-                </div>
-            </div>
+            <p>A PrEP é a combinação de dois medicamentos (tenofovir + entricitabina) que bloqueiam alguns
+                “caminhos”
+                que o HIV usa para infectar o organismo. Existem duas modalidades de PrEP indicadas: a PrEP diária e
+                a
+                PrEP sob demanda. </p>
         </div>
+    </div>
 
-        <div class="text-center">
-            <img src="assets/images/home/estruturaCurso.png" class="imagem img-fluid" style="max-width: 45%"
-                alt="Estrutura do Curso">
-        </div>
-
-        <div class="conteudoHome fundoCapa">
-            <div style="color: white">
-                <h1 class="text-center">Introdução</h1><br>
-                <p>Uma das formas de se prevenir do HIV é a PrEP (Profilaxia Pré-Exposição). Ela consiste na tomada de
-                    comprimidos antes da relação sexual, que permite ao organismo estar preparado para enfrentar um
-                    possível
-                    contato com o HIV. A pessoa que usa PrEP também realiza um acompanhamento regular de saúde sexual,
-                    com
-                    testagem para o HIV e para outras Infecções Sexualmente Transmissíveis (IST).</p>
-
-                <p>A PrEP é a combinação de dois medicamentos (tenofovir + entricitabina) que bloqueiam alguns
-                    “caminhos”
-                    que o HIV usa para infectar o organismo. Existem duas modalidades de PrEP indicadas: a PrEP diária e
-                    a
-                    PrEP sob demanda. </p>
-            </div>
-        </div>
-
-        <!-- Cards lado a lado -->
-        <div class="row justify-content-center">
-            <div class="col-xl-4 centro">
-                <!-- Flip Card 1 -->
-                <div class="cards">
-                    <div class="cards-header">
-                        <h2>Módulo 1</h2>
-                        <p>Identificar os candidatos à PrEP</p>
-                    </div>
-                    <div class="cards-body">
-                        <p>AULA 1<br>Critérios necessários para iniciar a PrEP</p>
-                        <p>AULA 2<br>Contraindicações para uso da PrEP</p>
-                        <p>ATIVIDADES</p>
-                        <p>ENCERRAMENTO</p>
-
-                        <!-- Botão Conheça o Curso -->
-                        <div class="row botao">
-                            <a href="" class="btn btn-sm" id="botaoConhecer" role="button" alt="Começar">
-                                <strong>Iniciar Módulo 1</strong>
-                            </a>
-                        </div>
-                    </div>
+    <!-- Cards lado a lado -->
+    <div class="row justify-content-center">
+        <div class="col-xl-3 centro">
+            <!-- Card 1 -->
+            <div class="cards">
+                <div class="cards-header">
+                    <h2>Módulo 1</h2>
+                    <p>Identificar os candidatos à PrEP</p>
                 </div>
-            </div>
+                <div class="cards-body">
+                    <p>AULA 1<br>Critérios necessários para iniciar a PrEP</p>
+                    <p>AULA 2<br>Contraindicações para uso da PrEP</p>
+                    <p>ATIVIDADES</p>
+                    <p>ENCERRAMENTO</p>
 
-            <div class="col-xl-4 centro">
-                <!-- Flip Card 2 -->
-                <div class="cards">
-                    <div class="cards-header">
-                        <h2>Módulo 2</h2>
-                        <p>Orientações e mensagens sobre PrEP</p>
-                        <p>Iniciar a PrEP oral</p>
-                    </div>
-                    <div class="cards-body">
-                        <p>AULA 1<br>Análise de situações especiais da PrEP</p>
-                        <p>AULA 2<br>Mensagem de orientação sobre a eficácia da PrEP</p>
-                        <p>AULA 3<br>Mensagem de orientação sobre a segurança da PrEP</p>
-                        <p>AULA 4<br>Mensagem de orientação para reduzir o estigma dos usuários da PrEP</p>
-                        <p>ATIVIDADES</p>
-                        <p>ENCERRAMENTO</p>
-
-                        <!-- Botão Conheça o Curso -->
-                        <div class="row botao">
-                            <a href="" class="btn btn-sm" id="botaoConhecer" role="button" alt="Começar">
-                                <strong>Iniciar Módulo 2</strong>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xl-4 centro">
-                <!-- Flip Card 2 -->
-                <div class="cards">
-                    <div class="cards-header">
-                        <h2>Módulo 3</h2>
-                        <p>Orientações e mensagens sobre PrEP</p>
-                    </div>
-                    <div class="cards-body">
-                        <p>AULA 1<br>Avaliação do uso da PrEP</p>
-                        <p>AULA 2<br>Introdução às modalidades da PrEP</p>
-                        <p>AULA 3<br>Procedimentos para as consultas inicial e de acompanhamento da PrEP</p>
-                        <p>AULA 4<br>Dispensa do medicamento</p>
-                        <p>ATIVIDADES</p>
-                        <p>ENCERRAMENTO</p>
-
-                        <!-- Botão Conheça o Curso -->
-                        <div class="row botao">
-                            <a href="" class="btn btn-sm" id="botaoConhecer" role="button" alt="Começar">
-                                <strong>Iniciar Módulo 3</strong>
-                            </a>
-                        </div>
+                    <!-- Botão Conheça o Curso -->
+                    <div class="row botao bottom-center">
+                        <a href="" class="btn btn-sm" id="botaoConhecer" role="button" alt="Começar">
+                            <strong>Iniciar Módulo 1</strong>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="conteudoHome fundoNavega">
-            <!-- Botões de navegação -->
-            <div class="row botao">
-                <!-- Botão para acionar modal -->
-                <a href="" class="btn btn-sm botaoExtras" role="button" alt="Referências" data-toggle="modal"
-                    data-target="#modalReferencias">
-                    <strong>Referências</strong></a>
-                <a href="" class="btn btn-sm botaoExtras" role="button" alt="Crétidos" data-toggle="modal"
-                    data-target="#modalCreditos">
-                    <strong>Créditos</strong></a>
+        <div class="col-xl-3 centro">
+            <!-- Card 2 -->
+            <div class="cards">
+                <div class="cards-header">
+                    <h2>Módulo 2</h2>
+                    <p>Iniciar a PrEP oral</p>
+                </div>
+                <div class="cards-body">
+                    <p>AULA 1<br>Avaliação do uso da PrEP</p>
+                    <p>AULA 2<br>Introdução às modalidades da PrEP</p>
+                    <p>AULA 3<br>Procedimentos para as consultas inicial e de acompanhamento da PrEP</p>
+                    <p>AULA 4<br>Dispensa do medicamento</p>
+                    <p>ATIVIDADES</p>
+                    <p>ENCERRAMENTO</p>
+                    <!-- Botão Conheça o Curso -->
+                    <div class="row botao bottom-center">
+                        <a href="" class="btn btn-sm" id="botaoConhecer" role="button" alt="Começar">
+                            <strong>Iniciar Módulo 2</strong>
+                        </a>
+                    </div>
+                </div>
             </div>
+
         </div>
 
-        <!-- Modal Referências  -->
-        <div class="modal fade" id="modalReferencias" tabindex="-1" role="dialog"
-            aria-labelledby="TituloModalCentralizado" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title" id="TituloModalCentralizado">Referências Bibliográficas</h1>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        ...
+        <div class="col-xl-3 centro">
+            <!-- Card 3 -->
+            <div class="cards">
+                <div class="cards-header">
+                    <h2>Módulo 3</h2>
+                    <p>Orientações e mensagens sobre PrEP</p>
+                </div>
+                <div class="cards-body">
+                    <p>AULA 1<br>Análise de situações especiais da PrEP</p>
+                    <p>AULA 2<br>Mensagem de orientação sobre a eficácia da PrEP</p>
+                    <p>AULA 3<br>Mensagem de orientação sobre a segurança da PrEP</p>
+                    <p>AULA 4<br>Mensagem de orientação para reduzir o estigma dos usuários da PrEP</p>
+                    <p>ATIVIDADES</p>
+                    <p>ENCERRAMENTO</p>
+
+                    <!-- Botão Conheça o Curso -->
+                    <div class="row botao bottom-center">
+                        <a href="" class="btn btn-sm" id="botaoConhecer" role="button" alt="Começar">
+                            <strong>Iniciar Módulo 3</strong>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Modal Créditos -->
-        <div class="modal fade" id="modalCreditos" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title" id="TituloModalCentralizado">Créditos</h1>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                </div>
-            </div>
+
+    <div class="conteudoHome fundoNavega">
+        <!-- Botões de navegação -->
+        <div class="row botao">
+            <!-- Botão para acionar modal -->
+            <a class="btn btn-sm botaoExtras" role="button" alt="Referências" data-toggle="modal"
+                data-target="#modalReferencias">
+                <strong>Referências</strong>
+            </a>
+
+            <a class="btn btn-sm botaoExtras" role="button" alt="Créditos" data-toggle="modal"
+                data-target="#modalCreditos">
+                <strong>Créditos</strong></a>
         </div>
+    </div>
 
-        <div class="conteudoHome fundoTexto">
-            <h1 class="text-center">Objetivos</h1>
+    <div class="conteudoHome fundoTexto">
+        <h1 class="text-center">Objetivos</h1>
 
-            <p>Ao final do curso, esperamos que você seja capaz de realizar o cuidado de uma pessoa que faz uso de PrEP
-                oral de acordo com as orientações do Ministério da Saúde.</p>
+        <p>Ao final do curso, esperamos que você seja capaz de realizar o cuidado de uma pessoa que faz uso de PrEP
+            oral de acordo com as orientações do Ministério da Saúde.</p>
 
-            <p><b>Bons estudos!</b></p>
+        <p><b>Bons estudos!</b></p>
 
-            <!-- Botão Conheça o Curso -->
-            <div class="row botao">
-                <a href="modulo1/modulo1-introducao.html" class="btn btn-sm" id="botaoComecar" role="button"
-                    alt="Começar">
-                    <strong>Começar</strong>
-                </a>
-            </div>
+        <!-- Botão Conheça o Curso -->
+        <div class="row botao">
+            <a href="modulo1/modulo1-introducao.html" class="btn btn-sm" id="botaoComecar" role="button" alt="Começar">
+                <strong>Começar</strong>
+            </a>
         </div>
     </div>
     <!-- Rodapé -->
@@ -248,9 +212,47 @@
         </div>
     </footer>
 
+    <!-- Modal Referências -->
+    <div class="modal fade" id="modalReferencias" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="TituloModalCentralizado">Referências Bibliográficas</h1>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <modal-referencias></modal-referencias>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Créditos -->
+    <div class="modal fade" id="modalCreditos" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="TituloModalCentralizado">Créditos</h1>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <modal-creditos></modal-creditos>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Arquivos JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/modalReferencias.js"></script>
+    <script src="./assets/js/modalCreditos.js"></script>
 </body>

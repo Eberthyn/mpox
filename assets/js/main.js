@@ -9,23 +9,16 @@ $(document).ready(function () {
   }
 
   if ($(window).scrollTop() === 0) {
-    $("#menuSuperior").removeClass("fixed-top");
     $("#row-main").css("padding-top", "0%");
-    $("#menuSuperior").css("box-shadow", "0px 0px 0px rgba(0,0,0,0.5)")
-
-  } else {
-    $("#menuSuperior").addClass("fixed-top");
-    $("#row-main").css("padding-top", ($('#menuSuperior').css("height")));
     $("#menuLateral").css("padding-bottom", ($('#menuSuperior').css("height")));
-    $("#menuSuperior").css("box-shadow", "0px 2px 2px rgba(0,0,0,0.5)")
+  } else {
+    $("#menuLateral").css("top", 0);
+    $("#sidebarButton").css("top", 0);
+    $("#sidebarButton2").css("top", 0);
   }
 });
 
-$("#botaoConhecer").click(function () {
-  $("#rodape").toggleClass("fixaRodape")
-})
-
-/* Fixa Menu Superior */
+/* Fixa onScroll */
 $(window).scroll(function teste() {
   if (document.body.scrollHeight > window.innerHeight) {
     $("#rodape").removeClass("fixaRodape");
@@ -36,15 +29,17 @@ $(window).scroll(function teste() {
   }
 
   if ($(window).scrollTop() === 0) {
-    $("#menuSuperior").removeClass("fixed-top");
     $("#row-main").css("padding-top", "0%");
-    $("#menuSuperior").css("box-shadow", "0px 0px 0px rgba(0,0,0,0.5)")
+    $("#menuLateral").css("top", '');
+    $("#sidebarButton").css("top", "");
+    $("#sidebarButton2").css("top", "");
+    $("#menuLateral").css("padding-bottom", ($('#menuSuperior').css("height")));
 
   } else {
-    $("#menuSuperior").addClass("fixed-top");
-    $("#row-main").css("padding-top", ($('#menuSuperior').css("height")));
-    $("#menuLateral").css("padding-bottom", ($('#menuSuperior').css("height")));
-    $("#menuSuperior").css("box-shadow", "0px 2px 2px rgba(0,0,0,0.5)")
+    $("#menuLateral").css({"top": "0"}, "slow");
+    $("#sidebarButton").css({"top": "0"}, "slow");
+    $("#sidebarButton2").css({"top": "0"}, "slow");
+    $("#menuLateral").css("padding-bottom", "0");
   }
 });
 
@@ -52,8 +47,9 @@ $(window).scroll(function teste() {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
-
-    $('html,body').animate({ scrollTop: ($("#row-main").offset().top) }, 500);
+    $('html,body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
   });
 });
 
