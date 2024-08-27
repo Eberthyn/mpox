@@ -47,7 +47,7 @@ class ModalCreditos extends HTMLElement {
         <i>Coordenadora Adjunta, Coordenadora da Plataforma Educare</i>
 
         <p>Renata Bernardes David</p>
-        <i>Gerente de Produção</i>
+        <i>Coordenadora de Produção</i>
 
         <p>Juliana Dutra</p>
         <i>Revisora Técnica de Conteúdo</i>

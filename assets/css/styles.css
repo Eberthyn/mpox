@@ -9,7 +9,8 @@ body,
 header,
 footer {
     font-family: 'Prelo Book', sans-serif;
-    font-size: 15px;
+    font-size: 18px;
+    letter-spacing: 1px;
 }
 
 /* header .img-fluid {
@@ -27,7 +28,7 @@ footer {
 }
 
 #botaoConhecer {
-    background-color: #00B9B9;
+    background-color: #00A6A6;
     font-size: 18px;
     color: white;
     padding: 8px 32px;
@@ -52,7 +53,7 @@ footer {
 
 .botaoExtras {
     background-color: white;
-    color: #00B9B9 !important;
+    color: #00A6A6 !important;
     border: rgba(5, 69, 166, .05) solid;
     padding: 8px;
     min-width: 260px;
@@ -105,7 +106,7 @@ footer {
 }
 
 .botaoMatricula {
-    background-color: #00B9B9;
+    background-color: #00A6A6;
 }
 
 .botaoAvaliacao,
@@ -179,7 +180,7 @@ footer {
 }
 
 .textoSlider {
-    color: #00B9B9;
+    color: #00A6A6;
     font-weight: 900;
 }
 
@@ -294,7 +295,7 @@ footer {
 }
 
 .materialComplementar {
-    border: 2px solid #00B9B9;
+    border: 2px solid #00A6A6;
     margin-bottom: 30px;
     padding: 12px 22px;
 
@@ -304,7 +305,7 @@ footer {
     }
 }
 
-.row.alerta{
+.row.alerta {
     margin-top: 0px !important;
 }
 
@@ -402,7 +403,7 @@ p {
 p.indice {
     margin-bottom: -35px;
     margin-top: 50px;
-    color: #00B9B9;
+    color: #00A6A6;
     font-weight: bold;
 }
 
@@ -495,7 +496,8 @@ p.tituloLista {
         margin: 50px 30px 0px 30px;
     }
 
-    .row.botao, .botoesEncerramento {
+    .row.botao,
+    .botoesEncerramento {
         padding-bottom: 50px;
     }
 
@@ -518,7 +520,7 @@ ul li {
 }
 
 ol li::marker {
-    color: #00B9B9;
+    color: #00A6A6;
     font-weight: 800;
     font-size: 16px;
 }
@@ -533,7 +535,7 @@ ol li::marker {
     content: '\f061';
     font-weight: 900;
     margin-right: 15px;
-    color: #00B9B9;
+    color: #00A6A6;
 }
 
 .icon.checkmark::before {
@@ -559,7 +561,7 @@ ol li::marker {
     margin-right: 15px;
     margin-top: 8px;
     font-size: 5px;
-    color: #00B9B9;
+    color: #00A6A6;
 }
 
 .circle-color p {
@@ -714,7 +716,7 @@ footer img {
 }
 
 .fundoNavega {
-    background-color: #00B9B9;
+    background-color: #00A6A6;
     justify-content: center;
     width: auto !important;
 }
@@ -840,7 +842,7 @@ footer img {
 }
 
 .carousel-indicators .active {
-    background-color: #00B9B9;
+    background-color: #00A6A6;
 }
 
 .carousel-control-next-icon {
@@ -866,8 +868,12 @@ footer img {
 
 
 /* MENU LATERAL */
+#sidebar, #content {
+    transition: 0.3s;
+}
+
 nav#menuLateral {
-    background-color: #00B9B9;
+    background-color: #00A6A6;
     color: white;
     padding-top: 32px;
     padding-left: 8px;
@@ -979,7 +985,7 @@ a.tituloItem {
 #sidebarButton {
     position: fixed;
     color: white;
-    background-color: #00B9B9;
+    background-color: #00A6A6;
     border-radius: 0 0 5px 0;
     padding: 0px !important;
     margin-left: 16.667%;
@@ -1005,7 +1011,7 @@ a.tituloItem {
 #sidebarButton2 {
     position: fixed;
     color: white;
-    background-color: #00B9B9;
+    background-color: #00A6A6;
     border-radius: 0 0 5px 0;
     padding: 0% !important;
     margin-left: 50%;
@@ -1181,7 +1187,7 @@ a.tituloItem {
 }
 
 .tabela th {
-    background-color: #00B9B9;
+    background-color: #00A6A6;
     color: white;
     text-align: center;
 }
