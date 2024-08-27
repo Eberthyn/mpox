@@ -75,7 +75,7 @@ $("input[name=questao2]").on("click", function () {
 });
 
 // MÓDULO 2 QUESTÃO 3
-var resposta3 = "A3"; // Resposta correta
+var resposta3 = "B3"; // Resposta correta
 $("input[name=questao3]").on("click", function () {
     var value = "";
     // seleciona apenas o que foi checado
@@ -88,7 +88,7 @@ $("input[name=questao3]").on("click", function () {
         });
 
         // Altera cor mensagem da resposta
-        if (value !== "A3") {
+        if (value !== "B3") {
             $("#feedback3").addClass("resposta-incorreta")
             $("#feedback3").removeClass("resposta-correta")
         } else {
@@ -97,22 +97,22 @@ $("input[name=questao3]").on("click", function () {
         }
 
         if (value === "C3") {
-            $("#A3").removeClass("resposta-correta")
-            $("#B3").removeClass("resposta-incorreta")
+            $("#A3").removeClass("resposta-incorreta")
+            $("#B3").removeClass("resposta-correta")
             $("#C3").addClass("resposta-incorreta")
         } else if (value === "A3") {
-            $("#A3").addClass("resposta-correta")
-            $("#B3").removeClass("resposta-incorreta")
+            $("#A3").addClass("resposta-incorreta")
+            $("#B3").removeClass("resposta-correta")
             $("#C3").removeClass("resposta-incorreta")
         } else if (value === "B3") {
-            $("#A3").removeClass("resposta-correta")
-            $("#B3").addClass("resposta-incorreta")
+            $("#A3").removeClass("resposta-incorreta")
+            $("#B3").addClass("resposta-correta")
             $("#C3").removeClass("resposta-incorreta")
         }
 
         var mensagem = "";
-        resposta3 == value ? mensagem = "Todas as alternativas são verdadeiras." :
-            mensagem = "Todas as alternativas são verdadeiras.";
+        resposta3 == value ? mensagem = "Apenas a alternativa I é verdadeira." :
+            mensagem = "Apenas a alternativa I é verdadeira.";
         $("#mensagem3").html(mensagem);
     } else {
         // esvazia a div de mensagem
