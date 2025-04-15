@@ -14,13 +14,13 @@ body,
 header,
 footer {
     font-family: 'Prelo Book', sans-serif;
-    font-size: 18px;
+    font-size: 24px !important;
     letter-spacing: 1px;
 }
 
 /* header .img-fluid {
     min-width: 100% !important;
-    height: 380px !important;
+    height: 340px !important;
 } */
 
 /*Botão*/
@@ -33,7 +33,7 @@ footer {
 }
 
 #botaoConhecer {
-    background-color: #00A6A6;
+    background-color: #B95E00;
     font-size: 18px;
     color: white;
     padding: 8px 32px;
@@ -58,7 +58,7 @@ footer {
 
 .botaoExtras {
     background-color: white;
-    color: #00A6A6 !important;
+    color: #B95E00 !important;
     border: rgba(5, 69, 166, .05) solid;
     padding: 8px;
     min-width: 260px;
@@ -69,7 +69,7 @@ footer {
 }
 
 #botaoAvancar {
-    background-color: #8242A5;
+    background-color: #F4CA00;
     /* border-radius: 25px; */
     color: white;
     width: 260px;
@@ -88,8 +88,8 @@ footer {
 #botaoVoltar {
     background-color: white;
     /* border-radius: 25px; */
-    border: 1px solid #8242A5;
-    color: #8242A5;
+    border: 1px solid #F4CA00;
+    color: #F4CA00;
     width: 260px;
     height: 40px;
     display: flex;
@@ -107,11 +107,11 @@ footer {
 }
 
 .botaoAvaliacao {
-    background-color: #8242A5;
+    background-color: #F4CA00;
 }
 
 .botaoMatricula {
-    background-color: #00A6A6;
+    background-color: #B95E00;
 }
 
 .botaoAvaliacao,
@@ -175,17 +175,17 @@ footer {
 }
 
 .blocoTexto {
-    background-color: #8242A5;
+    background-color: #F4CA00;
     color: white;
 }
 
 .textoDestacado {
-    color: #8242A5;
+    color: #F4CA00;
     font-weight: 900;
 }
 
 .textoSlider {
-    color: #00A6A6;
+    color: #B95E00;
     font-weight: 900;
 }
 
@@ -201,7 +201,7 @@ footer {
 
     & hr {
         margin: 0 0 20px 0;
-        border: 1px solid #8242A5;
+        border: 1px solid #F4CA00;
     }
 }
 
@@ -300,7 +300,7 @@ footer {
 }
 
 .materialComplementar {
-    border: 2px solid #00A6A6;
+    border: 2px solid #B95E00;
     margin-bottom: 30px;
     padding: 12px 22px;
 
@@ -382,6 +382,7 @@ h1 {
 
 h2 {
     font-size: 30px;
+    font-family: 'Prelo-Bold';
     font-weight: bold;
     margin-bottom: 30px;
     margin-top: 50px;
@@ -389,7 +390,9 @@ h2 {
 
 h3 {
     font-size: 24px;
+    color: #B95E00;
     font-weight: bold;
+    font-family: 'Prelo-Bold';
     margin-bottom: 30px;
     margin-top: 50px;
 }
@@ -413,7 +416,7 @@ p {
 p.indice {
     margin-bottom: -35px;
     margin-top: 50px;
-    color: #00A6A6;
+    color: #B95E00;
     font-weight: bold;
 }
 
@@ -488,6 +491,10 @@ p.tituloLista {
     }
 }
 
+small {
+    font-family: 'Prelo Book';
+}
+
 /* Smartphone */
 @media (max-width: 480px) {
     .blocoTexto {
@@ -530,7 +537,7 @@ ul li {
 }
 
 ol li::marker {
-    color: #00A6A6;
+    color: #B95E00;
     font-weight: 800;
     font-size: 16px;
 }
@@ -545,7 +552,7 @@ ol li::marker {
     content: '\f061';
     font-weight: 900;
     margin-right: 15px;
-    color: #00A6A6;
+    color: #B95E00;
 }
 
 .icon.checkmark::before {
@@ -571,7 +578,7 @@ ol li::marker {
     margin-right: 15px;
     margin-top: 8px;
     font-size: 5px;
-    color: #00A6A6;
+    color: #B95E00;
 }
 
 .circle-color p {
@@ -709,7 +716,7 @@ footer img {
 
 
 .fundoCapa {
-    background-color: #8242A5;
+    background-color: #F4CA00;
     justify-content: center;
     width: auto !important;
     padding-bottom: 50px !important;
@@ -726,7 +733,7 @@ footer img {
 }
 
 .fundoNavega {
-    background-color: #00A6A6;
+    background-color: #B95E00;
     justify-content: center;
     width: auto !important;
 }
@@ -852,7 +859,7 @@ footer img {
 }
 
 .carousel-indicators .active {
-    background-color: #00A6A6;
+    background-color: #B95E00;
 }
 
 .carousel-control-next-icon {
@@ -882,8 +889,13 @@ footer img {
     transition: 0.3s;
 }
 
+#sidebar {
+    font-family: 'Prelo';
+    font-size: 18px !important;
+}
+
 nav#menuLateral {
-    background-color: #00A6A6;
+    background-color: #B95E00;
     color: white;
     padding-top: 32px;
     padding-left: 8px;
@@ -924,8 +936,9 @@ nav#menuLateral {
     padding: 10px 20px;
     display: block;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 18px !important;
     padding-left: 2.2rem;
+    font-size: medium;
 }
 
 .listaMenu .subItem {
@@ -953,6 +966,7 @@ a.tituloLista {
 a.tituloItem,
 span.tituloItem {
     font-weight: bold;
+    font-family: 'Prelo Bold';
     padding-left: 20px;
 }
 
@@ -981,7 +995,7 @@ a.tituloItem {
 
 .item.active,
 .barraStepper.active {
-    background-color: #8242A5;
+    background-color: #F4CA00;
 }
 
 .sectionTitle {
@@ -993,9 +1007,10 @@ a.tituloItem {
 
 /* Botões */
 #sidebarButton {
+
     position: fixed;
     color: white;
-    background-color: #00A6A6;
+    background-color: #B95E00;
     border-radius: 0 0 5px 0;
     padding: 0px !important;
     margin-left: 16.667%;
@@ -1021,7 +1036,7 @@ a.tituloItem {
 #sidebarButton2 {
     position: fixed;
     color: white;
-    background-color: #00A6A6;
+    background-color: #B95E00;
     border-radius: 0 0 5px 0;
     padding: 0% !important;
     margin-left: 50%;
@@ -1197,7 +1212,7 @@ a.tituloItem {
 }
 
 .tabela th {
-    background-color: #00A6A6;
+    background-color: #B95E00;
     color: white;
     text-align: center;
 }
@@ -1218,4 +1233,13 @@ a.tituloItem {
 .modal-header .close {
     padding: 1rem;
     margin: -2rem -4rem -1rem auto;
+}
+
+.tarjaHeader {
+    background-color: #D08700;
+    color: white;
+
+    & h1 {
+        margin: 1.2rem 3.6rem !important;
+    }
 }
