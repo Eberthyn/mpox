@@ -14,7 +14,7 @@ body,
 header,
 footer {
     font-family: 'Prelo Book', sans-serif;
-    font-size: 24px !important;
+    font-size: 18px !important;
     letter-spacing: 1px;
 }
 
@@ -372,7 +372,7 @@ footer {
 
 /* Formatação de Fontes*/
 h1 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     margin-bottom: 30px;
     margin-top: 50px;
@@ -381,7 +381,7 @@ h1 {
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 24px;
     font-family: 'Prelo-Bold';
     font-weight: bold;
     margin-bottom: 30px;
@@ -389,7 +389,7 @@ h2 {
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 18px;
     color: #B95E00;
     font-weight: bold;
     font-family: 'Prelo-Bold';
@@ -890,8 +890,8 @@ footer img {
 }
 
 #sidebar {
-    font-family: 'Prelo';
-    font-size: 18px !important;
+    font-family: 'Prelo Book';
+    font-size: 14px !important;
 }
 
 nav#menuLateral {
@@ -936,7 +936,7 @@ nav#menuLateral {
     padding: 10px 20px;
     display: block;
     cursor: pointer;
-    font-size: 18px !important;
+    font-size: 14px !important;
     padding-left: 2.2rem;
     font-size: medium;
 }
