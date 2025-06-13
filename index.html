@@ -1,427 +1,231 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curso Assistência ao Parto</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            color: #fff;
-        }
+    <link href="./assets/css/home.css" rel="stylesheet" />
+  </head>
 
-        .header {
-            padding: 30px;
-            text-align: left;
-            position: relative;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: center;
-            min-height: 500px;
-            overflow: hidden;
-            background: linear-gradient(#3C1B33, #783566);
-        }
-
-        .header-shape-left {
-            position: absolute;
-            max-height: 100%;
-            max-width: 100%;
-            top: 0;
-            left: 0;
-        }
-
-        .header-shape-right {
-            position: absolute;
-            max-height: 100%;
-            max-width: 100%;
-            top: 0;
-            right: 0;
-        }
-
-                .illustration {
-            width: 38%;
-            height: auto;
-        }
-
-        .header-text {
-            max-width: 600px;
-            padding-left: 100px;
-        }
-
-        .header h1 {
-            font-size: 48px;
-            margin: 0;
-            line-height: 1.2;
-        }
-
-        .header h2 {
-            font-size: 24px;
-            margin: 10px 0;
-        }
-
-        .content {
-            padding: 20px;
-            text-align: center;
-            background: linear-gradient(#783566, #3C1B33);
-        }
-
-        .video-placeholder {
-            background: #ddd;
-            width: 80%;
-            max-width: 800px;
-            height: 450px;
-            margin: 20px auto;
-        }
-
-        .decorative-flowers {
-            display: block;
-            margin: 10px auto;
-        }
-
-        .course-structure {
-            background: linear-gradient(#3C1B33, #8D3A76);
-            padding: 40px 20px;
-            position: relative;
-            overflow: hidden;
-            text-align: center;
-        }
-
-        .icons {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 20px 0;
-            gap: 40px;
-        }
-
-        .icon {
-            text-align: center;
-        }
-
-        .icon img {
-            width: 50px;
-            height: 50px;
-            display: block;
-            margin: 0 auto 10px;
-        }
-
-        .modules {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            text-align: center;
-            gap: 10px;
-        }
-
-        .module {
-            padding: 20px;
-            margin: 10px;
-            width: calc(33% - 40px);
-            max-width: 200px;
-            text-align: center;
-            border: 1px dashed #fff;
-            position: relative;
-        }
-
-        .soon-tag {
-            background: #C04CAF;
-            color: #fff;
-            padding: 5px 10px;
-            font-size: 12px;
-            position: absolute;
-            top: 0px;
-            right: 0px;
-        }
-
-        .coming-soon {
-            background: rgba(255, 255, 255, 0.1);
-        }
-
-        .module img {
-            display: block;
-            margin: 0 auto 10px;
-            width: 30px;
-            height: 30px;
-        }
-
-                .start-button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #C04CAF;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 16px;
-            text-align: center;
-        }
-        .start-button:hover {
-            background: rgba(255, 255, 255, 0.1);
-        }
-
-        .footer {
-            padding: 20px;
-            text-align: center;
-        }
-
-        .footer img {
-            width: 100px;
-            margin: 10px;
-        }
-
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.8);
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-        }
-        .modal-content {
-            background: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            max-width: 500px;
-            width: 90%;
-            color: #333;
-            text-align: left;
-        }
-        .open-modal {
-            color: white;
-        }
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        @media (max-width: 768px) {
-            .header {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                padding-left: 0;
-            }
-
-            .header-text {
-                padding-left: 0;
-                max-width: none;
-            }
-
-            .header h1 {
-                font-size: 36px;
-                text-align: center;
-            }
-
-            .header h2 {
-                font-size: 18px;
-                text-align: center;
-            }
-
-            .illustration {
-                width: 50%;
-                max-width: 200px;
-                margin-top: 20px;
-            }
-        }
-
-        @media (max-width: 600px) {
-
-            .module,
-            .icons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .module {
-                width: calc(100% - 40px);
-            }
-        }
-    </style>
-</head>
-
-<body>
+  <body>
     <div class="header">
-        <img src="assets/images/home/top-wave-left.png" alt="Decorative shape left" class="header-shape-left">
-        <img src="assets/images/home/top-wave-right.png" alt="Decorative shape right" class="header-shape-right">
-        <div class="header-text">
-            <h1>Curso <br> Assistência <br> ao parto:</h1>
-            <h2>ênfase nas distocias e <br>principais causas de <br>morbimortalidade materna</h2>
-        </div>
-        <img src="assets/images/home/illustration.png" alt="Illustration" class="illustration">
+      <img
+        src="assets/images/home/top-wave-left.png"
+        alt="Decorative shape left"
+        class="header-shape-left"
+      />
+      <img
+        src="assets/images/home/top-wave-right.png"
+        alt="Decorative shape right"
+        class="header-shape-right"
+      />
+      <div class="header-text">
+        <h1>
+          Curso <br />
+          Assistência <br />
+          ao parto:
+        </h1>
+        <h2>
+          ênfase nas distocias e <br />principais causas de
+          <br />morbimortalidade materna
+        </h2>
+      </div>
+      <img
+        src="assets/images/home/illustration.png"
+        alt="Illustration"
+        class="illustration"
+      />
     </div>
     <div class="content">
-        <img src="assets/images/home/flowers.png" alt="Decorative flowers" class="decorative-flowers">
-        <h3>Apresentação</h3>
-        <p>Seja muito bem-vindo e bem-vinda! É com grande entusiasmo que damos início ao Curso de Assistência ao Parto:
-            ênfase nas distocias e principais causas de morbimortalidade materna. Este é um conteúdo pensado
-            especialmente para médicos, médicas, enfermeiros e enfermeiras que atuam na linha de frente da assistência
-            ao parto nos estados do Amazonas e Roraima. Veja a seguir o vídeo que apresentará maiores detalhes sobre
-            este curso!</p>
-        <div class="video-placeholder"></div>
+      <img
+        src="assets/images/home/flowers.png"
+        alt="Decorative flowers"
+        class="decorative-flowers"
+      />
+      <h3>Apresentação</h3>
+      <p>
+        Seja muito bem-vindo e bem-vinda! É com grande entusiasmo que damos
+        início ao Curso de Assistência ao Parto: ênfase nas distocias e
+        principais causas de morbimortalidade materna. Este é um conteúdo
+        pensado especialmente para médicos, médicas, enfermeiros e enfermeiras
+        que atuam na linha de frente da assistência ao parto nos estados do
+        Amazonas e Roraima. Veja a seguir o vídeo que apresentará maiores
+        detalhes sobre este curso!
+      </p>
+      <div class="video-placeholder"></div>
     </div>
 
     <div class="course-structure">
-        <img src="assets/images/home/flowers-purple.png" alt="Decorative flowers" class="decorative-flowers">
-        <h3>Estrutura do curso</h3>
-        <p>Ao iniciar um curso, é comum surgirem dúvidas sobre como organizar os estudos e aproveitar ao máximo o
-            conteúdo. Por isso, vale destacar: a estrutura deste curso foi cuidadosamente planejada para apoiar a sua
-            trajetória de aprendizado, promovendo compreensão prática e teórica de cada tema relacionado à assistência
-            ao parto. Tudo foi pensado para facilitar a sua experiência e contribuir para uma formação significativa,
-            voltada para os desafios reais da sua atuação profissional. Veja agora as informações detalhadas de cada
-            módulo que você verá!</p>
-        <div class="icons">
-            <div class="icon">
-                <img src="assets/images/home/computer-icon.png" alt="Computer icon">
-                Modalidade <br> Autoinstrucional
-            </div>
-            <div class="icon">
-                <img src="assets/images/home/clock-icon.png" alt="Clock icon">
-                17 horas de <br> carga horária
-            </div>
-            <div class="icon">
-                <img src="assets/images/home/modules-icon.png" alt="Modules icon">
-                5 módulos divididos <br> em 17 aulas
-            </div>
+      <img
+        src="assets/images/home/flowers-purple.png"
+        alt="Decorative flowers"
+        class="decorative-flowers"
+      />
+      <h3>Estrutura do curso</h3>
+      <p>
+        Ao iniciar um curso, é comum surgirem dúvidas sobre como organizar os
+        estudos e aproveitar ao máximo o conteúdo. Por isso, vale destacar: a
+        estrutura deste curso foi cuidadosamente planejada para apoiar a sua
+        trajetória de aprendizado, promovendo compreensão prática e teórica de
+        cada tema relacionado à assistência ao parto. Tudo foi pensado para
+        facilitar a sua experiência e contribuir para uma formação
+        significativa, voltada para os desafios reais da sua atuação
+        profissional. Veja agora as informações detalhadas de cada módulo que
+        você verá!
+      </p>
+      <div class="icons">
+        <div class="icon">
+          <img src="assets/images/home/computer-icon.png" alt="Computer icon" />
+          Modalidade <br />
+          Autoinstrucional
         </div>
-        <div class="modules">
-            <div class="module">
-                <img src="assets/images/home/flower-icon.png" alt="Flower icon">
-                Módulo 1<br>Evolução da Obstetrícia e as Etapas de Assistência ao Parto <br>
-                 <a href="#" class="open-modal" data-modal="modal1">Aulas +</a>
-            </div>
-            <div class="module">
-                <img src="assets/images/home/flower-icon.png" alt="Flower icon">
-                Módulo 2<br>Tipos de Parto: o papel das Distocias na morbimortalidade materna <br>
-                 <a href="#" class="open-modal" data-modal="modal2">Aulas +</a>
-            </div>
-            <div class="module">
-                <img src="assets/images/home/flower-icon.png" alt="Flower icon">
-                Módulo 3<br>Hemorragia Obstétrica <br>
-                 <a href="#" class="open-modal" data-modal="modal3">Aulas +</a>
-            </div>
-            <div class="module coming-soon">
-                <div class="soon-tag">Em Breve</div>
-                <img src="assets/images/home/flower-icon.png" alt="Flower icon">
-                Módulo 4<br>Infecções no ciclo gravido puerperal <br>
-                 <a href="#" class="open-modal" data-modal="modal4">Aulas +</a>
-            </div>
-            <div class="module coming-soon">
-                <div class="soon-tag">Em Breve</div>
-                <img src="assets/images/home/flower-icon.png" alt="Flower icon">
-                Módulo 5<br>Síndromes Hipertensivas na gestação <br>
-                 <a href="#" class="open-modal" data-modal="modal5">Aulas +</a>
-            </div>
+        <div class="icon">
+          <img src="assets/images/home/clock-icon.png" alt="Clock icon" />
+          17 horas de <br />
+          carga horária
         </div>
+        <div class="icon">
+          <img src="assets/images/home/modules-icon.png" alt="Modules icon" />
+          5 módulos divididos <br />
+          em 17 aulas
+        </div>
+      </div>
+      <div class="modules">
+        <div class="module">
+          <img src="assets/images/home/flower-icon.png" alt="Flower icon" />
+          Módulo 1<br />Evolução da Obstetrícia e as Etapas de Assistência ao
+          Parto <br />
+          <a href="#" class="open-modal" data-modal="modal1">Aulas +</a>
+        </div>
+        <div class="module">
+          <img src="assets/images/home/flower-icon.png" alt="Flower icon" />
+          Módulo 2<br />Tipos de Parto: o papel das Distocias na
+          morbimortalidade materna <br />
+          <a href="#" class="open-modal" data-modal="modal2">Aulas +</a>
+        </div>
+        <div class="module">
+          <img src="assets/images/home/flower-icon.png" alt="Flower icon" />
+          Módulo 3<br />Hemorragia Obstétrica <br />
+          <a href="#" class="open-modal" data-modal="modal3">Aulas +</a>
+        </div>
+        <div class="module coming-soon">
+          <div class="soon-tag">Em Breve</div>
+          <img src="assets/images/home/flower-icon.png" alt="Flower icon" />
+          Módulo 4<br />Infecções no ciclo gravido puerperal <br />
+          <a href="#" class="open-modal" data-modal="modal4">Aulas +</a>
+        </div>
+        <div class="module coming-soon">
+          <div class="soon-tag">Em Breve</div>
+          <img src="assets/images/home/flower-icon.png" alt="Flower icon" />
+          Módulo 5<br />Síndromes Hipertensivas na gestação <br />
+          <a href="#" class="open-modal" data-modal="modal5">Aulas +</a>
+        </div>
+      </div>
 
-        <a href="#" class="start-button">Começar</a>
+      <a href="#" class="start-button">Começar</a>
     </div>
     <footer class="footer">
-        <img src="assets/images/rodape/fiocruz.png" alt="Fiocruz">
-        <img src="assets/images/rodape/campus-virtual.png" alt="Campus Virtual Fiocruz">
-        <img src="assets/images/rodape/logos.png" alt="Government logos">
+      <img src="assets/images/rodape/fiocruz.png" alt="Fiocruz" />
+      <img
+        src="assets/images/rodape/campus-virtual.png"
+        alt="Campus Virtual Fiocruz"
+      />
+      <img src="assets/images/rodape/logos.png" alt="Government logos" />
     </footer>
 
     <!-- Modals -->
     <div id="modal1" class="modal">
-        <div class="modal-content">
-            <span class="close" data-close="modal1">&times;</span>
-            <h3>Módulo 1 Aulas</h3>
-            <p>
-                Aula 1.1: Assistência ao Parto: as práticas baseadas em evidência científica e a realidade brasileira. (parte 1)<br>
-                Aula 1.2: Assistência ao Parto: as práticas baseadas em evidência científica e a realidade brasileira. (parte 2)<br>
-                Aula 1.3: Assistência ao Parto: as práticas baseadas em evidência científica e a realidade brasileira. (parte 3)<br>
-                Aula 1.4: Episiotomia e Trauma Perineal
-            </p>
-        </div>
+      <div class="modal-content">
+        <span class="close" data-close="modal1">&times;</span>
+        <h3>Módulo 1 Aulas</h3>
+        <p>
+          Aula 1.1: Assistência ao Parto: as práticas baseadas em evidência
+          científica e a realidade brasileira. (parte 1)<br />
+          Aula 1.2: Assistência ao Parto: as práticas baseadas em evidência
+          científica e a realidade brasileira. (parte 2)<br />
+          Aula 1.3: Assistência ao Parto: as práticas baseadas em evidência
+          científica e a realidade brasileira. (parte 3)<br />
+          Aula 1.4: Episiotomia e Trauma Perineal
+        </p>
+      </div>
     </div>
 
     <div id="modal2" class="modal">
-        <div class="modal-content">
-            <span class="close" data-close="modal2">&times;</span>
-            <h3>Módulo 2 Aulas</h3>
-            <p>
-                Aula 2.1: Parto Pélvico Vaginal<br>
-                Aula 2.2: Parto Vaginal Operatório<br>
-                Aula 2.3: Distocia de Ombro<br>
-                Aula 2.4: Extração Fetal Difícil na Cesariana
-            </p>
-        </div>
+      <div class="modal-content">
+        <span class="close" data-close="modal2">&times;</span>
+        <h3>Módulo 2 Aulas</h3>
+        <p>
+          Aula 2.1: Parto Pélvico Vaginal<br />
+          Aula 2.2: Parto Vaginal Operatório<br />
+          Aula 2.3: Distocia de Ombro<br />
+          Aula 2.4: Extração Fetal Difícil na Cesariana
+        </p>
+      </div>
     </div>
 
     <div id="modal3" class="modal">
-        <div class="modal-content">
-            <span class="close" data-close="modal3">&times;</span>
-            <h3>Módulo 3 Aulas</h3>
-            <p>
-                Aula 3.1: Hemorragia Pós-parto: prevenção, diagnóstico e manejo não cirúrgicos<br>
-                Aula 3.2: Hemorragia Pós-parto: tratamento cirúrgico e controle de danos
-            </p>
-        </div>
+      <div class="modal-content">
+        <span class="close" data-close="modal3">&times;</span>
+        <h3>Módulo 3 Aulas</h3>
+        <p>
+          Aula 3.1: Hemorragia Pós-parto: prevenção, diagnóstico e manejo não
+          cirúrgicos<br />
+          Aula 3.2: Hemorragia Pós-parto: tratamento cirúrgico e controle de
+          danos
+        </p>
+      </div>
     </div>
 
     <div id="modal4" class="modal">
-        <div class="modal-content">
-            <span class="close" data-close="modal4">&times;</span>
-            <h3>Módulo 4 Aulas</h3>
-            <p>
-                Aula 4.1: Sepse na gestação e puerpério<br>
-                Aula 4.2: Malária da Gestação: epidemiologia, diagnóstico e manejo
-            </p>
-        </div>
+      <div class="modal-content">
+        <span class="close" data-close="modal4">&times;</span>
+        <h3>Módulo 4 Aulas</h3>
+        <p>
+          Aula 4.1: Sepse na gestação e puerpério<br />
+          Aula 4.2: Malária da Gestação: epidemiologia, diagnóstico e manejo
+        </p>
+      </div>
     </div>
 
     <div id="modal5" class="modal">
-        <div class="modal-content">
-            <span class="close" data-close="modal5">&times;</span>
-            <h3>Módulo 5 Aulas</h3>
-            <p>
-                Aula 5.1: Epidemiologia, Técnica adequada de aferição da pressão arterial, classificação das síndromes hipertensivas, suspeita clínica e diagnóstico da pré-eclâmpsia.<br>
-                Aula 5.2: Pré-eclâmpsia precoce e tardia e o impacto da época de instalação.<br>
-                Aula 5.3: Eclâmpsia e Síndrome Hellp<br>
-                Aula 5.4: Hipertensão Arterial Crônica e Gravidez<br>
-                Aula 5.5: Emergências Hipertensivas
-            </p>
-        </div>
+      <div class="modal-content">
+        <span class="close" data-close="modal5">&times;</span>
+        <h3>Módulo 5 Aulas</h3>
+        <p>
+          Aula 5.1: Epidemiologia, Técnica adequada de aferição da pressão
+          arterial, classificação das síndromes hipertensivas, suspeita clínica
+          e diagnóstico da pré-eclâmpsia.<br />
+          Aula 5.2: Pré-eclâmpsia precoce e tardia e o impacto da época de
+          instalação.<br />
+          Aula 5.3: Eclâmpsia e Síndrome Hellp<br />
+          Aula 5.4: Hipertensão Arterial Crônica e Gravidez<br />
+          Aula 5.5: Emergências Hipertensivas
+        </p>
+      </div>
     </div>
 
-     <script>
-        // JavaScript para abrir e fechar modais
-        document.querySelectorAll('.open-modal').forEach(button => {
-            button.addEventListener('click', function(e) {
-                e.preventDefault();
-                const modalId = this.getAttribute('data-modal');
-                document.getElementById(modalId).style.display = 'flex';
-            });
+    <script>
+      // JavaScript para abrir e fechar modais
+      document.querySelectorAll(".open-modal").forEach((button) => {
+        button.addEventListener("click", function (e) {
+          e.preventDefault();
+          const modalId = this.getAttribute("data-modal");
+          document.getElementById(modalId).style.display = "flex";
         });
+      });
 
-        document.querySelectorAll('.close').forEach(span => {
-            span.addEventListener('click', function() {
-                const modalId = this.getAttribute('data-close');
-                document.getElementById(modalId).style.display = 'none';
-            });
+      document.querySelectorAll(".close").forEach((span) => {
+        span.addEventListener("click", function () {
+          const modalId = this.getAttribute("data-close");
+          document.getElementById(modalId).style.display = "none";
         });
+      });
 
-        window.addEventListener('click', function(event) {
-            if (event.target.classList.contains('modal')) {
-                event.target.style.display = 'none';
-            }
-        });
+      window.addEventListener("click", function (event) {
+        if (event.target.classList.contains("modal")) {
+          event.target.style.display = "none";
+        }
+      });
     </script>
-</body>
-
+  </body>
 </html>
