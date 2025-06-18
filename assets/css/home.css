@@ -1,3 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+@font-face {
+  font-family: "Prelo Book";
+  src: url(../fonts/Prelo-Book.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Prelo Bold";
+  src: url(../fonts/Prelo-Bold.ttf) format("truetype");
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -19,16 +31,16 @@ body {
 
 .header-shape-left {
   position: absolute;
-  max-height: 100%;
-  max-width: 100%;
+  max-height: 70%;
+  max-width: 70%;
   top: 0;
   left: 0;
 }
 
 .header-shape-right {
   position: absolute;
-  max-height: 100%;
-  max-width: 100%;
+  max-height: 70%;
+  max-width: 70%;
   top: 0;
   right: 0;
 }
@@ -40,7 +52,6 @@ body {
 
 .header-text {
   max-width: 600px;
-  padding-left: 100px;
 }
 
 .header h1 {
@@ -55,9 +66,13 @@ body {
 }
 
 .content {
-  padding: 20px;
+  padding: 40px 18%;
   text-align: center;
   background: linear-gradient(#783566, #3c1b33);
+}
+
+.menu-list {
+  padding: 0 !important;
 }
 
 .video-placeholder {
@@ -65,17 +80,17 @@ body {
   width: 80%;
   max-width: 800px;
   height: 450px;
-  margin: 20px auto;
+  margin: auto;
 }
 
 .decorative-flowers {
   display: block;
-  margin: 10px auto;
+  margin: auto;
 }
 
 .course-structure {
+  padding: 0px 18%;
   background: linear-gradient(#3c1b33, #8d3a76);
-  padding: 40px 20px;
   position: relative;
   overflow: hidden;
   text-align: center;
@@ -112,10 +127,20 @@ body {
   padding: 20px;
   margin: 10px;
   width: calc(33% - 40px);
-  max-width: 200px;
-  text-align: center;
+  max-width: 320px;
+  max-height: auto;
   border: 1px dashed #fff;
   position: relative;
+}
+
+.module-text {
+  font-family: "Prelo Bold", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: start !important;
 }
 
 .soon-tag {
@@ -149,6 +174,8 @@ body {
   border-radius: 5px;
   font-size: 16px;
   text-align: center;
+  width: 260px;
+  height: 40px;
 }
 .start-button:hover {
   background: rgba(255, 255, 255, 0.1);
@@ -160,7 +187,7 @@ body {
 }
 
 .footer img {
-  width: 100px;
+  width: 240px;
   margin: 10px;
 }
 
@@ -229,6 +256,16 @@ body {
     max-width: 200px;
     margin-top: 20px;
   }
+
+  .header-shape-left {
+    max-height: 60%;
+    max-width: 60%;
+  }
+
+  .header-shape-right {
+    max-height: 60%;
+    max-width: 60%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -241,4 +278,40 @@ body {
   .module {
     width: calc(100% - 40px);
   }
+
+  .header-shape-left {
+    max-height: 40%;
+    max-width: 40%;
+  }
+
+  .header-shape-right {
+    max-height: 40%;
+    max-width: 40%;
+  }
+}
+
+.sectionTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+li:nth-child(1) {
+  margin-right: 12px;
+}
+
+a.tituloLista {
+  padding-top: 22px;
+  margin: 0px;
+  font-weight: bold;
+  color: white;
+}
+
+.sectionTitle i {
+  margin: 5px;
 }

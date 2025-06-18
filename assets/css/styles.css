@@ -10,6 +10,8 @@
   src: url(../fonts/Prelo-Bold.ttf) format("truetype");
 }
 
+
+
 body,
 header,
 footer {
@@ -27,6 +29,7 @@ header {
   align-items: center;
   justify-content: center;
   background: linear-gradient(#3c1b33, #783566);
+  color: white;
 }
 
 .header-shape-left {
@@ -68,7 +71,7 @@ header {
 }
 
 #botaoConhecer {
-  background-color: #b95e00;
+  background-color: #aa1c95;
   font-size: 18px;
   color: white;
   padding: 8px 32px;
@@ -93,7 +96,7 @@ header {
 
 .botaoExtras {
   background-color: white;
-  color: #b95e00 !important;
+  color: #aa1c95 !important;
   border: rgba(5, 69, 166, 0.05) solid;
   padding: 8px;
   min-width: 260px;
@@ -104,8 +107,7 @@ header {
 }
 
 #botaoAvancar {
-  background-color: #f4ca00;
-  /* border-radius: 25px; */
+  background-color: #c04caf;
   color: white;
   width: 260px;
   height: 40px;
@@ -123,8 +125,8 @@ header {
 #botaoVoltar {
   background-color: white;
   /* border-radius: 25px; */
-  border: 1px solid #f4ca00;
-  color: #f4ca00;
+  border: 1px solid #c04caf;
+  color: #c04caf;
   width: 260px;
   height: 40px;
   display: flex;
@@ -146,7 +148,7 @@ header {
 }
 
 .botaoMatricula {
-  background-color: #b95e00;
+  background-color: #aa1c95;
 }
 
 .botaoAvaliacao,
@@ -220,7 +222,7 @@ header {
 }
 
 .textoSlider {
-  color: #b95e00;
+  color: #aa1c95;
   font-weight: 900;
 }
 
@@ -279,9 +281,15 @@ header {
 }
 
 .saibaMais {
-  background-color: #0545a6;
+  border: 4px dotted #783566;
+  color: #783566 !important;
   margin-left: 0px !important;
-  font-weight: bold;
+  text-align: center;
+  font-family: "Prelo Bold", sans-serif;
+
+  .col-md-2 {
+    background-color: white !important;
+  }
 
   .video {
     margin-left: 40px !important;
@@ -290,6 +298,42 @@ header {
   @media (max-width: 780px) {
     .col-md-2 {
       justify-content: start;
+    }
+  }
+}
+
+.voceSabia,
+.curiosidade,
+.saibaMais {
+  margin-bottom: 40px !important;
+  margin-top: 40px !important;
+  color: white;
+
+  .col-md-2 {
+    padding: 0 !important;
+  }
+
+  .col-md-2 img {
+    padding: 16%;
+  }
+
+  .col-md-10 {
+    padding-right: 12% !important;
+  }
+
+  .col-md-10 p {
+    margin-top: 10px !important;
+    margin-left: 40px;
+  }
+
+  .col-md-10 h3 {
+    margin-top: 30px !important;
+    margin-left: 40px;
+  }
+
+  @media (max-width: 780px) {
+    .col-md-2 img {
+      padding: 6% !important;
     }
   }
 }
@@ -335,7 +379,7 @@ header {
 }
 
 .materialComplementar {
-  border: 2px solid #b95e00;
+  border: 2px solid #aa1c95;
   margin-bottom: 30px;
   padding: 12px 22px;
 
@@ -424,7 +468,7 @@ h2 {
 
 h3 {
   font-size: 18px;
-  color: #b95e00;
+  color: #aa1c95;
   font-weight: bold;
   font-family: "Prelo-Bold";
   margin-bottom: 30px;
@@ -450,7 +494,7 @@ p {
 p.indice {
   margin-bottom: -35px;
   margin-top: 50px;
-  color: #b95e00;
+  color: #aa1c95;
   font-weight: bold;
   font-family: "Prelo-Bold";
 }
@@ -570,7 +614,7 @@ ul li {
 }
 
 ol li::marker {
-  color: #b95e00;
+  color: #aa1c95;
   font-weight: 800;
   font-size: 16px;
 }
@@ -585,7 +629,7 @@ ol li::marker {
   content: "\f061";
   font-weight: 900;
   margin-right: 15px;
-  color: #b95e00;
+  color: #aa1c95;
 }
 
 .icon.checkmark::before {
@@ -611,7 +655,7 @@ ol li::marker {
   margin-right: 15px;
   margin-top: 8px;
   font-size: 5px;
-  color: #b95e00;
+  color: #aa1c95;
 }
 
 .circle-color p {
@@ -760,7 +804,7 @@ footer img {
 }
 
 .fundoNavega {
-  background-color: #b95e00;
+  background-color: #aa1c95;
   justify-content: center;
   width: auto !important;
 }
@@ -829,59 +873,27 @@ footer img {
   margin-bottom: 0 !important;
 }
 
-.accordionMenu .collapsed i::before,
+.accordionMenu .collapsed i:before {
+  content: "\f0d7";
+}
+
 .accordion .collapsed i::before {
   content: "\f067";
 }
 
 /*Carousel*/
-.carousel-item {
-  text-align: left;
-}
-
-@media (max-width: 480px) {
-  .sliderCard {
-    height: 330px;
-    width: 180px;
-    margin: 32px 52px;
-  }
-
-  .carousel {
-    height: 145px !important;
-  }
-
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    height: 32px !important;
-    width: 32px !important;
-  }
-}
-
-.carousel {
-  height: 110px;
-  margin-top: 15px;
-  margin-bottom: 45px;
-
-  & p {
-    font-size: 16px;
-    font-weight: bold;
-  }
-}
-
-.carousel-indicators {
-  bottom: -8px !important;
-}
 
 .carousel-indicators li {
   width: 10px;
   height: 10px;
   border-radius: 25px;
   border: 1px solid #707070;
+  background-color: #e4e4e4;
   list-style: none;
 }
 
 .carousel-indicators .active {
-  background-color: #b95e00;
+  background-color: #c04caf;
 }
 
 .carousel-control-next-icon {
@@ -890,19 +902,6 @@ footer img {
 
 .carousel-control-prev-icon {
   background-image: url("../../assets/images/icones/prev.png");
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 42px;
-  width: 42px;
-  outline: #2f6c48;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  background-color: #2f6c48;
-  position: absolute;
-  cursor: pointer;
-  margin: -32px;
 }
 
 /* MENU LATERAL */
@@ -917,7 +916,7 @@ footer img {
 }
 
 nav#menuLateral {
-  background-color: #b95e00;
+  background-color: #aa1c95;
   color: white;
   padding-top: 32px;
   padding-left: 8px;
@@ -1017,7 +1016,7 @@ a.tituloItem {
 
 .item.active,
 .barraStepper.active {
-  background-color: #f4ca00;
+  background-color: #783566;
 }
 
 .sectionTitle {
@@ -1031,7 +1030,7 @@ a.tituloItem {
 #sidebarButton {
   position: fixed;
   color: white;
-  background-color: #b95e00;
+  background-color: #aa1c95;
   border-radius: 0 0 5px 0;
   padding: 0px !important;
   margin-left: 16.667%;
@@ -1057,7 +1056,7 @@ a.tituloItem {
 #sidebarButton2 {
   position: fixed;
   color: white;
-  background-color: #b95e00;
+  background-color: #aa1c95;
   border-radius: 0 0 5px 0;
   padding: 0% !important;
   margin-left: 50%;
@@ -1233,7 +1232,7 @@ a.tituloItem {
 }
 
 .tabela th {
-  background-color: #b95e00;
+  background-color: #aa1c95;
   color: white;
   text-align: center;
 }

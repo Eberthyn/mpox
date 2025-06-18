@@ -4,6 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curso Assistência ao Parto</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico" />
+
+    <link href="../assets/css/normalize.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    />
     <link href="./assets/css/home.css" rel="stylesheet" />
   </head>
 
@@ -37,31 +52,51 @@
       />
     </div>
     <div class="content">
+      <ul class="menu-list">
+        <div class="row">
+          <li>
+            <div class="sectionTitle">
+              <a class="tituloLista" role="button" href="../creditos.html"
+                ><i class="fas fa-list"></i>Créditos</a
+              >
+            </div>
+          </li>
+          <li>
+            <div class="column sectionTitle">
+              <a class="tituloLista" role="button" href="../referencias.html"
+                ><i class="fas fa-file-alt"></i>Referências</a
+              >
+            </div>
+          </li>
+        </div>
+      </ul>
       <img
         src="assets/images/home/flowers.png"
         alt="Decorative flowers"
-        class="decorative-flowers"
+        class="decorative-flowers mb-5"
       />
-      <h3>Apresentação</h3>
-      <p>
-        Seja muito bem-vindo e bem-vinda! É com grande entusiasmo que damos
-        início ao Curso de Assistência ao Parto: ênfase nas distocias e
-        principais causas de morbimortalidade materna. Este é um conteúdo
-        pensado especialmente para médicos, médicas, enfermeiros e enfermeiras
-        que atuam na linha de frente da assistência ao parto nos estados do
-        Amazonas e Roraima. Veja a seguir o vídeo que apresentará maiores
-        detalhes sobre este curso!
-      </p>
-      <div class="video-placeholder"></div>
+      <div class="mb-5">
+        <h3 class="mb-5">Apresentação</h3>
+        <p>
+          Seja muito bem-vindo e bem-vinda! É com grande entusiasmo que damos
+          início ao Curso de Assistência ao Parto: ênfase nas distocias e
+          principais causas de morbimortalidade materna. Este é um conteúdo
+          pensado especialmente para médicos, médicas, enfermeiros e enfermeiras
+          que atuam na linha de frente da assistência ao parto nos estados do
+          Amazonas e Roraima. Veja a seguir o vídeo que apresentará maiores
+          detalhes sobre este curso!
+        </p>
+      </div>
+      <div class="video-placeholder mt-5 mb-5"></div>
     </div>
 
     <div class="course-structure">
       <img
         src="assets/images/home/flowers-purple.png"
         alt="Decorative flowers"
-        class="decorative-flowers"
+        class="decorative-flowers mb-5"
       />
-      <h3>Estrutura do curso</h3>
+      <h3 class="mb-5">Estrutura do curso</h3>
       <p>
         Ao iniciar um curso, é comum surgirem dúvidas sobre como organizar os
         estudos e aproveitar ao máximo o conteúdo. Por isso, vale destacar: a
@@ -73,7 +108,7 @@
         profissional. Veja agora as informações detalhadas de cada módulo que
         você verá!
       </p>
-      <div class="icons">
+      <div class="icons mt-5 mb-5">
         <div class="icon">
           <img src="assets/images/home/computer-icon.png" alt="Computer icon" />
           Modalidade <br />
@@ -90,39 +125,77 @@
           em 17 aulas
         </div>
       </div>
-      <div class="modules">
+
+      <div class="modules mb-5 mt-5">
         <div class="module">
-          <img src="assets/images/home/flower-icon.png" alt="Flower icon" />
-          Módulo 1<br />Evolução da Obstetrícia e as Etapas de Assistência ao
-          Parto <br />
-          <a href="#" class="open-modal" data-modal="modal1">Aulas +</a>
+          <div class="row">
+            <div class="col-sm-2">
+              <img src="assets/images/home/flower-icon.png" alt="Flower icon" />
+            </div>
+            <div class="col-sm-10 module-text">
+              <p>
+                Módulo 1<br />Evolução da Obstetrícia e as Etapas de Assistência
+                ao Parto <br />
+              </p>
+              <a href="#" class="open-modal" data-modal="modal1">Aulas +</a>
+            </div>
+          </div>
         </div>
         <div class="module">
-          <img src="assets/images/home/flower-icon.png" alt="Flower icon" />
-          Módulo 2<br />Tipos de Parto: o papel das Distocias na
-          morbimortalidade materna <br />
-          <a href="#" class="open-modal" data-modal="modal2">Aulas +</a>
+          <div class="row">
+            <div class="col-sm-2">
+              <img src="assets/images/home/flower-icon.png" alt="Flower icon" />
+            </div>
+            <div class="col-sm-10 module-text">
+              <p>
+                Módulo 2<br />Tipos de Parto: o papel das Distocias na
+                morbimortalidade materna <br />
+              </p>
+              <a href="#" class="open-modal" data-modal="modal2">Aulas +</a>
+            </div>
+          </div>
         </div>
         <div class="module">
-          <img src="assets/images/home/flower-icon.png" alt="Flower icon" />
-          Módulo 3<br />Hemorragia Obstétrica <br />
-          <a href="#" class="open-modal" data-modal="modal3">Aulas +</a>
+          <div class="row">
+            <div class="col-sm-2">
+              <img src="assets/images/home/flower-icon.png" alt="Flower icon" />
+            </div>
+            <div class="col-sm-10 module-text">
+              <p>Módulo 3<br />Hemorragia Obstétrica <br /></p>
+              <div class="w-100">
+              <a href="#" class="open-modal" data-modal="modal3">Aulas +</a></div>
+            </div>
+          </div>
         </div>
         <div class="module coming-soon">
-          <div class="soon-tag">Em Breve</div>
-          <img src="assets/images/home/flower-icon.png" alt="Flower icon" />
-          Módulo 4<br />Infecções no ciclo gravido puerperal <br />
-          <a href="#" class="open-modal" data-modal="modal4">Aulas +</a>
+          <div class="row">
+            <div class="col-sm-2">
+              <img src="assets/images/home/flower-icon.png" alt="Flower icon" />
+            </div>
+            <div class="soon-tag">Em Breve</div>
+            <div class="col-sm-10 module-text">
+              <p>Módulo 4<br />Infecções no ciclo gravido puerperal <br /></p>
+              <a href="#" class="open-modal" data-modal="modal4">Aulas +</a>
+            </div>
+          </div>
         </div>
         <div class="module coming-soon">
-          <div class="soon-tag">Em Breve</div>
-          <img src="assets/images/home/flower-icon.png" alt="Flower icon" />
-          Módulo 5<br />Síndromes Hipertensivas na gestação <br />
-          <a href="#" class="open-modal" data-modal="modal5">Aulas +</a>
+          <div class="row">
+            <div class="col-sm-2">
+              <img src="assets/images/home/flower-icon.png" alt="Flower icon" />
+            </div>
+            <div class="soon-tag">Em Breve</div>
+            <div class="col-sm-10 module-text">
+              <p>Módulo 5<br />Síndromes Hipertensivas na gestação <br /></p>
+              <a href="#" class="open-modal" data-modal="modal5">Aulas +</a>
+            </div>
+          </div>
         </div>
       </div>
 
-      <a href="#" class="start-button">Começar</a>
+      <a href="modulo1/modulo1-aula1.html" class="start-button mt-5 mb-5"
+        >Começar</a
+      >
     </div>
     <footer class="footer">
       <img src="assets/images/rodape/fiocruz.png" alt="Fiocruz" />
