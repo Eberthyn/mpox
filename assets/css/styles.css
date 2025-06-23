@@ -30,6 +30,24 @@ header {
   color: white;
 }
 
+.header {
+  padding: 66px 66px 0 66px;
+  text-align: left;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 500px;
+  overflow: hidden;
+  background: linear-gradient(#3c1b33, #783566);
+}
+
+.illustration {
+  width: 38%;
+  height: auto;
+}
+
 .descricaoModulo {
   display: flex;
   justify-content: center;
@@ -52,7 +70,6 @@ header {
 
 .header-text {
   max-width: 600px;
-  padding-left: 100px;
 }
 
 .header h1 {
@@ -68,7 +85,7 @@ header {
 
 .decorative-flowers {
   display: block;
-  margin: 10px auto;
+  margin: 80px auto;
 }
 
 /*Botão*/
@@ -893,6 +910,37 @@ footer img {
 
 /*Carousel*/
 
+/* Container para posicionamento relativo */
+#imgSlider {
+  position: relative;
+}
+
+/* Estilos comuns para os controles */
+.custom-carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: #c04caf;
+  outline: #c04caf;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+/* Botão anterior - posicionado à esquerda e fora do carousel */
+.custom-prev {
+  left: -50px; /* Ajuste este valor conforme necessário */
+}
+
+/* Botão próximo - posicionado à direita e fora do carousel */
+.custom-next {
+  right: -50px; /* Ajuste este valor conforme necessário */
+}
+
 .carousel-indicators li {
   width: 10px;
   height: 10px;
@@ -906,13 +954,13 @@ footer img {
   background-color: #c04caf;
 }
 
-.carousel-control-next-icon {
+/* .carousel-control-next-icon {
   background-image: url("../../assets/images/icones/next.png");
 }
 
 .carousel-control-prev-icon {
   background-image: url("../../assets/images/icones/prev.png");
-}
+} */
 
 /* MENU LATERAL */
 #sidebar,
