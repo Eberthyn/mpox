@@ -18,29 +18,31 @@ footer {
   letter-spacing: 1px;
 }
 
-header {
-  padding: 0px !important;
-  margin: 0px !important;
+.header {
+  /* padding: 66px 66px 0 66px; */
   position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  text-align: left;
+  justify-content: space-evenly;
   background: linear-gradient(#3c1b33, #783566);
   color: white;
 }
 
-.header {
-  padding: 66px 66px 0 66px;
-  text-align: left;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  min-height: 500px;
-  overflow: hidden;
-  background: linear-gradient(#3c1b33, #783566);
+.header-text {
+  max-width: 600px;
+}
+
+.header h1 {
+  font-size: 48px;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.header h2 {
+  font-size: 24px;
+  margin: 10px 0;
 }
 
 .illustration {
@@ -66,21 +68,6 @@ header {
   max-width: 60%;
   top: 0;
   left: 0;
-}
-
-.header-text {
-  max-width: 600px;
-}
-
-.header h1 {
-  font-size: 48px;
-  margin: 0;
-  line-height: 1.2;
-}
-
-.header h2 {
-  font-size: 24px;
-  margin: 10px 0;
 }
 
 .decorative-flowers {
@@ -493,9 +480,15 @@ h2 {
   margin-top: 50px;
 }
 
+.conteudo {
+  h2 {
+    color: #c04caf;
+  }
+}
+
 h3 {
   font-size: 18px;
-  color: #aa1c95;
+  color: #783566;
   font-weight: bold;
   font-family: "Prelo-Bold";
   margin-bottom: 30px;
@@ -545,6 +538,14 @@ p.tituloLista {
   .col-md-6 {
     padding: 15px !important;
   }
+
+  h3 {
+    margin: 10px 0;
+  }
+}
+
+.imagemLegenda {
+  text-align: end;
 }
 
 .imagem .lista-imagem {
@@ -920,9 +921,9 @@ footer img {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
-  background-color: #c04caf;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
   outline: #c04caf;
   border-radius: 50%;
   display: flex;
@@ -933,12 +934,14 @@ footer img {
 
 /* Botão anterior - posicionado à esquerda e fora do carousel */
 .custom-prev {
-  left: -50px; /* Ajuste este valor conforme necessário */
+  left: -50px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23C04CAF' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
 
 /* Botão próximo - posicionado à direita e fora do carousel */
 .custom-next {
-  right: -50px; /* Ajuste este valor conforme necessário */
+  right: -50px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23C04CAF' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
 .carousel-indicators li {
@@ -955,10 +958,12 @@ footer img {
 }
 
 /* .carousel-control-next-icon {
+  right: -50px;
   background-image: url("../../assets/images/icones/next.png");
 }
 
 .carousel-control-prev-icon {
+  left: -50px;
   background-image: url("../../assets/images/icones/prev.png");
 } */
 

@@ -24,43 +24,38 @@
 
   <body>
     <!-- Toolbar -->
-    <header>
-      <div class="header row">
-        <img
-          src="../assets/images/home/top-wave-left.png"
-          alt="Decorative shape left"
-          class="header-shape-left"
-        />
-        <div class="header-text">
-          <h1>
-            Assistência <br />
-            ao parto:
-          </h1>
-          <h2>
-            ênfase nas distocias e <br />principais causas de
-            <br />morbimortalidade materna
-          </h2>
-        </div>
-        <img
-          id="menuSuperior"
-          class="img-fluid"
-          src="../assets/images/logos/header.png"
-          alt="Capa das páginas do curso"
-        />
-        <img
-          src="../assets/images/logos/campuVirtual.png"
-          alt="Campus Virtual"
-          class="img-fluid"
-        />
-
-        <div class="col-md-12 descricaoModulo">
-          <h2>
-            Módulo 1 | Evolução da obstetrícia e as etapas de assistência ao
-            parto
-          </h2>
-        </div>
+    <div class="row header">
+      <img
+        src="../assets/images/home/top-wave-left.png"
+        alt="Decorative shape left"
+        class="header-shape-left"
+      />
+      <div class="header-text">
+        <h1>
+          Assistência <br />
+          ao parto:
+        </h1>
+        <h2>
+          ênfase nas distocias e <br />principais causas de
+          <br />morbimortalidade materna
+        </h2>
       </div>
-    </header>
+      <img
+        class="img-fluid"
+        src="../assets/images/logos/header.png"
+        alt="Capa das páginas do curso"
+      />
+      <img
+        src="../assets/images/logos/campuVirtual.png"
+        alt="Campus Virtual"
+        class="img-fluid"
+      />
+      <div class="col-md-12 descricaoModulo">
+        <h2>
+          Módulo 1 | Evolução da obstetrícia e as etapas de assistência ao parto
+        </h2>
+      </div>
+    </div>
 
     <div class="row" id="row-main">
       <!-- Sidebar -->
@@ -538,28 +533,41 @@
           <h1>Introdução</h1>
 
           <div class="row centro">
-            <div class="col-md-10 objetivos">
-              <p>
-                A evolução das espécies impôs modificações ao esqueleto humano,
-                e, por meio do bipedalismo e da encefalização, determinaram:
-              </p>
-              <ul>
-                <li class="icon arrow">
-                  Conhecer os aspectos históricos e epidemiológicos relacionados
-                  ao HTLV.
-                </li>
-                <li class="icon arrow">
-                  Compreender as formas de transmissão do HTLV.
-                </li>
-                <li class="icon arrow">
-                  Entender as características virais e como se relacionam com a
-                  replicação e propagação do vírus.
-                </li>
-                <li class="icon arrow">
-                  Conhecer as formas de prevenção da transmissão do HTLV.
-                </li>
-              </ul>
-            </div>
+            <p>
+              A evolução das espécies impôs modificações ao esqueleto humano, e,
+              por meio do
+              <a
+                style="color: #aa1c95"
+                data-toggle="tooltip"
+                class="nobr"
+                data-original-title="Bipedalismo é a carga atribuída por um peso corporal suportado exclusivamente pelos membros inferiores."
+                ><u>bipedalismo</u></a
+              >
+              e da
+              <a
+                style="color: #aa1c95"
+                data-toggle="tooltip"
+                class="nobr"
+                data-original-title="Encefalização é o aumento das dimensões e do peso do encéfalo humano."
+                ><u>encefalização</u></a
+              >, determinaram:
+            </p>
+            <ul>
+              <li class="icon arrow">
+                Conhecer os aspectos históricos e epidemiológicos relacionados
+                ao HTLV.
+              </li>
+              <li class="icon arrow">
+                Compreender as formas de transmissão do HTLV.
+              </li>
+              <li class="icon arrow">
+                Entender as características virais e como se relacionam com a
+                replicação e propagação do vírus.
+              </li>
+              <li class="icon arrow">
+                Conhecer as formas de prevenção da transmissão do HTLV.
+              </li>
+            </ul>
           </div>
 
           <p>
@@ -577,7 +585,7 @@
                 alt="Mulher no momento do parto"
                 class="img-fluid"
               />
-              <div>
+              <div class="imagemLegenda">
                 <small>Fonte: Freepik (2025)</small>
               </div>
             </div>
@@ -616,7 +624,7 @@
                 alt="Mecanismo do parto em OEA em 45º"
                 class="img-fluid"
               />
-              <div><small>Fonte: Xxxxx</small></div>
+              <div class="imagemLegenda"><small>Fonte: Xxxxx</small></div>
             </div>
           </div>
 
@@ -984,10 +992,6 @@
             menor incidência em relação às causas diretas.
           </p>
 
-          <h2>
-            Principais causas obstétricas indiretas de MM entre 1996 e 2018
-          </h2>
-
           <!-- Imagem 5 -->
           <div class="row centro">
             <div class="col-md-8 imagem">
@@ -1315,10 +1319,6 @@
                   role="button"
                   data-slide="prev"
                 >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
                   <span class="sr-only">Previous</span>
                 </a>
                 <a
@@ -1327,10 +1327,6 @@
                   role="button"
                   data-slide="next"
                 >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
                   <span class="sr-only">Next</span>
                 </a>
               </div>
