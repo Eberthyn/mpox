@@ -163,7 +163,8 @@
             <div class="col-sm-10 module-text">
               <p>Módulo 3<br />Hemorragia Obstétrica <br /></p>
               <div class="w-100">
-              <a href="#" class="open-modal" data-modal="modal3">Aulas +</a></div>
+                <a href="#" class="open-modal" data-modal="modal3">Aulas +</a>
+              </div>
             </div>
           </div>
         </div>
@@ -277,28 +278,6 @@
       </div>
     </div>
 
-    <script>
-      // JavaScript para abrir e fechar modais
-      document.querySelectorAll(".open-modal").forEach((button) => {
-        button.addEventListener("click", function (e) {
-          e.preventDefault();
-          const modalId = this.getAttribute("data-modal");
-          document.getElementById(modalId).style.display = "flex";
-        });
-      });
-
-      document.querySelectorAll(".close").forEach((span) => {
-        span.addEventListener("click", function () {
-          const modalId = this.getAttribute("data-close");
-          document.getElementById(modalId).style.display = "none";
-        });
-      });
-
-      window.addEventListener("click", function (event) {
-        if (event.target.classList.contains("modal")) {
-          event.target.style.display = "none";
-        }
-      });
-    </script>
+    <script src="assets/js/modal.js"></script>
   </body>
 </html>

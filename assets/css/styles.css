@@ -469,6 +469,7 @@ h1 {
   margin-bottom: 30px;
   margin-top: 50px;
   font-family: "Prelo-Bold";
+
   /*max-width: 58ch*/
 }
 
@@ -484,11 +485,14 @@ h2 {
   h2 {
     color: #c04caf;
   }
+  h1 {
+    color: #783566;
+  }
 }
 
 h3 {
   font-size: 18px;
-  color: #783566;
+  color: #c04caf;
   font-weight: bold;
   font-family: "Prelo-Bold";
   margin-bottom: 30px;
@@ -540,6 +544,7 @@ p.tituloLista {
   }
 
   h3 {
+    color: #783566 !important;
     margin: 10px 0;
   }
 }
@@ -657,7 +662,7 @@ ol li::marker {
   content: "\f061";
   font-weight: 900;
   margin-right: 15px;
-  color: #aa1c95;
+  color: #c04caf;
 }
 
 .icon.checkmark::before {
@@ -911,11 +916,6 @@ footer img {
 
 /*Carousel*/
 
-/* Container para posicionamento relativo */
-#imgSlider {
-  position: relative;
-}
-
 /* Estilos comuns para os controles */
 .custom-carousel-control {
   position: absolute;
@@ -932,16 +932,52 @@ footer img {
   z-index: 10;
 }
 
+.slide-content {
+  margin: 0; /* Remove margens padrão dos parágrafos */
+  padding: 30px 10px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Botão anterior - posicionado à esquerda e fora do carousel */
 .custom-prev {
-  left: -50px;
+  left: -35px;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23C04CAF' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
 
 /* Botão próximo - posicionado à direita e fora do carousel */
 .custom-next {
-  right: -50px;
+  right: -35px;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23C04CAF' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/* Container que envolve todo o carrossel e os indicadores */
+.carousel-wrapper {
+  position: relative;
+  padding-bottom: 30px;
+}
+
+/* Container para os indicadores */
+.carousel-indicators-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20px; /* Altura fixa para os indicadores */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo para os indicadores */
+.carousel-indicators {
+  position: static; /* Sobrescreve a posição absoluta padrão */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .carousel-indicators li {
@@ -956,16 +992,6 @@ footer img {
 .carousel-indicators .active {
   background-color: #c04caf;
 }
-
-/* .carousel-control-next-icon {
-  right: -50px;
-  background-image: url("../../assets/images/icones/next.png");
-}
-
-.carousel-control-prev-icon {
-  left: -50px;
-  background-image: url("../../assets/images/icones/prev.png");
-} */
 
 /* MENU LATERAL */
 #sidebar,
@@ -982,7 +1008,7 @@ nav#menuLateral {
   background-color: #aa1c95;
   color: white;
   padding-top: 32px;
-  padding-left: 32px;
+  /* padding-left: 32px; */
   width: 16.667%;
   height: 100vh;
   position: fixed;
@@ -1444,6 +1470,7 @@ a.tituloItem {
   font-size: 1.1rem;
   z-index: 10;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  line-height: 18px;
 }
 
 .timeline-component .timeline-item .timeline-marker {
