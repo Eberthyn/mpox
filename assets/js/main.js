@@ -284,3 +284,18 @@ $("#myModal").on("shown.bs.modal", function () {
 });
 
 $("#example").tooltip(options);
+
+$(function () {
+  $(".example-popover").popover({
+    container: "body",
+  });
+});
+
+$(function () {
+  $('[data-toggle="popover"]').popover();
+});
+
+$("#example").popover(options);
+
+$('#element').popover('show')
+

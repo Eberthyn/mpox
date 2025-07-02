@@ -191,7 +191,19 @@ body {
   margin: 10px;
 }
 
-.modal {
+
+.modal-content {
+  padding: 1rem 3rem;
+  color: black;
+}
+
+.modal-header .close {
+  padding: 1rem;
+  margin: -2rem -4rem -1rem auto;
+}
+
+
+/* .modal {
   display: none;
   position: fixed;
   top: 0;
@@ -213,7 +225,7 @@ body {
   text-align: left;
 }
 .open-modal {
-  color: white;
+  cursor: pointer;
 }
 .close {
   color: #aaa;
@@ -226,7 +238,7 @@ body {
   color: black;
   text-decoration: none;
   cursor: pointer;
-}
+} */
 
 @media (max-width: 768px) {
   .header {
